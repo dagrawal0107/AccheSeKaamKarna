@@ -166,5 +166,6 @@
         </apiParam>
       </generatedParameters>
     </apiCall>
+    <caseCall guid="65fad33c-b4d9-4cc4-bb2b-b76c6e12836e" testCaseId="a374bd76-ef4e-42f1-9fe1-11fd4fa6c4e7" testCasePath="tests/Test Case 3.testcase" testItemId="5"/>
   </steps>
 </testCase>
