@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5j00000354z3AAA" durableId="06m5j00000354z3AAA" n="Sales" packageName="standard" s="" seqNum="1">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="standard-Campaign" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/701/o" s="" seqNum="2" t="Campaigns">
+      <children>
+        <sfObjectReference n="Campaign" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Lead" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/00Q/o" s="" seqNum="3" t="Leads">
+      <children>
+        <sfObjectReference n="Lead" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Account" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/001/o" s="" seqNum="4" t="Accounts">
+      <children>
+        <sfObjectReference n="Account" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Contact" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/003/o" s="" seqNum="5" t="Contacts">
+      <children>
+        <sfObjectReference n="Contact" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Opportunity" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/006/o" s="" seqNum="6" t="Opportunities">
+      <children>
+        <sfObjectReference n="Opportunity" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Forecasting3" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/sales/forecasting/ui/ForecastingTabPage" s="" seqNum="7" t="Forecasts"/>
+    <sfTab n="standard-Contract" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/800/o" s="" seqNum="8" t="Contracts">
+      <children>
+        <sfObjectReference n="Contract" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Order" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/801/o" s="" seqNum="9" t="Orders">
+      <children>
+        <sfObjectReference n="Order" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Case" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/500/o" s="" seqNum="10" t="Cases">
+      <children>
+        <sfObjectReference n="Case" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Solution" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/501/o" s="" seqNum="11" t="Solutions">
+      <children>
+        <sfObjectReference n="Solution" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Product2" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/01t/o" s="" seqNum="12" t="Products">
+      <children>
+        <sfObjectReference n="Product2" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/00O/o" s="" seqNum="13" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Dashboard" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/01Z/o" s="" seqNum="14" t="Dashboards">
+      <children>
+        <sfObjectReference n="Dashboard" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="CheckBox__c" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/a0o/o" s="" seqNum="15" t="CheckBox">
+      <children>
+        <sfObjectReference n="CheckBox__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="Student__c" pageUrl="https://provar-9a-dev-ed.develop.my.salesforce.com/a0p/o" s="" seqNum="16" t="Students">
+      <children>
+        <sfObjectReference n="Student__c" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ServiceContract" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Service Contracts" Name="standard-ServiceContract" SobjectName="ServiceContract" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/810/o"/>
+</toolingTabInfo>

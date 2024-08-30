@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ListEmail" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="List Emails" Name="standard-ListEmail" SobjectName="ListEmail" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0XB/o"/>
+</toolingTabInfo>

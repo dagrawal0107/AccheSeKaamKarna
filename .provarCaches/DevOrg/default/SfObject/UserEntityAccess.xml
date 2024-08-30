@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="07u" label="User Entity Access" labelPlural="User Entity Access" n="UserEntityAccess" queryable="true" readPermission="false" s="" t="User Entity Access (07u)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome UserEntityAccessRights" n="New"/>
+    <sfActionLink modes="View UserEntityAccessRights" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View UserEntityAccessRights" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View UserEntityAccessRights" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View UserEntityAccessRights" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

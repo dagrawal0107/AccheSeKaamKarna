@@ -1,0 +1,15 @@
+<apex:page standardController="provar__Repository__c" recordSetVar="repositories" lightningStylesheets="true" standardstylesheets="false" showHeader="false" title="Import Repositories">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <apex:outputPanel id="page">
+        <script>
+            $Lightning.use("provar:importRepositoriesApp", function () {
+                $Lightning.createComponent("provar:importRepositories",
+                    { vcsId: '{! $CurrentPage.parameters.id }' },
+                    "lightning",
+                    function() {});
+            });
+        </script>
+    </apex:outputPanel>
+</apex:page>

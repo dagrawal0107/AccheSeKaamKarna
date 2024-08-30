@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00I" label="Partner" labelPlural="Partner" n="Partner" queryable="true" retrieveable="true" s="" t="Partner (00I)">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Partner ID" type="id" updateable="false"/>
+    <sfField length="18" n="OpportunityId" relationshipName="Opportunity" t="Opportunity" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="AccountFromId" relationshipName="AccountFrom" t="Account From" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="AccountToId" relationshipName="AccountTo" required="true" t="Account To" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="Role" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="System Integrator" s=""/>
+        <sfPLE id="2" n="Agency" s=""/>
+        <sfPLE id="3" n="Advertiser" s=""/>
+        <sfPLE id="4" n="VAR/Reseller" s=""/>
+        <sfPLE id="5" n="Distributor" s=""/>
+        <sfPLE id="6" n="Developer" s=""/>
+        <sfPLE id="7" n="Broker" s=""/>
+        <sfPLE id="8" n="Lender" s=""/>
+        <sfPLE id="9" n="Supplier" s=""/>
+        <sfPLE id="10" n="Institution" s=""/>
+        <sfPLE id="11" n="Contractor" s=""/>
+        <sfPLE id="12" n="Dealer" s=""/>
+        <sfPLE id="13" n="Consultant" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField editPermission="false" n="IsPrimary" t="Primary" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="18" n="ReversePartnerId" t="Reverse Partner" type="reference" updateable="false">
+      <referenceTos>
+        <string>Partner</string>
+      </referenceTos>
+    </sfField>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome PartnersFrom PartnersTo List" n="New"/>
+    <sfActionLink modes="View PartnersFrom PartnersTo" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View PartnersFrom PartnersTo" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View PartnersFrom PartnersTo" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View PartnersFrom PartnersTo" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

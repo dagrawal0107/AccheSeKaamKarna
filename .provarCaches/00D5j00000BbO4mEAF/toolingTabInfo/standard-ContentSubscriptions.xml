@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ContentSubscriptions" IsAvailableInAloha="true" Label="Subscriptions" Name="standard-ContentSubscriptions" SobjectName="ContentSubscriptions" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/sfc/#subscriptions"/>
+</toolingTabInfo>

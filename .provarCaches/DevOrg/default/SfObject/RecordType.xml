@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" keyPrefix="012" label="Record Type" labelPlural="Record Types" n="RecordType" queryable="true" retrieveable="true" s="" t="Record Type (012)" updatable="true">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Record Type ID" type="id" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true" required="true" t="Record Type Name"/>
+    <sfField length="80" n="DeveloperName" required="true" t="Developer Name"/>
+    <sfField createable="false" length="15" n="NamespacePrefix" t="Namespace Prefix" updateable="false"/>
+    <sfField length="255" n="Description"/>
+    <sfField length="18" n="BusinessProcessId" t="Business Process ID" type="reference">
+      <referenceTos>
+        <string>BusinessProcess</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="SobjectType" required="true" restrictedPicklist="true" t="sObject Type" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Account" s=""/>
+        <sfPLE id="2" n="AccountBrand" s=""/>
+        <sfPLE id="3" n="ActionCadenceAsyncJob" s=""/>
+        <sfPLE id="4" n="Address" s=""/>
+        <sfPLE id="5" n="AIError" s=""/>
+        <sfPLE id="6" n="AIInsightAction" s=""/>
+        <sfPLE id="7" n="AIInsightFeedback" s=""/>
+        <sfPLE id="8" n="AIInsightReason" s=""/>
+        <sfPLE id="9" n="AIInsightReasonMLModelFactor" s=""/>
+        <sfPLE id="10" n="AIInsightSource" s=""/>
+        <sfPLE id="11" n="AIInsightValue" s=""/>
+        <sfPLE id="12" n="AIMetric" s=""/>
+        <sfPLE id="13" n="AIRecordInsight" s=""/>
+        <sfPLE id="14" n="AIState" s=""/>
+        <sfPLE id="15" n="AITenantProvisionedFeature" s=""/>
+        <sfPLE id="16" n="AlternativePaymentMethod" s=""/>
+        <sfPLE id="17" n="Announcement" s=""/>
+        <sfPLE id="18" n="ApiAnomalyEventStore" s=""/>
+        <sfPLE id="19" n="AppAnalyticsQueryRequest" s=""/>
+        <sfPLE id="20" n="AppointmentCategory" s=""/>
+        <sfPLE id="21" n="AppointmentInvitation" s=""/>
+        <sfPLE id="22" n="AppointmentInvitee" s=""/>
+        <sfPLE id="23" n="AppointmentScheduleAggr" s=""/>
+        <sfPLE id="24" n="AppointmentScheduleLog" s=""/>
+        <sfPLE id="25" n="AppointmentTopicTimeSlot" s=""/>
+        <sfPLE id="26" n="Asset" s=""/>
+        <sfPLE id="27" n="AssetAction" s=""/>
+        <sfPLE id="28" n="AssetActionSource" s=""/>
+        <sfPLE id="29" n="AssetRelationship" s=""/>
+        <sfPLE id="30" n="AssetStatePeriod" s=""/>
+        <sfPLE id="31" n="AssistantProgress" s=""/>
+        <sfPLE id="32" n="AssistantStepProgress" s=""/>
+        <sfPLE id="33" n="AssociatedLocation" s=""/>
+        <sfPLE id="34" n="AsyncOperationLog" s=""/>
+        <sfPLE id="35" n="AuthorizationForm" s=""/>
+        <sfPLE id="36" n="AuthorizationFormConsent" s=""/>
+        <sfPLE id="37" n="AuthorizationFormDataUse" s=""/>
+        <sfPLE id="38" n="AuthorizationFormText" s=""/>
+        <sfPLE id="39" n="BusinessBrand" s=""/>
+        <sfPLE id="40" n="BuyerGroup" s=""/>
+        <sfPLE id="41" n="CalendarModel" s=""/>
+        <sfPLE id="42" n="CalendarView" s=""/>
+        <sfPLE id="43" n="Campaign" s=""/>
+        <sfPLE id="44" n="CampaignMember" s=""/>
+        <sfPLE id="45" n="CardPaymentMethod" s=""/>
+        <sfPLE id="46" n="CartCheckoutSession" s=""/>
+        <sfPLE id="47" n="CartDeliveryGroup" s=""/>
+        <sfPLE id="48" n="CartDeliveryGroupMethod" s=""/>
+        <sfPLE id="49" n="CartDeliveryGroupMethodAdj" s=""/>
+        <sfPLE id="50" n="CartItem" s=""/>
+        <sfPLE id="51" n="CartItemPriceAdjustment" s=""/>
+        <sfPLE id="52" n="CartRelatedItem" s=""/>
+        <sfPLE id="53" n="CartTax" s=""/>
+        <sfPLE id="54" n="CartValidationOutput" s=""/>
+        <sfPLE id="55" n="Case" s=""/>
+        <sfPLE id="56" n="CaseRelatedIssue" s=""/>
+        <sfPLE id="57" n="ChangeRequest" s=""/>
+        <sfPLE id="58" n="ChangeRequestRelatedIssue" s=""/>
+        <sfPLE id="59" n="ChangeRequestRelatedItem" s=""/>
+        <sfPLE id="60" n="ChannelProgram" s=""/>
+        <sfPLE id="61" n="ChannelProgramLevel" s=""/>
+        <sfPLE id="62" n="ChannelProgramMember" s=""/>
+        <sfPLE id="63" n="CheckBox__c" s=""/>
+        <sfPLE id="64" n="CollabDocumentMetric" s=""/>
+        <sfPLE id="65" n="CollabDocumentMetricRecord" s=""/>
+        <sfPLE id="66" n="CollaborationGroup" s=""/>
+        <sfPLE id="67" n="CollaborationGroupRank" s=""/>
+        <sfPLE id="68" n="CollaborationGroupRecord" s=""/>
+        <sfPLE id="69" n="CollabTemplateMetric" s=""/>
+        <sfPLE id="70" n="CollabTemplateMetricRecord" s=""/>
+        <sfPLE id="71" n="CollabUserEngagementMetric" s=""/>
+        <sfPLE id="72" n="CollabUserEngmtRecordLink" s=""/>
+        <sfPLE id="73" n="CommerceJobStatus" s=""/>
+        <sfPLE id="74" n="CommerceSearchDocChangelist" s=""/>
+        <sfPLE id="75" n="CommerceSearchIndexInfo" s=""/>
+        <sfPLE id="76" n="CommerceSearchIndexLog" s=""/>
+        <sfPLE id="77" n="CommerceSearchIndexPayload" s=""/>
+        <sfPLE id="78" n="CommerceSearchResultsRule" s=""/>
+        <sfPLE id="79" n="CommSubscription" s=""/>
+        <sfPLE id="80" n="CommSubscriptionChannelType" s=""/>
+        <sfPLE id="81" n="CommSubscriptionConsent" s=""/>
+        <sfPLE id="82" n="CommSubscriptionTiming" s=""/>
+        <sfPLE id="83" n="ComponentResponseCache" s=""/>
+        <sfPLE id="84" n="ConsumptionRate" s=""/>
+        <sfPLE id="85" n="ConsumptionSchedule" s=""/>
+        <sfPLE id="86" n="Contact" s=""/>
+        <sfPLE id="87" n="ContactPointAddress" s=""/>
+        <sfPLE id="88" n="ContactPointConsent" s=""/>
+        <sfPLE id="89" n="ContactPointEmail" s=""/>
+        <sfPLE id="90" n="ContactPointPhone" s=""/>
+        <sfPLE id="91" n="ContactPointTypeConsent" s=""/>
+        <sfPLE id="92" n="ContactRequest" s=""/>
+        <sfPLE id="93" n="ContentBuilderChannel" s=""/>
+        <sfPLE id="94" n="ContentDocumentListViewMapping" s=""/>
+        <sfPLE id="95" n="ContentFolderDistribution" s=""/>
+        <sfPLE id="96" n="ContentVersion" s=""/>
+        <sfPLE id="97" n="Contract" s=""/>
+        <sfPLE id="98" n="ContractLineItem" s=""/>
+        <sfPLE id="99" n="ConvCoachingRecommendation" s=""/>
+        <sfPLE id="100" n="ConvMsgSessionAuthResult" s=""/>
+        <sfPLE id="101" n="Coupon" s=""/>
+        <sfPLE id="102" n="CredentialStuffingEventStore" s=""/>
+        <sfPLE id="103" n="CreditMemo" s=""/>
+        <sfPLE id="104" n="CreditMemoInvApplication" s=""/>
+        <sfPLE id="105" n="CreditMemoLine" s=""/>
+        <sfPLE id="106" n="Customer" s=""/>
+        <sfPLE id="107" n="DataAssetSemanticGraphEdge" s=""/>
+        <sfPLE id="108" n="DataAssetUsageTrackingInfo" s=""/>
+        <sfPLE id="109" n="DataflowTriggerEvent" s=""/>
+        <sfPLE id="110" n="DataPrepServiceLocator" s=""/>
+        <sfPLE id="111" n="DataUseLegalBasis" s=""/>
+        <sfPLE id="112" n="DataUsePurpose" s=""/>
+        <sfPLE id="113" n="DeflectionSignal" s=""/>
+        <sfPLE id="114" n="DelegatedAccount" s=""/>
+        <sfPLE id="115" n="DigitalWallet" s=""/>
+        <sfPLE id="116" n="DuplicateErrorLog" s=""/>
+        <sfPLE id="117" n="DuplicateRecordItem" s=""/>
+        <sfPLE id="118" n="DuplicateRecordSet" s=""/>
+        <sfPLE id="119" n="EmailThreadingToken" s=""/>
+        <sfPLE id="120" n="EngagementChannelType" s=""/>
+        <sfPLE id="121" n="EngagementChannelWorkType" s=""/>
+        <sfPLE id="122" n="Entitlement" s=""/>
+        <sfPLE id="123" n="EntitlementContact" s=""/>
+        <sfPLE id="124" n="EntityMilestone" s=""/>
+        <sfPLE id="125" n="Event" s=""/>
+        <sfPLE id="126" n="EventRelayFeedback" s=""/>
+        <sfPLE id="127" n="ExpressionFilter" s=""/>
+        <sfPLE id="128" n="ExpressionFilterCriteria" s=""/>
+        <sfPLE id="129" n="FileBasedDataImport" s=""/>
+        <sfPLE id="130" n="FileInspectionResult" s=""/>
+        <sfPLE id="131" n="FileSearchActivity" s=""/>
+        <sfPLE id="132" n="FinanceBalanceSnapshot" s=""/>
+        <sfPLE id="133" n="FinanceTransaction" s=""/>
+        <sfPLE id="134" n="FlowExecutionEventMetric" s=""/>
+        <sfPLE id="135" n="FlowRecordRelation" s=""/>
+        <sfPLE id="136" n="FlowStageRelation" s=""/>
+        <sfPLE id="137" n="FlowTestResult" s=""/>
+        <sfPLE id="138" n="FulfillmentOrder" s=""/>
+        <sfPLE id="139" n="FulfillmentOrderItemAdjustment" s=""/>
+        <sfPLE id="140" n="FulfillmentOrderItemTax" s=""/>
+        <sfPLE id="141" n="FulfillmentOrderLineItem" s=""/>
+        <sfPLE id="142" n="GuestUserAnomalyEventStore" s=""/>
+        <sfPLE id="143" n="HawkingTenantProvStatus" s=""/>
+        <sfPLE id="144" n="Idea" s=""/>
+        <sfPLE id="145" n="Image" s=""/>
+        <sfPLE id="146" n="Incident" s=""/>
+        <sfPLE id="147" n="IncidentRelatedItem" s=""/>
+        <sfPLE id="148" n="Individual" s=""/>
+        <sfPLE id="149" n="InventoryItemReservation" s=""/>
+        <sfPLE id="150" n="InventoryReservation" s=""/>
+        <sfPLE id="151" n="Invoice" s=""/>
+        <sfPLE id="152" n="InvoiceLine" s=""/>
+        <sfPLE id="153" n="Lead" s=""/>
+        <sfPLE id="154" n="LearningAssignment" s=""/>
+        <sfPLE id="155" n="LearningAssignmentProgress" s=""/>
+        <sfPLE id="156" n="LearningItem" s=""/>
+        <sfPLE id="157" n="LearningLesson" s=""/>
+        <sfPLE id="158" n="LearningLessonItem" s=""/>
+        <sfPLE id="159" n="LearningLink" s=""/>
+        <sfPLE id="160" n="LearningLinkProgress" s=""/>
+        <sfPLE id="161" n="LegalEntity" s=""/>
+        <sfPLE id="162" n="ListEmail" s=""/>
+        <sfPLE id="163" n="ListEmailIndividualRecipient" s=""/>
+        <sfPLE id="164" n="ListEmailRecipientSource" s=""/>
+        <sfPLE id="165" n="ListEmailSentResult" s=""/>
+        <sfPLE id="166" n="Location" s=""/>
+        <sfPLE id="167" n="LocationGroup" s=""/>
+        <sfPLE id="168" n="LocationGroupAssignment" s=""/>
+        <sfPLE id="169" n="LocationWaitlist" s=""/>
+        <sfPLE id="170" n="LocationWaitlistedParty" s=""/>
+        <sfPLE id="171" n="LocWaitlistMsgTemplate" s=""/>
+        <sfPLE id="172" n="LogLicenseUpdates" s=""/>
+        <sfPLE id="173" n="Macro" s=""/>
+        <sfPLE id="174" n="MacroAction" s=""/>
+        <sfPLE id="175" n="MacroInstruction" s=""/>
+        <sfPLE id="176" n="MacroUsage" s=""/>
+        <sfPLE id="177" n="MalformedTemplateTracker" s=""/>
+        <sfPLE id="178" n="MessagingDeliveryError" s=""/>
+        <sfPLE id="179" n="MessagingEndUser" s=""/>
+        <sfPLE id="180" n="MessagingSession" s=""/>
+        <sfPLE id="181" n="MlAppMigrationStatus" s=""/>
+        <sfPLE id="182" n="MlFeatureValueMetric" s=""/>
+        <sfPLE id="183" n="MLMigration" s=""/>
+        <sfPLE id="184" n="MLModel" s=""/>
+        <sfPLE id="185" n="MLModelFactor" s=""/>
+        <sfPLE id="186" n="MLModelFactorComponent" s=""/>
+        <sfPLE id="187" n="MLModelMetric" s=""/>
+        <sfPLE id="188" n="MobileHomeConfiguration" s=""/>
+        <sfPLE id="189" n="NetworkFeedResponseMetric" s=""/>
+        <sfPLE id="190" n="NetworkMemberChunk" s=""/>
+        <sfPLE id="191" n="NetworkSearchQueryFrequency" s=""/>
+        <sfPLE id="192" n="NetworkUserHistoryRecent" s=""/>
+        <sfPLE id="193" n="New_Custom_Object__c" s=""/>
+        <sfPLE id="194" n="ObjectMetadataTag" s=""/>
+        <sfPLE id="195" n="ObjectRelatedUrl" s=""/>
+        <sfPLE id="196" n="Opportunity" s=""/>
+        <sfPLE id="197" n="Order" s=""/>
+        <sfPLE id="198" n="OrgDeleteRequest" s=""/>
+        <sfPLE id="199" n="OrgMetric" s=""/>
+        <sfPLE id="200" n="OrgMetricScanResult" s=""/>
+        <sfPLE id="201" n="OrgMetricScanSummary" s=""/>
+        <sfPLE id="202" n="PageContentAssignment" s=""/>
+        <sfPLE id="203" n="PartnerFundAllocation" s=""/>
+        <sfPLE id="204" n="PartnerFundClaim" s=""/>
+        <sfPLE id="205" n="PartnerFundRequest" s=""/>
+        <sfPLE id="206" n="PartnerMarketingBudget" s=""/>
+        <sfPLE id="207" n="PartyConsent" s=""/>
+        <sfPLE id="208" n="Payment" s=""/>
+        <sfPLE id="209" n="PaymentAuthAdjustment" s=""/>
+        <sfPLE id="210" n="PaymentAuthorization" s=""/>
+        <sfPLE id="211" n="PaymentGateway" s=""/>
+        <sfPLE id="212" n="PaymentGatewayLog" s=""/>
+        <sfPLE id="213" n="PaymentGroup" s=""/>
+        <sfPLE id="214" n="PaymentLineInvoice" s=""/>
+        <sfPLE id="215" n="PersonalizationResource" s=""/>
+        <sfPLE id="216" n="Pricebook2" s=""/>
+        <sfPLE id="217" n="PrivacyJobSession" s=""/>
+        <sfPLE id="218" n="PrivacyObjectSession" s=""/>
+        <sfPLE id="219" n="PrivacyProcessorOrchestrator" s=""/>
+        <sfPLE id="220" n="PrivacyRTBFRequest" s=""/>
+        <sfPLE id="221" n="PrivacySessionRecordFailure" s=""/>
+        <sfPLE id="222" n="Problem" s=""/>
+        <sfPLE id="223" n="ProblemIncident" s=""/>
+        <sfPLE id="224" n="ProblemRelatedItem" s=""/>
+        <sfPLE id="225" n="ProcessException" s=""/>
+        <sfPLE id="226" n="Product2" s=""/>
+        <sfPLE id="227" n="ProductAttribute" s=""/>
+        <sfPLE id="228" n="ProductAttributeSetProduct" s=""/>
+        <sfPLE id="229" n="ProductCatalog" s=""/>
+        <sfPLE id="230" n="ProductCategory" s=""/>
+        <sfPLE id="231" n="ProductCategoryProduct" s=""/>
+        <sfPLE id="232" n="ProductConsumptionSchedule" s=""/>
+        <sfPLE id="233" n="Promotion" s=""/>
+        <sfPLE id="234" n="PromotionLineItemRule" s=""/>
+        <sfPLE id="235" n="PromotionMarketSegment" s=""/>
+        <sfPLE id="236" n="PromotionQualifier" s=""/>
+        <sfPLE id="237" n="PromotionSegment" s=""/>
+        <sfPLE id="238" n="PromotionSegmentBuyerGroup" s=""/>
+        <sfPLE id="239" n="PromotionSegmentSalesStore" s=""/>
+        <sfPLE id="240" n="PromotionTarget" s=""/>
+        <sfPLE id="241" n="PromotionTier" s=""/>
+        <sfPLE id="242" n="PromptAction" s=""/>
+        <sfPLE id="243" n="PromptError" s=""/>
+        <sfPLE id="244" n="QuickText" s=""/>
+        <sfPLE id="245" n="QuickTextUsage" s=""/>
+        <sfPLE id="246" n="Recommendation" s=""/>
+        <sfPLE id="247" n="RecommendationReaction" s=""/>
+        <sfPLE id="248" n="RecommendationResponse" s=""/>
+        <sfPLE id="249" n="RecordAction" s=""/>
+        <sfPLE id="250" n="RecordMergeHistory" s=""/>
+        <sfPLE id="251" n="RecordOrigin" s=""/>
+        <sfPLE id="252" n="Refund" s=""/>
+        <sfPLE id="253" n="RefundLinePayment" s=""/>
+        <sfPLE id="254" n="ReleaseUpdateStep" s=""/>
+        <sfPLE id="255" n="ReleaseUpdateStepLog" s=""/>
+        <sfPLE id="256" n="ReportAnomalyEventStore" s=""/>
+        <sfPLE id="257" n="ReportResultBlob" s=""/>
+        <sfPLE id="258" n="RequestsForAccessSIQ" s=""/>
+        <sfPLE id="259" n="ResourceAbsence" s=""/>
+        <sfPLE id="260" n="ReturnOrder" s=""/>
+        <sfPLE id="261" n="ReturnOrderItemAdjustment" s=""/>
+        <sfPLE id="262" n="ReturnOrderItemTax" s=""/>
+        <sfPLE id="263" n="ReturnOrderLineItem" s=""/>
+        <sfPLE id="264" n="Scorecard" s=""/>
+        <sfPLE id="265" n="ScorecardAssociation" s=""/>
+        <sfPLE id="266" n="ScorecardMetric" s=""/>
+        <sfPLE id="267" n="SearchActivity" s=""/>
+        <sfPLE id="268" n="SearchPromotionRule" s=""/>
+        <sfPLE id="269" n="Seller" s=""/>
+        <sfPLE id="270" n="ServiceAppointment" s=""/>
+        <sfPLE id="271" n="ServiceAppointmentAttendee" s=""/>
+        <sfPLE id="272" n="ServiceContract" s=""/>
+        <sfPLE id="273" n="ServiceResource" s=""/>
+        <sfPLE id="274" n="ServiceSetupProvisioning" s=""/>
+        <sfPLE id="275" n="ServiceTerritory" s=""/>
+        <sfPLE id="276" n="ServiceTerritoryWorkType" s=""/>
+        <sfPLE id="277" n="SessionHijackingEventStore" s=""/>
+        <sfPLE id="278" n="SetupAssistantAnswer" s=""/>
+        <sfPLE id="279" n="SetupAssistantProgress" s=""/>
+        <sfPLE id="280" n="SetupAssistantStep" s=""/>
+        <sfPLE id="281" n="SetupFlowProgress" s=""/>
+        <sfPLE id="282" n="Shift" s=""/>
+        <sfPLE id="283" n="ShiftEngagementChannel" s=""/>
+        <sfPLE id="284" n="ShiftWorkTopic" s=""/>
+        <sfPLE id="285" n="Shipment" s=""/>
+        <sfPLE id="286" n="ShipmentItem" s=""/>
+        <sfPLE id="287" n="ShippingConfigurationSet" s=""/>
+        <sfPLE id="288" n="ShippingRateArea" s=""/>
+        <sfPLE id="289" n="ShippingRateGroup" s=""/>
+        <sfPLE id="290" n="SiqUserBlacklist" s=""/>
+        <sfPLE id="291" n="SiteMarketingDataExtensionMapping" s=""/>
+        <sfPLE id="292" n="SiteUserViewMode" s=""/>
+        <sfPLE id="293" n="SoftwareProduct" s=""/>
+        <sfPLE id="294" n="Solution" s=""/>
+        <sfPLE id="295" n="StandardShippingRate" s=""/>
+        <sfPLE id="296" n="StoreIntegratedService" s=""/>
+        <sfPLE id="297" n="StrategyMonthlyStats" s=""/>
+        <sfPLE id="298" n="StreamActivityAccess" s=""/>
+        <sfPLE id="299" n="Student__c" s=""/>
+        <sfPLE id="300" n="SyncTransactionLog" s=""/>
+        <sfPLE id="301" n="TableauHostMapping" s=""/>
+        <sfPLE id="302" n="Task" s=""/>
+        <sfPLE id="303" n="TenantSecurityAlertRuleSelectedTenant" s=""/>
+        <sfPLE id="304" n="TenantSecurityApiAnomaly" s=""/>
+        <sfPLE id="305" n="TenantSecurityConnectedApp" s=""/>
+        <sfPLE id="306" n="TenantSecurityCredentialStuffing" s=""/>
+        <sfPLE id="307" n="TenantSecurityEncryptionPolicy" s=""/>
+        <sfPLE id="308" n="TenantSecurityFeature" s=""/>
+        <sfPLE id="309" n="TenantSecurityGuestUserAnomaly" s=""/>
+        <sfPLE id="310" n="TenantSecurityHealthCheckBaselineTrend" s=""/>
+        <sfPLE id="311" n="TenantSecurityHealthCheckDetail" s=""/>
+        <sfPLE id="312" n="TenantSecurityHealthCheckTrend" s=""/>
+        <sfPLE id="313" n="TenantSecurityLicense" s=""/>
+        <sfPLE id="314" n="TenantSecurityLogin" s=""/>
+        <sfPLE id="315" n="TenantSecurityLoginIpRangeTrend" s=""/>
+        <sfPLE id="316" n="TenantSecurityMetricDetail" s=""/>
+        <sfPLE id="317" n="TenantSecurityMetricDetailLink" s=""/>
+        <sfPLE id="318" n="TenantSecurityMobilePolicyTrend" s=""/>
+        <sfPLE id="319" n="TenantSecurityMonitorMetric" s=""/>
+        <sfPLE id="320" n="TenantSecurityNotification" s=""/>
+        <sfPLE id="321" n="TenantSecurityNotificationRule" s=""/>
+        <sfPLE id="322" n="TenantSecurityPackage" s=""/>
+        <sfPLE id="323" n="TenantSecurityPolicy" s=""/>
+        <sfPLE id="324" n="TenantSecurityPolicyChangeLog" s=""/>
+        <sfPLE id="325" n="TenantSecurityPolicyDeployment" s=""/>
+        <sfPLE id="326" n="TenantSecurityPolicySelectedTenant" s=""/>
+        <sfPLE id="327" n="TenantSecurityReportAnomaly" s=""/>
+        <sfPLE id="328" n="TenantSecuritySessionHijacking" s=""/>
+        <sfPLE id="329" n="TenantSecurityTenantChangeLog" s=""/>
+        <sfPLE id="330" n="TenantSecurityTenantInfo" s=""/>
+        <sfPLE id="331" n="TenantSecurityTransactionPolicyTrend" s=""/>
+        <sfPLE id="332" n="TenantSecurityTrustedIpRangeTrend" s=""/>
+        <sfPLE id="333" n="TenantSecurityUiFilter" s=""/>
+        <sfPLE id="334" n="TenantSecurityUserActivity" s=""/>
+        <sfPLE id="335" n="TenantSecurityUserPerm" s=""/>
+        <sfPLE id="336" n="TenantSecurityWebsite" s=""/>
+        <sfPLE id="337" n="TransactionSecurityAction" s=""/>
+        <sfPLE id="338" n="TransactionSecurityActionEvent" s=""/>
+        <sfPLE id="339" n="UserAssistantSummary" s=""/>
+        <sfPLE id="340" n="UserEmailPreferredPerson" s=""/>
+        <sfPLE id="341" n="UserMetrics" s=""/>
+        <sfPLE id="342" n="UserNavItem" s=""/>
+        <sfPLE id="343" n="UserPrioritizedRecord" s=""/>
+        <sfPLE id="344" n="UserQuestionnaireAnswer" s=""/>
+        <sfPLE id="345" n="UserQuestionnaireSummary" s=""/>
+        <sfPLE id="346" n="VoiceCall" s=""/>
+        <sfPLE id="347" n="VoiceChnlInteractionEvent" s=""/>
+        <sfPLE id="348" n="VoiceChnlIntrctnDtlEvent" s=""/>
+        <sfPLE id="349" n="VoiceProvisioningJob" s=""/>
+        <sfPLE id="350" n="Waitlist" s=""/>
+        <sfPLE id="351" n="WaitlistParticipant" s=""/>
+        <sfPLE id="352" n="WaitlistServiceResource" s=""/>
+        <sfPLE id="353" n="WaitlistWorkType" s=""/>
+        <sfPLE id="354" n="WebCart" s=""/>
+        <sfPLE id="355" n="WebCartAdjustmentBasis" s=""/>
+        <sfPLE id="356" n="WebCartAdjustmentGroup" s=""/>
+        <sfPLE id="357" n="WebCartDocument" s=""/>
+        <sfPLE id="358" n="WebStore" s=""/>
+        <sfPLE id="359" n="WebStoreBuyerGroup" s=""/>
+        <sfPLE id="360" n="WebStoreCatalog" s=""/>
+        <sfPLE id="361" n="WebStoreCMS" s=""/>
+        <sfPLE id="362" n="WebStoreConfig" s=""/>
+        <sfPLE id="363" n="WebStoreInventorySource" s=""/>
+        <sfPLE id="364" n="WorkOrder" s=""/>
+        <sfPLE id="365" n="WorkOrderLineItem" s=""/>
+        <sfPLE id="366" n="WorkPlan" s=""/>
+        <sfPLE id="367" n="WorkPlanTemplate" s=""/>
+        <sfPLE id="368" n="WorkPlanTemplateEntry" s=""/>
+        <sfPLE id="369" n="WorkStep" s=""/>
+        <sfPLE id="370" n="WorkStepTemplate" s=""/>
+        <sfPLE id="371" n="WorkType" s=""/>
+        <sfPLE id="372" n="WorkTypeGroup" s=""/>
+        <sfPLE id="373" n="WorkTypeGroupMember" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsActive" t="Active" type="_boolean"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

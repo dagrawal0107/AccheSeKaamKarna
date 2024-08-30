@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="5Pa" label="Session Permission Set Activation" labelPlural="Session Permission Set Activations" layoutable="true" n="SessionPermSetActivation" queryable="true" readPermission="false" retrieveable="true" s="" t="Session Permission Set Activation (5Pa)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome SessionPermSetActivations" n="New"/>
+    <sfActionLink modes="View SessionPermSetActivations" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View SessionPermSetActivations" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View SessionPermSetActivations" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View SessionPermSetActivations" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

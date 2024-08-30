@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00K" label="Opportunity Contact Role" labelPlural="Opportunity Contact Role" layoutable="true" n="OpportunityContactRole" queryable="true" retrieveable="true" s="" standardLabel="OpportunityContactRole" t="Opportunity Contact Role (00K)" updatable="true" urlDetail="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}" urlEdit="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}/e" urlNew="https://provar-9a-dev-ed.develop.my.salesforce.com/00K/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Contact Role ID" type="id" updateable="false"/>
+    <sfField length="18" n="OpportunityId" relationshipName="Opportunity" required="true" t="Opportunity" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ContactId" relationshipName="Contact" required="true" t="Contact" type="reference">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="Role" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Business User" s=""/>
+        <sfPLE id="2" n="Decision Maker" s=""/>
+        <sfPLE id="3" n="Economic Buyer" s=""/>
+        <sfPLE id="4" n="Economic Decision Maker" s=""/>
+        <sfPLE id="5" n="Evaluator" s=""/>
+        <sfPLE id="6" n="Executive Sponsor" s=""/>
+        <sfPLE id="7" n="Influencer" s=""/>
+        <sfPLE id="8" n="Technical Buyer" s=""/>
+        <sfPLE id="9" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField editPermission="false" n="IsPrimary" t="Primary" type="_boolean"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome OpportunityContactRoles List" n="New"/>
+    <sfActionLink alias="edit" modes="View OpportunityContactRoles" n="Edit" requiresRow="true"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="Delete" requiresRow="true"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OpportunityContactRoles" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink lightningActionName="AddContactRole" lightningLabel="Add Contact Role" modes="OpportunityContactRoles" n="newRole" newAction="true" t="New"/>
+    <sfActionLink modes="OpportunityContactRoles" n="OppContactRoleMultiEdit" t="Manage Contact Roles"/>
+    <sfActionLink modes="OpportunityContactRoles" n="OppContactRoleMultiAdd" t="Add Contact Roles"/>
+    <sfActionLink modes="OpportunityContactRoles" n="OppContactRoleEdit" t="Edit Contact Roles"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

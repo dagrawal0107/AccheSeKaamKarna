@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject label="Note, Attachment, Google Doc And File" labelPlural="Notes, Attachments, Google Docs And Files" n="CombinedAttachment" s="" standardLabel="Notes and Attachments" t="Note, Attachment, Google Doc And File">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Combined Attachment Id" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="18" n="ParentId" relationshipName="Parent" required="true" t="Parent" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+        <string>Account1__c</string>
+        <string>Account2__c</string>
+        <string>AccountBrand</string>
+        <string>Account__c</string>
+        <string>ApiAnomalyEventStore</string>
+        <string>AppointmentCategory</string>
+        <string>AppointmentInvitation</string>
+        <string>AppointmentTopicTimeSlot</string>
+        <string>Asset</string>
+        <string>AssetRelationship</string>
+        <string>AssignedResource</string>
+        <string>AuthorizationFormText</string>
+        <string>BuyerGroup</string>
+        <string>Campaign</string>
+        <string>Case</string>
+        <string>CaseRelatedIssue</string>
+        <string>ChangeRequest</string>
+        <string>ChangeRequestRelatedIssue</string>
+        <string>ChangeRequestRelatedItem</string>
+        <string>ChannelProgram</string>
+        <string>ChannelProgramLevel</string>
+        <string>ChannelProgramMember</string>
+        <string>CheckBox__c</string>
+        <string>CollaborationGroup</string>
+        <string>CommSubscription</string>
+        <string>CommSubscriptionChannelType</string>
+        <string>CommSubscriptionConsent</string>
+        <string>CommSubscriptionTiming</string>
+        <string>ConsumptionSchedule</string>
+        <string>Contact</string>
+        <string>ContentWorkspace</string>
+        <string>Contract</string>
+        <string>ContractLineItem</string>
+        <string>ConversationEntry</string>
+        <string>Coupon</string>
+        <string>CredentialStuffingEventStore</string>
+        <string>CreditMemo</string>
+        <string>CreditMemoInvApplication</string>
+        <string>CreditMemoLine</string>
+        <string>Dashboard</string>
+        <string>DashboardComponent</string>
+        <string>DelegatedAccount</string>
+        <string>EmailMessage</string>
+        <string>EmailTemplate</string>
+        <string>EngagementChannelType</string>
+        <string>EngagementChannelWorkType</string>
+        <string>EnhancedLetterhead</string>
+        <string>Entitlement</string>
+        <string>EntityMilestone</string>
+        <string>Event</string>
+        <string>FulfillmentOrder</string>
+        <string>FulfillmentOrderItemAdjustment</string>
+        <string>FulfillmentOrderItemTax</string>
+        <string>FulfillmentOrderLineItem</string>
+        <string>GuestUserAnomalyEventStore</string>
+        <string>Image</string>
+        <string>Incident</string>
+        <string>IncidentRelatedItem</string>
+        <string>Invoice</string>
+        <string>InvoiceLine</string>
+        <string>Lead</string>
+        <string>LegalEntity</string>
+        <string>ListEmail</string>
+        <string>Location</string>
+        <string>LocationGroup</string>
+        <string>MessagingSession</string>
+        <string>Network</string>
+        <string>New_Custom_Object__c</string>
+        <string>OperatingHours</string>
+        <string>OperatingHoursHoliday</string>
+        <string>Opportunity</string>
+        <string>Order</string>
+        <string>OrderItem</string>
+        <string>Organization</string>
+        <string>PartnerFundAllocation</string>
+        <string>PartnerFundClaim</string>
+        <string>PartnerFundRequest</string>
+        <string>PartnerMarketingBudget</string>
+        <string>PartyConsent</string>
+        <string>Payment</string>
+        <string>PrivacyRTBFRequest</string>
+        <string>Problem</string>
+        <string>ProblemIncident</string>
+        <string>ProblemRelatedItem</string>
+        <string>Product2</string>
+        <string>ProductCatalog</string>
+        <string>ProductCategory</string>
+        <string>Promotion</string>
+        <string>PromotionMarketSegment</string>
+        <string>PromotionQualifier</string>
+        <string>PromotionSegment</string>
+        <string>PromotionSegmentBuyerGroup</string>
+        <string>PromotionSegmentSalesStore</string>
+        <string>PromotionTarget</string>
+        <string>PromotionTier</string>
+        <string>Report</string>
+        <string>ReportAnomalyEventStore</string>
+        <string>ResourceAbsence</string>
+        <string>ResourcePreference</string>
+        <string>ReturnOrder</string>
+        <string>ReturnOrderLineItem</string>
+        <string>ServiceAppointment</string>
+        <string>ServiceAppointmentAttendee</string>
+        <string>ServiceContract</string>
+        <string>ServiceResource</string>
+        <string>ServiceResourceSkill</string>
+        <string>ServiceTerritory</string>
+        <string>ServiceTerritoryMember</string>
+        <string>ServiceTerritoryWorkType</string>
+        <string>SessionHijackingEventStore</string>
+        <string>Shift</string>
+        <string>ShiftEngagementChannel</string>
+        <string>ShiftWorkTopic</string>
+        <string>Shipment</string>
+        <string>ShipmentItem</string>
+        <string>Site</string>
+        <string>SkillRequirement</string>
+        <string>Solution</string>
+        <string>Student__c</string>
+        <string>Task</string>
+        <string>ThreatDetectionFeedback</string>
+        <string>User</string>
+        <string>VoiceCall</string>
+        <string>Waitlist</string>
+        <string>WaitlistParticipant</string>
+        <string>WaitlistServiceResource</string>
+        <string>WaitlistWorkType</string>
+        <string>WorkOrder</string>
+        <string>WorkOrderLineItem</string>
+        <string>WorkPlan</string>
+        <string>WorkPlanTemplate</string>
+        <string>WorkPlanTemplateEntry</string>
+        <string>WorkStep</string>
+        <string>WorkStepTemplate</string>
+        <string>WorkType</string>
+        <string>WorkTypeGroup</string>
+        <string>WorkTypeGroupMember</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="30" n="RecordType" t="Type" updateable="false"/>
+    <sfField createable="false" length="255" n="Title" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="30" n="FileType" t="File Type" updateable="false"/>
+    <sfField createable="false" digits="9" n="ContentSize" t="Size" type="_int" updateable="false"/>
+    <sfField createable="false" length="40" n="FileExtension" t="File Extension" updateable="false"/>
+    <sfField createable="false" length="255" n="ContentUrl" t="Content URL" type="url" updateable="false"/>
+    <sfField createable="false" length="80" n="ExternalDataSourceName" t="External Data Source" updateable="false"/>
+    <sfField createable="false" length="80" n="ExternalDataSourceType" restrictedPicklist="true" t="Class ID" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="AmazonAthena" s=""/>
+        <sfPLE id="2" n="AmazonDynamoDb" s=""/>
+        <sfPLE id="3" n="ASPAttribute" s=""/>
+        <sfPLE id="4" n="contentHubItem" s=""/>
+        <sfPLE id="5" n="Datacloud" s=""/>
+        <sfPLE id="6" n="Datajourney" s=""/>
+        <sfPLE id="7" n="FAAttribute" s=""/>
+        <sfPLE id="8" n="FLAttribute" s=""/>
+        <sfPLE id="9" n="GraphQl" s=""/>
+        <sfPLE id="10" n="IAItemProdtAttr" s=""/>
+        <sfPLE id="11" n="Identity" s=""/>
+        <sfPLE id="12" n="InsPolicyAttribute" s=""/>
+        <sfPLE id="13" n="IPAAttribute" s=""/>
+        <sfPLE id="14" n="IPCAttribute" s=""/>
+        <sfPLE id="15" n="IPPAttribute" s=""/>
+        <sfPLE id="16" n="OData" s=""/>
+        <sfPLE id="17" n="OData4" s=""/>
+        <sfPLE id="18" n="OData401" s=""/>
+        <sfPLE id="19" n="OIAttribute" s=""/>
+        <sfPLE id="20" n="OpenSearch" s=""/>
+        <sfPLE id="21" n="outgoingemail" s=""/>
+        <sfPLE id="22" n="QLIAttribute" s=""/>
+        <sfPLE id="23" n="SAPAttribute" s=""/>
+        <sfPLE id="24" n="SciApi" s=""/>
+        <sfPLE id="25" n="SelectableEmailAddressView" s=""/>
+        <sfPLE id="26" n="SfdcOrg" s=""/>
+        <sfPLE id="27" n="SimpleURL" s=""/>
+        <sfPLE id="28" n="Snowflake" s=""/>
+        <sfPLE id="29" n="TrailheadEditWithId" s=""/>
+        <sfPLE id="30" n="usermobileconfig" s=""/>
+        <sfPLE id="31" n="usrconnectionstatus" s=""/>
+        <sfPLE id="32" n="Wrapper" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" length="40" n="SharingOption" restrictedPicklist="true" t="Prevent others from sharing and unsharing" type="picklist" updateable="false">
+      <picklistEntryIds>33,34</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="33" n="A" s="" t="Freeze Sharing Off"/>
+        <sfPLE id="34" n="R" s="" t="Freeze Sharing On"/>
+      </picklistEntries>
+    </sfField>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View CombinedAttachments" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View CombinedAttachments" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink lightningActionName="ShareFile" modes="View CombinedAttachments" n="Share" requiresRow="true"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink massAction="true" modes="CombinedAttachments" n="NewNote" newAction="true" t="New Note"/>
+    <sfActionLink lightningActionName="AttachFileFromDevice" lightningLabel="Upload Files" massAction="true" modes="CombinedAttachments" n="AttachFile" t="Attach File"/>
+    <sfActionLink lightningActionName="AttachFileFromDevice" locator="//td[contains(@class, 'pbButton')]//input[@type='file' and (@id='GinaRLNewFile' or @id='RFLNewFile' or @id='AttachmentRLNewFile' or @name='upload_file')]" modes="CombinedAttachments" n="NewFile" t="Upload Files"/>
+    <sfActionLink modes="CombinedAttachments" n="viewAll" t="View All"/>
+    <sfActionLink modes="detail ObjectHome List" n="New"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/e?retURL=') or contains(@href, '%2Fe%3FretURL%3D')]" modes="CombinedAttachments" n="Edit" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/sfc/servlet.shepherd/version/download/') or contains(@href, '%2Fsfc%2Fservlet.shepherd%2Fversion%2Fdownload/')]" modes="CombinedAttachments" n="Download" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, 'javascript:OverlayDialogElement.showFilePreview')]" modes="CombinedAttachments" n="Preview" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/servlet.FileDownload?file=') or contains(@href, '%2Fservlet.FileDownload%3Ffile%3D')]" modes="CombinedAttachments" n="View" requiresRow="true"/>
+    <sfActionLink lightningActionName="DeleteFile" locator="td[contains(@class, 'actionColumn')]/a[contains(@href, 'deleteredirect.jsp')]" modes="CombinedAttachments" n="Delete" requiresRow="true"/>
+    <sfActionLink lightningActionName="FileLinkShare" modes="CombinedAttachments" n="PublicLink" requiresRow="true" t="Public Link"/>
+    <sfActionLink lightningActionName="GetFileDetail" modes="CombinedAttachments" n="ViewFileDetails" requiresRow="true" t="View File Details"/>
+    <sfActionLink lightningActionName="NewVersion" modes="CombinedAttachments" n="UploadNewVersion" requiresRow="true" t="Upload New Version"/>
+    <sfActionLink modes="CombinedAttachments" n="EditFileDetails" requiresRow="true" t="Edit File Details"/>
+    <sfActionLink lightningActionName="DetachFile" modes="CombinedAttachments" n="RemoveFromRecord" requiresRow="true" t="Remove from Record"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

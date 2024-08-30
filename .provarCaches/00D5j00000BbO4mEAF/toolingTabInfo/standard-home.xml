@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="home" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Home" Name="standard-home" SobjectName="Home" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/lightning/page/home"/>
+</toolingTabInfo>

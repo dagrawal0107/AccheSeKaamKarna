@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WorkStepTemplate" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Work Step Templates" Name="standard-WorkStepTemplate" SobjectName="WorkStepTemplate" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/4L0/o"/>
+</toolingTabInfo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="AlternativePaymentMethod" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Alternative Payment Methods" Name="standard-AlternativePaymentMethod" SobjectName="AlternativePaymentMethod" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/8Z7/o"/>
+</toolingTabInfo>

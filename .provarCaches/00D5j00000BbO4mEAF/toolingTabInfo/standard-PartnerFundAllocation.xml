@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="PartnerFundAllocation" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Partner Fund Allocations" Name="standard-PartnerFundAllocation" SobjectName="PartnerFundAllocation" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0R8/o"/>
+</toolingTabInfo>

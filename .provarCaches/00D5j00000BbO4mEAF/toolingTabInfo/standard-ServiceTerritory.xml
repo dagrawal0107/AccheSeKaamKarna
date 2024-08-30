@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ServiceTerritory" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Service Territories" Name="standard-ServiceTerritory" SobjectName="ServiceTerritory" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0Hh/o"/>
+</toolingTabInfo>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00k" label="Opportunity Product" labelPlural="Opportunity Product" layoutable="true" n="OpportunityLineItem" queryable="true" retrieveable="true" s="" t="Opportunity Product (00k)" updatable="true">
+  <fields>
+    <sfField createable="false" length="18" n="Id" t="Line Item ID" type="id" updateable="false"/>
+    <sfField length="18" n="OpportunityId" relationshipName="Opportunity" required="true" t="Opportunity" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField digits="9" n="SortOrder" t="Sort Order" type="_int"/>
+    <sfField length="18" n="PricebookEntryId" relationshipName="PricebookEntry" t="Price Book Entry" type="reference" updateable="false">
+      <referenceTos>
+        <string>PricebookEntry</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="Product2Id" relationshipName="Product2" t="Product" type="reference" updateable="false">
+      <referenceTos>
+        <string>Product2</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="255" n="ProductCode" t="Product Code" updateable="false"/>
+    <sfField createable="false" length="376" n="Name" nameField="true" t="Opportunity Product Name" updateable="false"/>
+    <sfField n="Quantity" precision="12" required="true" scale="2" type="_double"/>
+    <sfField n="TotalPrice" precision="18" scale="2" t="Total Price" type="currency"/>
+    <sfField n="UnitPrice" precision="18" scale="2" t="Sales Price" type="currency"/>
+    <sfField createable="false" n="ListPrice" precision="18" scale="2" t="List Price" type="currency" updateable="false"/>
+    <sfField n="ServiceDate" t="Date" type="date"/>
+    <sfField length="255" n="Description" t="Line Description"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome OpportunityLineItems List" n="New"/>
+    <sfActionLink alias="edit" modes="View OpportunityLineItems" n="Edit" requiresRow="true"/>
+    <sfActionLink alias="delete" modes="View OpportunityLineItems" n="Delete" requiresRow="true"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OpportunityLineItems" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OpportunityLineItems" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink alias="sort" modes="ObjectHome List OpportunityLineItems" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink lightningActionName="MultiAdd" lightningLabel="Add Products" modes="OpportunityLineItems" n="addProd" t="Select Product"/>
+    <sfActionLink lightningActionName="MultiEdit" lightningLabel="Edit Products" modes="OpportunityLineItems" n="editProd" t="Edit All"/>
+    <sfActionLink lightningActionName="ChoosePricebook" modes="OpportunityLineItems" n="choosePB" t="Choose Price Book"/>
+    <sfActionLink modes="" n="addProd2" t="Add Product"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingAppInfo>
+  <appDefinition DeveloperName="Insights" Label="Insights" NamespacePrefix="standard" NavType="Standard">
+    <Metadata>&lt;CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata"   &gt;    &lt;defaultLandingTab&gt;standard-home&lt;/defaultLandingTab&gt;  &lt;formFactors&gt;Large&lt;/formFactors&gt; &lt;isNavAutoTempTabsDisabled&gt;false&lt;/isNavAutoTempTabsDisabled&gt; &lt;isNavPersonalizationDisabled&gt;false&lt;/isNavPersonalizationDisabled&gt; &lt;isNavTabPersistenceDisabled&gt;false&lt;/isNavTabPersistenceDisabled&gt; &lt;isOmniPinnedViewEnabled&gt;false&lt;/isOmniPinnedViewEnabled&gt; &lt;isServiceCloudConsole&gt;false&lt;/isServiceCloudConsole&gt;         &lt;/CustomApplication&gt;</Metadata>
+  </appDefinition>
+</toolingAppInfo>

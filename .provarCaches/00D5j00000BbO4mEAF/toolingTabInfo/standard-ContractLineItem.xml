@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ContractLineItem" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Contract Line Items" Name="standard-ContractLineItem" SobjectName="ContractLineItem" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/811/o"/>
+</toolingTabInfo>

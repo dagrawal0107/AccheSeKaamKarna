@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Customer" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Customers" Name="standard-Customer" SobjectName="Customer" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0o6/o"/>
+</toolingTabInfo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="4nL" label="Asset Action" labelPlural="Asset Actions" layoutable="true" n="AssetAction" queryable="true" readPermission="false" retrieveable="true" s="" t="Asset Action (4nL)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome AssetActions" n="New"/>
+    <sfActionLink modes="View AssetActions" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View AssetActions" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View AssetActions" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View AssetActions" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

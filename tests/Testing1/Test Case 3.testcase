@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="ddc740d6-b2c6-4a9a-aed7-8ecf5aa26a17" id="29">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="0cae8e58-cfc1-489d-9a15-32780d444279" name="SetValues" testItemId="7" title="Set Values: {}">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>D:/Deepak/Download/Chrome/Sheet.xlsx;1702487545533</cacheToken>
+          <cachedParameters>
+            <apiParam name="Number"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">D:/Deepak/Download/Chrome/Sheet.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">Sheet1</worksheetName>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="548a2bbc-c7eb-41bf-9136-c83dcd9d8ae4" name="ForEach" testItemId="5" title="For Each: {SourceData}=&gt;listtt">
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="SourceData"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">listtt</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData234" variableScope="Test">
+          <cacheToken>D:/Deepak/Download/Chrome/Sheet.xlsx;1702488253044</cacheToken>
+          <cachedParameters>
+            <apiParam name="Number"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">D:/Deepak/Download/Chrome/Sheet.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">Sheet1</worksheetName>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="substeps" testItemId="6">
+          <steps/>
+        </clause>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="eefadcae-5011-4792-af1a-3f1bf4641e71" name="SetValues" testItemId="2" title="Set Values: IsSorted">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">IsSorted</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="funcCall" id="IsSorted">
+                  <argument id="value">
+                    <value class="variable">
+                      <path element="SourceData"/>
+                    </value>
+                  </argument>
+                  <argument id="sortColumns">
+                    <value class="value" valueClass="string">1 ASC</value>
+                  </argument>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="01fb56d0-3b67-4ee3-a3f9-7d24fd30d1d4" name="SetValues" testItemId="3" title="Set Values: Hell">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Hell</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="variable">
+                  <path element="SourceData"/>
+                  <path element="Number"/>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

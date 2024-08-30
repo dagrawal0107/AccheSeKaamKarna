@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="PartnerFundClaim" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Partner Fund Claims" Name="standard-PartnerFundClaim" SobjectName="PartnerFundClaim" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0RB/o"/>
+</toolingTabInfo>

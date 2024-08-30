@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="0PK" label="Individual" labelPlural="Individuals" layoutable="true" n="Individual" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Individual (0PK)" updatable="true" urlDetail="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}" urlEdit="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}/e" urlNew="https://provar-9a-dev-ed.develop.my.salesforce.com/0PK/e">
+  <fields>
+    <sfField createable="false" length="18" n="Id" t="Individual ID" type="id" updateable="false"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Individual Owner" type="reference">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField extraTypeInfo="personname" length="80" n="LastName" required="true" t="Last Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="FirstName" t="First Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="Salutation" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Mr." s=""/>
+        <sfPLE id="2" n="Ms." s=""/>
+        <sfPLE id="3" n="Mrs." s=""/>
+        <sfPLE id="4" n="Dr." s=""/>
+        <sfPLE id="5" n="Prof." s=""/>
+        <sfPLE id="6" n="Mx." s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" extraTypeInfo="personname" length="121" n="Name" nameField="true" required="true" updateable="false"/>
+    <sfField n="HasOptedOutTracking" t="Don't Track" type="_boolean"/>
+    <sfField n="HasOptedOutProfiling" t="Don't Profile" type="_boolean"/>
+    <sfField n="HasOptedOutProcessing" t="Don't Process" type="_boolean"/>
+    <sfField n="HasOptedOutSolicit" t="Don't Market" type="_boolean"/>
+    <sfField n="ShouldForget" t="Forget this Individual" type="_boolean"/>
+    <sfField n="SendIndividualData" t="Export Individual's Data" type="_boolean"/>
+    <sfField n="CanStorePiiElsewhere" t="OK to Store PII Data Elsewhere" type="_boolean"/>
+    <sfField n="HasOptedOutGeoTracking" t="Block Geolocation Tracking" type="_boolean"/>
+    <sfField n="BirthDate" t="Birth Date" type="date"/>
+    <sfField n="DeathDate" t="Death Date" type="date"/>
+    <sfField digits="9" n="ConvictionsCount" t="Conviction Count" type="_int"/>
+    <sfField digits="9" n="ChildrenCount" t="Number of Children" type="_int"/>
+    <sfField length="255" n="MilitaryService" t="Military Service" type="picklist">
+      <picklistEntryIds>7,8,9</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="7" n="Unknown" s=""/>
+        <sfPLE id="8" n="Yes" s=""/>
+        <sfPLE id="9" n="No" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="IsHomeOwner" t="Is Homeowner" type="_boolean"/>
+    <sfField length="150" n="Occupation"/>
+    <sfField length="255" n="Website" type="url"/>
+    <sfField length="255" n="IndividualsAge" t="Individual's Age" type="picklist">
+      <picklistEntryIds>10,11</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="10" n="13 or Older" s=""/>
+        <sfPLE id="11" n="16 or Older" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" length="18" n="MasterRecordId" relationshipName="MasterRecord" t="Individual" type="reference" updateable="false">
+      <referenceTos>
+        <string>Individual</string>
+      </referenceTos>
+    </sfField>
+    <sfField digits="9" n="ConsumerCreditScore" t="Consumer Credit Score" type="_int"/>
+    <sfField length="255" n="ConsumerCreditScoreProviderName" t="Consumer Credit Score Provider Name"/>
+    <sfField digits="9" n="InfluencerRating" t="Influencer Rating" type="_int"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="AuthorizationFormConsent" field="ConsentGiverId" n="AuthorizationFormConsents" relationshipName="AuthorizationFormConsents" s="2-" t="AuthorizationFormConsent"/>
+    <sfObjectRelationship childName="CommSubscriptionConsent" field="ConsentGiverId" n="CommSubscriptionConsents" relationshipName="CommSubscriptionConsents" s="2-" t="CommSubscriptionConsent"/>
+    <sfObjectRelationship alias="RelatedContactListIndividual" childName="Contact" field="IndividualId" n="Contacts" relationshipName="Contacts" s="2-" t="Contact"/>
+    <sfObjectRelationship childName="ContactPointAddress" field="ParentId" n="ContactPointAddresses" relationshipName="ContactPointAddresses" s="2-" t="ContactPointAddress"/>
+    <sfObjectRelationship childName="ContactPointEmail" field="ParentId" n="ContactPointEmails" relationshipName="ContactPointEmails" s="2-" t="ContactPointEmail"/>
+    <sfObjectRelationship childName="ContactPointPhone" field="ParentId" n="ContactPointPhones" relationshipName="ContactPointPhones" s="2-" t="ContactPointPhone"/>
+    <sfObjectRelationship childName="ContactPointTypeConsent" field="PartyId" n="Individuals" relationshipName="Individuals" s="2-" t="ContactPointTypeConsent"/>
+    <sfObjectRelationship childName="Customer" field="PartyId" n="PartyRoleCustomers" relationshipName="PartyRoleCustomers" s="2-" t="Customer"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="FlowOrchestrationWorkItem" field="RelatedRecordId" n="FlowOrchestrationWorkItems" relationshipName="FlowOrchestrationWorkItems" s="2-" t="FlowOrchestrationWorkItem"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="IndividualHistory" field="IndividualId" n="Histories" relationshipName="Histories" s="2-" t="IndividualHistory"/>
+    <sfObjectRelationship childName="IndividualShare" field="IndividualId" n="Shares" relationshipName="Shares" s="2-" t="IndividualShare"/>
+    <sfObjectRelationship alias="RelatedLeadListIndividual" childName="Lead" field="IndividualId" n="Leads" relationshipName="Leads" s="2-" t="Lead"/>
+    <sfObjectRelationship childName="PartyConsent" field="PartyId" n="PartyConsents" relationshipName="PartyConsents" s="2-" t="PartyConsent"/>
+    <sfObjectRelationship childName="Seller" field="PartyId" n="PartyRoleSellers" relationshipName="PartyRoleSellers" s="2-" t="Seller"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="View" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="View" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

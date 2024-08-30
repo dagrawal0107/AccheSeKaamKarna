@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="9851a926-b7e9-4b67-8e66-b22939da83bc" id="2">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="5ead1744-36f6-4baf-94fb-e4ca5c8bc8cd" name="ApexConnect" testItemId="1" title="Salesforce Connect: DevOrg (Test)">
+      <arguments>
+        <argument argId="41af7bc0-bd45-4679-80b4-41cabcf9b48e" id="connectionName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Reuse</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="f90221af-40cf-47c2-a23d-bc6818d3d30e" name="If" testItemId="5" title="If: {CallVar = &quot;Callable&quot;}">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument argId="1bc8c329-d56c-47bf-8402-2ceb5528eb7f" id="condition">
+          <value class="eq">
+            <lhs class="variable">
+              <path element="CallVar"/>
+            </lhs>
+            <rhs class="value" valueClass="string">Callable</rhs>
+          </value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="then" testItemId="6">
+          <steps>
+            <caseCall guid="08409304-7767-4b4e-97c2-56114cea508a" testCaseId="7122bb76-b5a6-4536-8234-33791f202236" testCasePath="templates/Callable.testcase" testItemId="9">
+              <arguments>
+                <argument id="AccName"/>
+                <argument id="reuseConnectionName"/>
+              </arguments>
+              <outputArguments>
+                <outputArgument id="accountId">
+                  <name class="value" valueClass="string">accountId</name>
+                </outputArgument>
+              </outputArguments>
+            </caseCall>
+          </steps>
+        </clause>
+        <clause name="else" testItemId="10">
+          <steps>
+            <caseCall guid="90df28f1-26ef-4c1e-bdf4-dac93f42567a" testCaseId="5ea1382f-c76a-4535-9c75-b3c192c8f545" testCasePath="tests/DataDriven/Callable2.testcase" testItemId="11">
+              <outputArguments>
+                <outputArgument id="DevOrg">
+                  <name class="value" valueClass="string">DevOrg</name>
+                </outputArgument>
+              </outputArguments>
+            </caseCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+    <caseCall guid="f6fa9e56-dbc5-4de9-8a1c-a74f2b70485b" testCaseId="7122bb76-b5a6-4536-8234-33791f202236" testCasePath="templates/Callable.testcase" testItemId="12">
+      <arguments>
+        <argument id="AccName">
+          <value class="value" valueClass="string">h</value>
+        </argument>
+        <argument id="reuseConnectionName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+      </arguments>
+      <outputArguments>
+        <outputArgument id="accountId">
+          <name class="value" valueClass="string">accountId</name>
+        </outputArgument>
+      </outputArguments>
+    </caseCall>
+  </steps>
+  <params/>
+  <args/>
+</testCase>

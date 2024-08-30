@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject guid="e1c54598-5498-4466-bd54-826740753c24" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedEnvironment="NewTest">
+  <title>/Traning1/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <testPlansPath>plans</testPlansPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment guid="16782f21-d932-4277-b322-8631d0cf2597" name="NewTest">
+      <summary>New Testing Environment</summary>
+    </environment>
+    <environment guid="0ab69105-bd7b-4dcd-a3fd-67968d8a05c7" name="QA">
+      <summary/>
+    </environment>
+  </environments>
+  <variables>
+    <testVariable name="AccountName">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">New Account</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="CallVar">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">Callable</value>
+        </testVariableValue>
+        <testVariableValue envName="QA">
+          <valueType class="textType">
+            <constraints>
+              <valueConstraint name="minLength">0</valueConstraint>
+              <valueConstraint name="maxLength">9999</valueConstraint>
+            </constraints>
+          </valueType>
+          <value class="value" valueClass="string">Callable2</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="_webDriverLogFile">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">C:\\Users\\deepak.agrawal\\Provar\\Workspace1\\logs.txt</value>
+        </testVariableValue>
+        <testVariableValue envName="NewTest">
+          <valueType class="textType">
+            <constraints>
+              <valueConstraint name="minLength">0</valueConstraint>
+              <valueConstraint name="maxLength">9999</valueConstraint>
+            </constraints>
+          </valueType>
+          <value class="value" valueClass="string">C:\\Users\\deepak.agrawal\\Provar\\Workspace1\\logs.txt</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="Call2">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">Callable</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="provar_autoretry_timeout">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">60</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="provar_autoretry_override">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">ENABLE_ALL</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+    <testVariable name="Password">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="password">true</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue secureStorageNodeId="f094abf5-dae2-4427-ae45-54c5f0d94b12"/>
+      </values>
+    </testVariable>
+    <testVariable name="_chromeOptions">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">--enable-features=SameSiteByDefaultCookies,CookiesWithoutSameSiteMustBeSecure\r\nC:\\Users\\deepak.agrawal\\Favorites\\chromedriver.exe</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+  </variables>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection id="7a884988-abc8-4cab-a19e-8cfde77d3f39" name="DevOrg">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="33699742-b047-4146-89ea-aafb5b5cd4a6" url="sf:user=deepak.agrawal@provartesting.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="d8a473bc-8ddf-4cce-95a0-0c2c5850b6d0" name="NewOrg">
+          <summary>For testing purpose</summary>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="d02706a2-d643-42fe-a2d7-ec043cd27d97" url="sf:user=deepak.agrawal@provartesting.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+            <connectionUrl envName="NewTest" secureStorageNodeId="5bd4d029-ad2f-4bc3-989e-dc9215cef12a" url="sf:user=deepak.agrawal@provartesting.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="d6334722-e078-4e44-8a18-01f1bc527f1c" name="SalesForceNewUser">
+          <summary>New User</summary>
+          <connectionUrls>
+            <connectionUrl url="sf:user=dreu900@gmail.com;environment=PROD_DEV;logonAsConnection=DevOrg;logonAsConnectionId=7a884988-abc8-4cab-a19e-8cfde77d3f39;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="9ce6b1bf-11b5-4b63-8030-7889376eb9b5" name="DifferrentURL">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="5c81a3fc-5e6f-4a88-bf21-e11483b736b0" url="sf:user=deepak.agrawal@provartesting.com;password={password};securityToken={securityToken};environment=PROD_DEV;userLoginUrl=https://www.google.com;webBaseUrl=https://www.google.com;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="56963d54-f67a-4f51-8d4a-e3721803cee3" name="SCU">
+          <summary>Community User</summary>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="345991e8-f4c7-426a-8d02-2c1c5fac3df6" url="sf:userType=COMMUNITIES;user=deepak.agrawal@provartesting.com;environment=PROD_DEV;userLoginUrl=https://provar-9a-dev-ed.develop.my.site.com/QuickDeal;webBaseUrl=https://provar-9a-dev-ed.develop.my.site.com/QuickDeal;metadataConnection=DevOrg;metadataConnectionId=7a884988-abc8-4cab-a19e-8cfde77d3f39;logonAsConnection=DevOrg;logonAsConnectionId=7a884988-abc8-4cab-a19e-8cfde77d3f39;portal=QuickDeal;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="43873da0-0ce9-4972-8137-66cfdb1be441" name="OAuthJWT_JKS">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b325f4dc-57a7-4297-b73e-981f1522ce69" url="sf:environment=PROD_DEV;apiLoginUrl=https://provar-9a-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5j00000BbO4mEAF/0055j000008CvL3AAK;clientId={clientId};clientSecret={clientSecret};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=C:\\Users\\deepak.agrawal\\Downloads\\00D5j00000BbO4m.jks;jwtUsername=deepak.agrawal@provartesting.com;jwtPassword={jwtPassword};jwtCertAlias=Provar;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+        <connection id="09c77de1-7cce-4694-8e6f-382411c6f1a4" name="OAuthWebFLow">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="f7c581fb-e195-4233-9ed7-c386eb8d7635" url="sf:environment=PROD_DEV;apiLoginUrl=https://provar-9a-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5j00000BbO4mEAF/0055j000008CvL3AAK;clientId={clientId};clientSecret={clientSecret};lightningMode=true;authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+          </connectionUrls>
+        </connection>
+        <connection id="1d2a3921-93b2-4bc8-8b4f-745023892ede" name="SFNew">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="ed97df7a-446c-4a1b-a0da-16ecc7350da6" url="sf:user=testmanager@provar.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="google">
+      <connections>
+        <connection id="d916a2a6-b996-48fb-bc0b-0f9093bb8723" name="GoogleConnection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="c9196104-3d93-4b02-82ea-af8f921fa6e5" url="google:user=deepak.agrawal@provartesting.com;password={password};authenticationType=PASSWORD"/>
+          </connectionUrls>
+        </connection>
+        <connection id="48e9afc6-aea2-45b2-970c-d781f39df260" name="Gmail1">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="837e4ba8-1527-41e1-a247-1c66a79a93db" url="google:user=deepak.agrawal@provartesting.com;password={password};authenticationType=PASSWORD"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection id="091c63fd-0830-4ddd-8641-9e64f9f75a92" name="UIConnection">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="3ffe434b-74a0-48aa-b6df-1a5b1269c267" url="se:baseUrl=https://login.salesforce.com/"/>
+          </connectionUrls>
+        </connection>
+        <connection id="2028c048-0b4c-4e9f-88f4-a4a2a5a51360" name="Hello">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="280ac398-9f1b-4260-a858-152317d6367c" url="se:user=student;password={password};baseUrl=https://practicetestautomation.com/practice-test-login/"/>
+          </connectionUrls>
+        </connection>
+        <connection id="3845d226-4765-471f-809a-5b3738f66875" name="NewUI">
+          <summary>Table</summary>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=https://www.w3schools.com/html/html_tables.asp"/>
+          </connectionUrls>
+        </connection>
+        <connection id="a52d4767-73b2-43f3-a903-b5e0284e440b" name="Frame">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=https://demo.automationtesting.in/Frames.html"/>
+          </connectionUrls>
+        </connection>
+        <connection id="55544404-11ce-4bde-bbab-b50928938bfb" name="ThridUI">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=https://google.com"/>
+          </connectionUrls>
+        </connection>
+        <connection id="c5f173ea-b4b1-4a69-9eb8-401ee96284a0" name="e">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=23&amp;ct=1713181026&amp;rver=7.0.6738.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26culture%3den-in%26country%3din%26RpsCsrfState%3d97c85a69-2914-a6a0-7c60-20f7483041f2&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="webservice">
+      <connections>
+        <connection id="9f0921aa-4820-430a-b91e-d435412c5ec3" name="SOAP">
+          <summary>Web Services</summary>
+          <connectionUrls>
+            <connectionUrl url="soapservice:wsdlLocation=C:\\Users\\deepak.agrawal\\Provar\\Workspace1\\Traning1\\templates\\calculator.xml;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="509df05a-5a09-44cd-8cc5-e089f3c6e101" name="SOAPAPI">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="soapservice:wsdlLocation=C:\\Users\\deepak.agrawal\\Provar\\Workspace1\\Traning1\\lib\\calculator.xml;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="c2924b4c-6dbb-4e6f-8b65-f816dd80f9b0" name="REST">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="96ee5626-08a9-4493-b061-3f458fc6314e" url="restservice:url=https://graph.microsoft.com/v1.0;clientId=55c4b518-7118-4b54-88f0-f632b85c8a2f;clientSecret={clientSecret};authenticationType=OAUTH_CLIENT_CREDENTIALS">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="cfbb86c0-cba6-431a-8dc6-2309712f9b30" name="RESTc">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="restservice:url=https://simple-books-api.glitch.me;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="msexc">
+      <connections>
+        <connection id="ec621074-6717-445f-9b41-e7f501ac06fe" name="MSExchange">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="1abb7acd-688d-4037-8167-48d08bd6e3cb" url="exchange:serverType=EWS;user=dagrawal0107@hotmail.com;password={password}"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="testmanager">
+      <connections>
+        <connection id="3a37e4d2-f39d-4fdb-9360-d9ae03e64193" name="ProvarManager">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="d37e767b-4c83-44e8-b3be-ea44d712b371" url="tm:projectName=Traning1;projectKey=TestPMA;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};userLoginUrl=https://provar-9a-dev-ed.develop.my.salesforce.com;apiLoginUrl=https://provar-9a-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5j00000BbO4mEAF/0055j000008CvL3AAK;sendScreenshots=true;reportMetadataCoverage=true;authenticationType=OAUTH_MANAGED"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+  <browserApplications>
+    <browserApplication connectionTypes="sf" name="Salesforce1">
+      <properties>
+        <browserPlatformProperty name="browserName" platform="IOS" type="DesiredCapability" value="Safari"/>
+        <browserPlatformProperty name="browserName" platform="ANDROID" type="DesiredCapability" value="Chrome"/>
+      </properties>
+    </browserApplication>
+    <browserApplication connectionTypes="sf" name="ServiceMax FSA">
+      <properties>
+        <browserPlatformProperty name="bundleId" platform="IOS" type="DesiredCapability" value="com.servicemaxinc.svmxfieldserviceapp"/>
+        <browserPlatformProperty name="app" platform="DESKTOP" type="DesiredCapability" value="C:\\Program Files\\ServiceMax\\ServiceMax Field Service\\Laptop Mobile.exe"/>
+      </properties>
+    </browserApplication>
+  </browserApplications>
+  <browserProviders>
+    <browserProvider name="Desktop" type="SeleniumLocal">
+      <devices>
+        <browserProviderDevice name="Full Screen">
+          <properties>
+            <browserPlatformProperty name="summary" value="Full screen with Test Builder adjustment"/>
+            <browserPlatformProperty name="browserHeightType" value="Full"/>
+            <browserPlatformProperty name="browserWidthType" value="Full"/>
+            <browserPlatformProperty name="adjustBrowserWidthForChromeIde" value="true"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1024x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1024x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1280x800">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1280x800"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="800"/>
+            <browserPlatformProperty name="browserWidth" value="1280"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1366x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1366x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1366"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1920x1080">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1920x1080"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="1080"/>
+            <browserPlatformProperty name="browserWidth" value="1920"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+    </browserProvider>
+    <browserProvider name="BrowserStack" secureStorageNodeId="d7993cf9-e929-4c09-89a3-dba07c2cd2f6" type="BrowserStackDesktop">
+      <devices>
+        <browserProviderDevice name="WIN10 edge 116.0" platform="WIN10">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="edge"/>
+            <browserPlatformProperty name="version" type="DesiredCapability" value="116.0"/>
+            <browserPlatformProperty name="resolution" type="DesiredCapability" value="2048x1536"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+      <properties>
+        <browserPlatformProperty name="userName" value="deepakagrawal_Jm4EAd"/>
+      </properties>
+    </browserProvider>
+  </browserProviders>
+  <associations>
+    <association assocationType="TM.TEST_PROJECT" connectionId="3a37e4d2-f39d-4fdb-9360-d9ae03e64193" entityKey="a0i5j000003v18gAAA"/>
+  </associations>
+</testProject>

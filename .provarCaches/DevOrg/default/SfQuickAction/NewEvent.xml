@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfQuickAction label="New Event" n="NewEvent" s="" standardLabel="New" t="New Event" targetSObject="Event" type="Create">
+  <quickActionLayout n="NewEvent" profileLayout="false" s="" t="Quick Action Layout">
+    <layoutTypes>
+      <sfLayoutType layoutType="QuickAction" n="QuickAction" t="Web Layout Type">
+        <children>
+          <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" s="" seqNum="0" t="Web Layout Section - null">
+            <children>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="Subject" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="Subject" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="StartDateTime" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="StartDateTime" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="EndDateTime" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="EndDateTime" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="IsAllDayEvent" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="IsAllDayEvent" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="WhoId" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="WhoId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="WhatId" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="WhatId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="OwnerId" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="Location" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="Location" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+            </children>
+          </sfLayoutSection>
+        </children>
+      </sfLayoutType>
+    </layoutTypes>
+  </quickActionLayout>
+</sfQuickAction>

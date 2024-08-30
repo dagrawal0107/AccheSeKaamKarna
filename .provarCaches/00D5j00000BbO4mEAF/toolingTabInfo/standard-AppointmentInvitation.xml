@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="AppointmentInvitation" IsAvailableInLightning="true" Label="Appointment Invitations" Name="standard-AppointmentInvitation" SobjectName="AppointmentInvitation" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/1S8/o"/>
+</toolingTabInfo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Campaign" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Campaigns" Name="standard-Campaign" SobjectName="Campaign" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/701/o"/>
+</toolingTabInfo>

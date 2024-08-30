@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CmsContent" IsAvailableInLightning="true" Label="Content" Name="standard-CmsContent" SobjectName="CmsContent"/>
+</toolingTabInfo>

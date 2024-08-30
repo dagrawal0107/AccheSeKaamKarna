@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="VoiceCall" IsAvailableInLightning="true" Label="Voice Calls" Name="standard-VoiceCall" SobjectName="VoiceCall" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0LQ/o"/>
+</toolingTabInfo>

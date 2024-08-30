@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject keyPrefix="023" label="Calendar" labelPlural="Calendars" n="Calendar" queryable="true" retrieveable="true" s="" t="Calendar (023)">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Calendar ID" type="id" updateable="false"/>
+    <sfField createable="false" length="80" n="Name" nameField="true" required="true" t="Calendar Name" updateable="false"/>
+    <sfField createable="false" length="18" n="UserId" t="User" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="40" n="Type" required="true" restrictedPicklist="true" t="Calendar Type" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="User" s="" t="User Calendar"/>
+        <sfPLE id="2" n="Public" s="" t="Public Calendar"/>
+        <sfPLE id="3" n="Resource" s="" t="Resource Calendar"/>
+        <sfPLE id="4" n="Holiday" s="" t="Holiday Calendar"/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsActive" t="Active" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedEventAttendeeAccept" childName="AcceptedEventRelation" field="RelationId" n="AcceptedEventRelations" relationshipName="AcceptedEventRelations" s="2-" t="AcceptedEventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeDecline" childName="DeclinedEventRelation" field="RelationId" n="DeclinedEventRelations" relationshipName="DeclinedEventRelations" s="2-" t="DeclinedEventRelation"/>
+    <sfObjectRelationship childName="EventRelation" field="RelationId" n="EventRelations" relationshipName="EventRelations" s="2-" t="EventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeNotDecided" childName="UndecidedEventRelation" field="RelationId" n="UndecidedEventRelations" relationshipName="UndecidedEventRelations" s="2-" t="UndecidedEventRelation"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

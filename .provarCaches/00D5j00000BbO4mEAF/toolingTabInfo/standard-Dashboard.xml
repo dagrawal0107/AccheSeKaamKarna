@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Dashboard" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Dashboards" Name="standard-Dashboard" SobjectName="Dashboard" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/01Z/o"/>
+</toolingTabInfo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="JigsawSearch" IsAvailableInAloha="true" Label="Data.com" Name="standard-JigsawSearch" SobjectName="JigsawSearch" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/DataDotComSearch"/>
+</toolingTabInfo>

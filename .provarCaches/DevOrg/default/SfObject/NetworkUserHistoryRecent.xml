@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0c6" label="Experience User Access History Recent" labelPlural="Experience User Access Histories Recent" n="NetworkUserHistoryRecent" queryable="true" readPermission="false" s="" t="Experience User Access History Recent (0c6)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome NetworkUserHistoryRecentToUser NetworkUserHistoryRecentToRecord" n="New"/>
+    <sfActionLink modes="View NetworkUserHistoryRecentToUser NetworkUserHistoryRecentToRecord" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View NetworkUserHistoryRecentToUser NetworkUserHistoryRecentToRecord" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View NetworkUserHistoryRecentToUser NetworkUserHistoryRecentToRecord" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View NetworkUserHistoryRecentToUser NetworkUserHistoryRecentToRecord" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

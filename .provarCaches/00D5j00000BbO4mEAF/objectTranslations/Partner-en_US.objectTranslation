@@ -1,0 +1,7 @@
+<n1:CustomObjectTranslation n2:type="n1:CustomObjectTranslation" xmlns:n1="http://soap.sforce.com/2006/04/metadata"
+   xmlns:n2="http://www.w3.org/2001/XMLSchema-instance">
+ <n1:fullName>Partner-en_US</n1:fullName>
+ <n1:gender n2:nil="true" />
+ <n1:nameFieldLabel n2:nil="true" />
+ <n1:startsWith n2:nil="true" />
+</n1:CustomObjectTranslation>

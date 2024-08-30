@@ -1,0 +1,15 @@
+<apex:page standardController="provar__System__c" recordSetVar="branches" lightningStylesheets="true" standardstylesheets="false" showHeader="false" title="Import Branches">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <apex:outputPanel id="page">
+        <script>
+            $Lightning.use("provar:importBranchesApp", function () {
+                $Lightning.createComponent("provar:importBranches",
+                    { repositoryId: '{! $CurrentPage.parameters.id }' },
+                    "lightning",
+                    function() {});
+            });
+        </script>
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style>
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.TestCaseImplTitle {
+				color: blue;
+				font: 0.85em arial;
+				font-weight: bold;
+			}
+
+			.TestCaseImpl .TestItemTitle {
+				color: blue;
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+				margin-bottom: 0.5em;
+			}
+
+			.TestCaseImpl .TestItemOutcome {
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+			}
+
+			.ApiCallImpl .TestItemTitle{
+				color: blue;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+				margin-bottom: 0.25em;
+			}
+
+			.ApiCallImpl .TestItemOutcome {
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+			}
+
+			.TestItemOutcome {
+				padding-left: 20px;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				clear: both;
+			}
+			
+			.TestItemOutcome.Successful {
+				color: green;
+				background: url('../../../successful_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestItemOutcome.Failed {
+				color: red;
+				background: url('../../../failed_16x16.gif') no-repeat 0 0.15em;
+				font-weight: bold;
+			}
+
+			.TestItemOutcome.Skipped {
+				color: orange;
+				background: url('../../../skipped_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestOutput {
+				font: 0.9em arial;
+				color: black;
+				margin-top: 0.15em;
+				margin-bottom: 0.15em;
+			}
+
+			.TestOutput.err {
+				font-weight: bold;
+				color: red;
+			}
+
+			.TestOutput.war {
+				font-weight: bold;
+				color: orange;
+			}
+
+			.ApiCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+
+			.TestCaseCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+			
+		</style>
+	</head>
+	<body><div id='detail-body'>
+	<div style='float: right;'><img src='../../..//provar_logo_400x100.png' height='50'/></div>
+<h2><img src='../../..//testcase_16x16.png' style='height: 24; padding-top: 4px;'/> ConsoleApp.testcase</h2>
+<div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:41:56 (00:00.000)</span></div>Start of Test Case ConsoleApp.testcase</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:41:56 (00:00.018)</span></div>Start of Test Step Salesforce Connect: DevOrg (Test)</div><div class='TestOutput inf'>AutoRetry overrides:</div><div class='TestOutput off'>AutoRetry overrides:</div><div class='TestOutput inf'>Connecting to Salesforce as DevOrg</div><div class='TestOutput off'>Successfully connected to Salesforce as DevOrg</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:00 (00:03.627)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:00 (00:03.635)</span></div>Start of Test Step On SF Account Home screen</div><div class='TestOutput inf'>Start of With Screen.  Connection Name: DevOrg, target: sf:ui:target?object=Account&action=ObjectHome</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput sev'>Failed to get home page for Salesforce application. DevOrg, Application Name: LightningService</div><div class='TestOutput sev'>The specified Salesforce Application was not found.  Application Name: LightningService</div><div class='TestOutput inf'>Opening Chrome webdriver instance to https://login.salesforce.com/</div><div class='TestOutput off'>Successfully opened Chrome webdriver to https://login.salesforce.com/</div><div class='TestOutput war'>Getting the Account Object Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput sev'>Error getting Object definition.  Object: Account, cause: Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput inf'>Going to update browser window handles.</div><div class='TestOutput off'>Successfully updated browser window handles.</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:07 (00:10.456)</span></div>Start of Test Step With Account rows {1}</div><div style='float: right;' ><a target='_blank' href='../../../Artifacts/ScreenShot1'><img style='width: 150px; border: solid 2px grey;' src='../../../Artifacts/ScreenShot1'></img></a></div><div class='TestOutput inf'>Start of With Row.  Connection Name: DevOrg, target: sf:ui:locator:row?table=ObjectHome%2Frecent%2FrecentTable</div><div class='TestOutput inf'>Going to update browser window handles.</div><div class='TestOutput off'>Successfully updated browser window handles.</div><div class='TestOutput sev'>[NullPointerException&lt;br/&gt;Stack Trace:&lt;br/&gt;java.lang.NullPointerException&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performRowOpen(SfUiHandler.java:4594)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.perform(SeleniumUiHandler.java:409)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.delegateToUiHandler(SfConnectionHandler.java:342)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.perform(SfConnectionHandler.java:333)&lt;br/&gt;	at com.provar.core.testexecution.common.java.TestExecutionContextImpl.doConnectionOperation(TestExecutionContextImpl.java:866)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.UiWithRow.execute(UiWithRow.java:121)&lt;br/&gt;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&lt;br/&gt;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&lt;br/&gt;	at java.base/java.lang.reflect.Method.invoke(Method.java:566)&lt;br/&gt;	at com.provar.core.testexecution.container.java.TestExecutionContainerImpl.invokeTestApi(TestExecutionContainerImpl.java:798)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.doInvokeTestApi(LocalTestExecutionContainerRunner.java:772)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner$MessageProcessor.run(LocalTestExecutionContainerRunner.java:1446)&lt;br/&gt;]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput war'>Getting the LightningService Application Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput inf'>Going to update browser window handles.</div><div class='TestOutput off'>Successfully updated browser window handles.</div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:12 (00:15.950)</span></div>Test Step failed.</div></div><div class='TestOutput sev'>One or more Sub-Test Steps failed.</div><div class='TestOutput war'>Getting the Account Object Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput sev'>Error opening Salesforce UI Connection.  Connection Name: DevOrg, cause: Error clearing Salesforce metadata index.  Please check that you don't have any files open in this folder:&lt;br/&gt;C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF - [NoSuchFileException: C:\Users\deepak.agrawal\Provar\Workspace1\.provarCaches\00D5j00000BbO4mEAF\toolingTabInfo\standard-LegalEntity.xml]</div><div class='TestOutput inf'>Going to update browser window handles.</div><div class='TestOutput off'>Successfully updated browser window handles.</div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:12 (00:16.016)</span></div>Test Step failed.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Account View screen SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Opportunity New screen SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Accounts tab (All Accounts) SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Account View screen SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Opportunity View screen SKIPPED</div></div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>13:42:12 (00:16.024)</span></div>Test Case failed.</div></div><div class='TestOutput inf'>Handling managed resource.  Name: DevOrg</div><div class='TestOutput inf'>WebDriver log file written to C:\Users\deepak.agrawal\Provar\Workspace1\logs.txt</div><div class='TestOutput off'>Salesforce Connection handled successfully.  Name: DevOrg</div>
+	</div></body>
+</html>

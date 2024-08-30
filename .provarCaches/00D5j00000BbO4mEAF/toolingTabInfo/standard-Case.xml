@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Case" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Cases" Name="standard-Case" SobjectName="Case" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/500/o"/>
+</toolingTabInfo>

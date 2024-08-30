@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0tB" label="Problem Related Item" labelPlural="Problem Related Items" layoutable="true" n="ProblemRelatedItem" queryable="true" readPermission="false" retrieveable="true" s="" t="Problem Related Item (0tB)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome ProblemRelatedItems" n="New"/>
+    <sfActionLink modes="View ProblemRelatedItems" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View ProblemRelatedItems" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View ProblemRelatedItems" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View ProblemRelatedItems" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="AppointmentCategory" IsAvailableInLightning="true" Label="Appointment Categories" Name="standard-AppointmentCategory" SobjectName="AppointmentCategory" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/11x/o"/>
+</toolingTabInfo>

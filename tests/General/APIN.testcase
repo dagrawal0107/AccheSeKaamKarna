@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="2e061055-b716-4939-b0bf-0cd272ca1bbd" id="27">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="7a4867a6-50a3-40d8-aa58-87ef51f8e22d" name="ApexConnect" testItemId="2" title="Salesforce Connect: NewOrg (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="172acedf-701f-46fd-9b35-3b543a6c85b7" name="ApexSoqlQuery" testItemId="3" title="SOQL Query: select Id,Name\n    ,Type\n    ,BillingCity\n    ,BillingLatitude from Account where Name = 'New Account'=&gt;AccountRows">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">select Id,Name\n    ,Type\n    ,BillingCity\n    ,BillingLatitude from Account where Name = 'New Account'</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="739ad704-bf44-4563-a4d2-92be7058011a" name="ApexSoqlQuery" testItemId="4" title="SOQL Query: select count() from Account where Name = 'New Account' =&gt;AccountRows">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">select count() from Account where Name = 'New Account' </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="f74d46ab-e5a0-45af-ba6a-26a3c9b05f23" name="ApexSoqlQuery" testItemId="5" title="SOQL Query: select Id\n    ,Name from Account where Name = '{AccountName}'=&gt;AccountRows">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="compound">
+            <parts>
+              <value valueClass="string">select Id\n    ,Name from Account where Name = '</value>
+              <variable>
+                <path element="AccountName"/>
+              </variable>
+              <value valueClass="string">'</value>
+            </parts>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" guid="a2383ee3-c6ff-438e-875e-1fe41228f956" name="ApexSoqlQuery" testItemId="6" title="SOQL Query: select Id\n    ,Name from Account=&gt;AccountRows">
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">select Id\n    ,Name from Account</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">AccountRows</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="3637599d-82a6-4e08-8409-48cf99509453" name="SetValues" testItemId="7" title="Set Values: V40thRowName">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">V40thRowName</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="variable">
+                  <path element="AccountRows">
+                    <filter class="index">
+                      <index valueClass="decimal">39</index>
+                    </filter>
+                  </path>
+                  <path element="Id"/>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexReadObject" guid="6e7b80e9-6a20-4fe1-85fa-ec12332deab2" name="ApexReadObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand" testItemId="9" title="Read Object: Account = {V40thRowName}">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">AccountRead</value>
+        </argument>
+        <argument id="objectId">
+          <value class="variable">
+            <path element="V40thRowName"/>
+          </value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">New Account</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <resultAssertions>
+        <resultAssertion resultName="Name" title="Check Name">
+          <expected class="value" valueClass="string">Express Logistics and Transport</expected>
+        </resultAssertion>
+      </resultAssertions>
+      <parameterValueSources/>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.ConnectionName">NewOrg</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.ReadCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Account Name"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="1584ad9f-41dd-44e0-b554-f2e012eee274" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="10" title="Create Object: Account=&gt;AccountId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">NewOrg</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">first</value>
+        </argument>
+        <argument id="LastViewedDate">
+          <value class="value" valueClass="dateTime">1690800633000</value>
+        </argument>
+        <argument id="LastReferencedDate">
+          <value class="value" valueClass="dateTime">1690800633000</value>
+        </argument>
+        <argument id="CleanStatus">
+          <value class="value" valueClass="string">Pending</value>
+        </argument>
+        <argument id="SLA__c">
+          <value class="value" valueClass="string">Platinum</value>
+        </argument>
+        <argument id="Active__c">
+          <value class="value" valueClass="string">Yes</value>
+        </argument>
+        <argument id="SLASerialNumber__c">
+          <value class="value" valueClass="string">LKQQZQ300R</value>
+        </argument>
+        <argument id="SLAExpirationDate__c">
+          <value class="value" valueClass="date">1695945600000</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="BillingCountry">
+          <value class="value" valueClass="string">new</value>
+        </argument>
+        <argument id="BillingPostalCode">
+          <value class="value" valueClass="string">12345</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">NewOrg</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=LastViewedDate" name="LastViewedDate" title="LastViewedDate"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=LastReferencedDate" name="LastReferencedDate" title="LastReferencedDate"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=CleanStatus" name="CleanStatus" title="CleanStatus"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLA__c" name="SLA__c" title="SLA__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Active__c" name="Active__c" title="Active__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLASerialNumber__c" name="SLASerialNumber__c" title="SLASerialNumber__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLAExpirationDate__c" name="SLAExpirationDate__c" title="SLAExpirationDate__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingCountry" name="BillingCountry" title="BillingCountry"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingPostalCode" name="BillingPostalCode" title="BillingPostalCode"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

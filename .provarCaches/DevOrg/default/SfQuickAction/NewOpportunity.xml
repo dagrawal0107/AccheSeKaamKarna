@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfQuickAction label="New Opportunity" n="NewOpportunity" s="" standardLabel="New" t="New Opportunity" targetSObject="Opportunity" type="Create">
+  <quickActionLayout n="NewOpportunity" profileLayout="false" s="" t="Quick Action Layout">
+    <layoutTypes>
+      <sfLayoutType layoutType="QuickAction" n="QuickAction" t="Web Layout Type">
+        <children>
+          <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" s="" seqNum="0" t="Web Layout Section - null">
+            <children>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="Name" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="AccountId" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="AccountId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="CloseDate" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="CloseDate" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="StageName" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="StageName" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="Amount" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="Amount" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+              <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                <children>
+                  <sfLI editableForNew="false" editableForUpdate="false" n="NextStep" s="" seqNum="0" t="Web Layout Item">
+                    <children>
+                      <sfLIC n="NextStep" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                    </children>
+                  </sfLI>
+                  <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                </children>
+              </sfLayoutRow>
+            </children>
+          </sfLayoutSection>
+        </children>
+      </sfLayoutType>
+    </layoutTypes>
+  </quickActionLayout>
+</sfQuickAction>

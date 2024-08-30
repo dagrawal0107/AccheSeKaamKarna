@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="File" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Files" Name="standard-File" SobjectName="File" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/chatter/files/FileTabPage"/>
+</toolingTabInfo>

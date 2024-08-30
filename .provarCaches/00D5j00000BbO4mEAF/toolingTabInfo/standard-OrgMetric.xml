@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="OrgMetric" IsAvailableInLightning="true" Label="Org Metrics" Name="standard-OrgMetric" SobjectName="OrgMetric" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/3v1/o"/>
+</toolingTabInfo>

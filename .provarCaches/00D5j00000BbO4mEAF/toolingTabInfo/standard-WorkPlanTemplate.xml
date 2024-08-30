@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WorkPlanTemplate" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Work Plan Templates" Name="standard-WorkPlanTemplate" SobjectName="WorkPlanTemplate" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/7Iy/o"/>
+</toolingTabInfo>

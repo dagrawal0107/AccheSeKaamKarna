@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="DeleteEvent" IsAvailableInLightning="true" Label="Recycle Bin" Name="standard-DeleteEvent" SobjectName="DeleteEvent" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/00C/o"/>
+</toolingTabInfo>

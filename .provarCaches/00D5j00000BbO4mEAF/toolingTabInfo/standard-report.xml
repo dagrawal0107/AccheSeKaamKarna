@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="report" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Reports" Name="standard-report" SobjectName="Report" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/00O/o"/>
+</toolingTabInfo>

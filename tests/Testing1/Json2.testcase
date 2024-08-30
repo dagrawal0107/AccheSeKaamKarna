@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="743a5dbc-6c08-455a-ba6a-979cc5a8b605" id="21">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.io.Read" guid="36679e8a-d993-448c-a0c4-8ff0b5d29da0" name="Read" testItemId="1" title="Read: D:\\\\Deepak\\\\Download\\\\Chrome\\\\DummySalesforceConfiguration.json=&gt;Contents">
+      <arguments>
+        <argument id="urlString">
+          <value class="url">D:\\\\Deepak\\\\Download\\\\Chrome\\\\DummySalesforceConfiguration.json</value>
+        </argument>
+        <argument id="contentFormat">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+        <argument id="contentEncoding">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Contents</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="storeAs">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource url="json:fileScheme=json%3A&amp;displayValue=D%3A%2FDeepak%2FDownload%2FChrome%2FDummySalesforceConfiguration.json&amp;filePath=D%3A%2FDeepak%2FDownload%2FChrome%2FDummySalesforceConfiguration.json&amp;whereName=applicationSettings.credentials.userRole&amp;whereValue=role1&amp;whereComparison=EqualTo&amp;filePathValue=PrimitiveValueImpl+%5B+value%3A+D%3A%2FDeepak%2FDownload%2FChrome%2FDummySalesforceConfiguration.json%2C+valueId%3Dnull%2C+createdUpdateSeq%3D-1%2C+updatedUpdateSeq%3D-1%5D&amp;debug=true&amp;expressionOffset=-1&amp;expressionLength=-1&amp;propertyChangeSupport=java.beans.PropertyChangeSupport%4055b3da15" variableName="Source" variableScope="Test">
+          <cacheToken>D:/Deepak/Download/Chrome/DummySalesforceConfiguration.json;1697088266769</cacheToken>
+          <cachedParameters>
+            <apiParam name="applicationSettings.credentials.userRole"/>
+            <apiParam name="applicationSettings.credentials.userTag"/>
+            <apiParam name="applicationSettings.credentials.password"/>
+            <apiParam name="applicationSettings.applicationUrl"/>
+            <apiParam name="applicationSettings.environmentName"/>
+            <apiParam name="applicationSettings.applicationSSOUrl"/>
+            <apiParam name="applicationSettings.credentials.userName"/>
+          </cachedParameters>
+          <sourceValue class="jsonTarget" debug="true" whereComparison="EqualTo" whereName="applicationSettings.credentials.userRole" whereValue="role1">
+            <filePath class="value" valueClass="string">D:/Deepak/Download/Chrome/DummySalesforceConfiguration.json</filePath>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+    </apiCall>
+  </steps>
+</testCase>

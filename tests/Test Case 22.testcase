@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="7b6f5c09-b8ad-4b2d-91f9-bf8ef4f32958" id="0">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="139ebe5a-66c4-4f4a-8de4-af239c9ee13f" name="ApexConnect" testItemId="1" title="Salesforce Connect: DevOrg (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">7a884988-abc8-4cab-a19e-8cfde77d3f39</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Marketing</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConvertLead" guid="1a3aa910-33af-42d3-ba64-20f1337489fe" name="ApexConvertLead" testItemId="2" title="Convert Lead:  =&gt; //">
+      <arguments>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="leadId">
+          <value class="value" valueClass="string">00QJ4000006ufrRMAQ</value>
+        </argument>
+        <argument id="accountId"/>
+        <argument id="contactId"/>
+        <argument id="ownerId"/>
+        <argument id="convertedStatus">
+          <value class="value" valueClass="string">Closed - Converted</value>
+        </argument>
+        <argument id="createOpportunity">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="opportunityName"/>
+        <argument id="overwriteLeadSource">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="sendNotificationEmail">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="resultAccountIdName">
+          <value class="value" valueClass="string">convertedAccountId</value>
+        </argument>
+        <argument id="resultContactIdName">
+          <value class="value" valueClass="string">convertedContactId</value>
+        </argument>
+        <argument id="resultOpportunityIdName">
+          <value class="value" valueClass="string">convertedOpportunityId</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

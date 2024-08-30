@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="6a013079-7fd1-4174-82ed-5d82a2b7927d">
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="8ee25a45-f199-4679-8400-662c644cbb95" name="UiConnect" testItemId="1" title="UI Connect: ThridUI">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">ThridUI</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">55544404-11ce-4bde-bbab-b50928938bfb</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ThridUI</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="privateBrowsingMode"/>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

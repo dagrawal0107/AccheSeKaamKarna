@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WebStoreInventorySource" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Web Store Inventory Sources" Name="standard-WebStoreInventorySource" SobjectName="WebStoreInventorySource" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/10t/o"/>
+</toolingTabInfo>

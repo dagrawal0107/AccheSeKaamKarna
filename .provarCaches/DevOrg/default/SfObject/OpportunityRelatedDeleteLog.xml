@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="0oe" label="Opportunity Related Delete Log" labelPlural="Opportunity Related Delete Log" n="OpportunityRelatedDeleteLog" queryable="true" readPermission="false" retrieveable="true" s="" t="Opportunity Related Delete Log (0oe)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome OpportunityRelatedDeleteLogs" n="New"/>
+    <sfActionLink modes="View OpportunityRelatedDeleteLogs" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View OpportunityRelatedDeleteLogs" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OpportunityRelatedDeleteLogs" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OpportunityRelatedDeleteLogs" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

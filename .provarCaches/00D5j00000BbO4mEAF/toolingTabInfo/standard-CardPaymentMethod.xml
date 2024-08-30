@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CardPaymentMethod" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Card Payment Methods" Name="standard-CardPaymentMethod" SobjectName="CardPaymentMethod" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/03O/o"/>
+</toolingTabInfo>

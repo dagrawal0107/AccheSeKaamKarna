@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" defaultCompactLayoutId="Lead.SYSTEM" deleteable="true" feedEnabled="true" keyPrefix="00Q" label="Lead" labelPlural="Leads" layoutable="true" listViewFilterType="l" metadataLabel="Lead" n="Lead" queryable="true" retrieveable="true" s="" searchLayoutable="true" standardLabel="Lead" t="Lead (00Q)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/00Q/e">
+  <fields>
+    <sfField length="18" n="Id" t="Lead ID" type="id"/>
+    <sfField n="IsDeleted" t="Deleted" type="_boolean"/>
+    <sfField length="18" n="MasterRecordId" relationshipName="MasterRecord" t="Lead" type="reference">
+      <referenceTos>
+        <string>Lead</string>
+      </referenceTos>
+    </sfField>
+    <sfField extraTypeInfo="personname" length="80" n="LastName" required="true" t="Last Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="FirstName" t="First Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="Salutation" standardPickListName="Salutation" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Mr." s=""/>
+        <sfPLE id="2" n="Ms." s=""/>
+        <sfPLE id="3" n="Mrs." s=""/>
+        <sfPLE id="4" n="Dr." s=""/>
+        <sfPLE id="5" n="Prof." s=""/>
+        <sfPLE id="6" n="Mx." s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" extraTypeInfo="personname" length="121" n="Name" nameField="true" required="true" updateable="false"/>
+    <sfField length="128" n="Title"/>
+    <sfField length="255" n="Company" required="true"/>
+    <sfField editPermission="false" extraTypeInfo="plaintextarea" length="255" n="Street" readPermission="false" type="textarea"/>
+    <sfField editPermission="false" length="40" n="City" readPermission="false"/>
+    <sfField editPermission="false" length="80" n="State" readPermission="false" t="State/Province"/>
+    <sfField editPermission="false" length="20" n="PostalCode" readPermission="false" t="Zip/Postal Code"/>
+    <sfField editPermission="false" length="80" n="Country" readPermission="false"/>
+    <sfField editPermission="false" n="Latitude" precision="18" readPermission="false" scale="15" type="_double"/>
+    <sfField editPermission="false" n="Longitude" precision="18" readPermission="false" scale="15" type="_double"/>
+    <sfField editPermission="false" length="40" n="GeocodeAccuracy" readPermission="false" restrictedPicklist="true" standardPickListName="GeocodeAccuracy" t="Geocode Accuracy" type="picklist">
+      <picklistEntryIds>7,8,9,10,11,12,13,14,15,16,17</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="7" n="Address" s=""/>
+        <sfPLE id="8" n="NearAddress" s=""/>
+        <sfPLE id="9" n="Block" s=""/>
+        <sfPLE id="10" n="Street" s=""/>
+        <sfPLE id="11" n="ExtendedZip" s=""/>
+        <sfPLE id="12" n="Zip" s=""/>
+        <sfPLE id="13" n="Neighborhood" s=""/>
+        <sfPLE id="14" n="City" s=""/>
+        <sfPLE id="15" n="County" s=""/>
+        <sfPLE id="16" n="State" s=""/>
+        <sfPLE id="17" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="Address" type="address" updateable="false"/>
+    <sfField length="40" n="Phone" type="phone"/>
+    <sfField length="40" n="MobilePhone" t="Mobile" type="phone"/>
+    <sfField length="40" n="Fax" type="phone"/>
+    <sfField length="80" n="Email" type="email"/>
+    <sfField length="255" n="Website" type="url"/>
+    <sfField createable="false" extraTypeInfo="imageurl" length="255" n="PhotoUrl" t="Photo URL" type="url" updateable="false"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea"/>
+    <sfField length="255" n="LeadSource" standardPickListName="LeadSource" t="Lead Source" type="picklist">
+      <picklistEntryIds>18,19,20,21,22</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="18" n="Web" s=""/>
+        <sfPLE id="19" n="Phone Inquiry" s=""/>
+        <sfPLE id="20" n="Partner Referral" s=""/>
+        <sfPLE id="21" n="Purchased List" s=""/>
+        <sfPLE id="22" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Status" standardPickListName="LeadStatus" t="Lead Status" type="picklist">
+      <picklistEntryIds>23,24,25,26</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="23" n="Open - Not Contacted" s=""/>
+        <sfPLE id="24" n="Working - Contacted" s=""/>
+        <sfPLE id="25" n="Closed - Converted" s=""/>
+        <sfPLE id="26" n="Closed - Not Converted" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Industry" standardPickListName="Industry" type="picklist">
+      <picklistEntryIds>27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,22</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="27" n="Agriculture" s=""/>
+        <sfPLE id="28" n="Apparel" s=""/>
+        <sfPLE id="29" n="Banking" s=""/>
+        <sfPLE id="30" n="Biotechnology" s=""/>
+        <sfPLE id="31" n="Chemicals" s=""/>
+        <sfPLE id="32" n="Communications" s=""/>
+        <sfPLE id="33" n="Construction" s=""/>
+        <sfPLE id="34" n="Consulting" s=""/>
+        <sfPLE id="35" n="Education" s=""/>
+        <sfPLE id="36" n="Electronics" s=""/>
+        <sfPLE id="37" n="Energy" s=""/>
+        <sfPLE id="38" n="Engineering" s=""/>
+        <sfPLE id="39" n="Entertainment" s=""/>
+        <sfPLE id="40" n="Environmental" s=""/>
+        <sfPLE id="41" n="Finance" s=""/>
+        <sfPLE id="42" n="Food &amp; Beverage" s=""/>
+        <sfPLE id="43" n="Government" s=""/>
+        <sfPLE id="44" n="Healthcare" s=""/>
+        <sfPLE id="45" n="Hospitality" s=""/>
+        <sfPLE id="46" n="Insurance" s=""/>
+        <sfPLE id="47" n="Machinery" s=""/>
+        <sfPLE id="48" n="Manufacturing" s=""/>
+        <sfPLE id="49" n="Media" s=""/>
+        <sfPLE id="50" n="Not For Profit" s=""/>
+        <sfPLE id="51" n="Recreation" s=""/>
+        <sfPLE id="52" n="Retail" s=""/>
+        <sfPLE id="53" n="Shipping" s=""/>
+        <sfPLE id="54" n="Technology" s=""/>
+        <sfPLE id="55" n="Telecommunications" s=""/>
+        <sfPLE id="56" n="Transportation" s=""/>
+        <sfPLE id="57" n="Utilities" s=""/>
+        <sfPLE id="22" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Rating" standardPickListName="AccountRating" type="picklist">
+      <picklistEntryIds>58,59,60</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="58" n="Hot" s=""/>
+        <sfPLE id="59" n="Warm" s=""/>
+        <sfPLE id="60" n="Cold" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="AnnualRevenue" precision="18" t="Annual Revenue" type="currency"/>
+    <sfField digits="9" n="NumberOfEmployees" t="No. of Employees" type="_int"/>
+    <sfField createable="false" editPermission="false" length="40" n="InternalSource" readPermission="false" standardPickListName="Lead.InternalSource" t="Internal Source" type="picklist" updateable="false">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField internalLabel="Owner ID" length="18" n="OwnerId" relationshipName="Owner" t="Lead Owner" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="HasOptedOutOfEmail" readPermission="false" t="Email Opt Out" type="_boolean" updateable="false"/>
+    <sfField n="IsConverted" t="Converted" type="_boolean"/>
+    <sfField n="ConvertedDate" t="Converted Date" type="date"/>
+    <sfField length="18" n="ConvertedAccountId" relationshipName="ConvertedAccount" t="Converted Account" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ConvertedContactId" relationshipName="ConvertedContact" t="Converted Contact" type="reference" updateable="false">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ConvertedOpportunityId" relationshipName="ConvertedOpportunity" t="Converted Opportunity" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="IsUnreadByOwner" t="Unread By Owner" type="_boolean"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="SystemModstamp" t="System Modstamp" type="datetime"/>
+    <sfField n="LastActivityDate" t="Last Activity" type="date"/>
+    <sfField createable="false" editPermission="false" n="DoNotCall" readPermission="false" t="Do Not Call" type="_boolean" updateable="false"/>
+    <sfField internal="true" length="18" n="CampaignId" relationshipName="Campaign" t="Campaign" type="reference">
+      <referenceTos>
+        <string>Campaign</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" length="255" n="CampaignMemberStatus" readPermission="false" standardPickListName="Lead.CampaignMemberStatus" t="Campaign Member Status" type="picklist" updateable="false">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="HasOptedOutOfFax" readPermission="false" t="Fax Opt Out" type="_boolean" updateable="false"/>
+    <sfField n="LastViewedDate" t="Last Viewed Date" type="datetime"/>
+    <sfField n="LastReferencedDate" t="Last Referenced Date" type="datetime"/>
+    <sfField createable="false" editPermission="false" n="LastTransferDate" readPermission="false" t="Last Transfer Date" type="date" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="PartnerAccountId" readPermission="false" relationshipName="PartnerAccount" t="Partner Account" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="20" n="Jigsaw" t="Data.com Key"/>
+    <sfField createable="false" editPermission="false" length="20" n="JigsawContactId" readPermission="false" relationshipName="JigsawContact" t="Jigsaw Contact Id" updateable="false"/>
+    <sfField length="40" n="CleanStatus" standardPickListName="Lead.CleanStatus" t="Clean Status" type="picklist">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField length="9" n="CompanyDunsNumber" t="Company D-U-N-S Number"/>
+    <sfField length="18" n="DandbCompanyId" relationshipName="DandbCompany" t="D&amp;B Company" type="reference">
+      <referenceTos>
+        <string>DandBCompany</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="255" n="EmailBouncedReason" t="Email Bounced Reason"/>
+    <sfField createable="false" n="EmailBouncedDate" t="Email Bounced Date" type="datetime"/>
+    <sfField length="18" n="IndividualId" relationshipName="Individual" t="Individual" type="reference">
+      <referenceTos>
+        <string>Individual</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" length="255" n="Pronouns" readPermission="false" standardPickListName="Lead.Pronouns" type="picklist" updateable="false">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField createable="false" editPermission="false" length="255" n="GenderIdentity" readPermission="false" standardPickListName="Lead.GenderIdentity" t="Gender Identity" type="picklist" updateable="false">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField filterable="false" n="IsPriorityRecord" t="Important" type="_boolean"/>
+    <sfField length="15" n="SICCode__c" t="SIC Code"/>
+    <sfField length="255" n="ProductInterest__c" t="Product Interest" type="picklist">
+      <picklistEntryIds>61,62,63</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="61" n="GC1000 series" s=""/>
+        <sfPLE id="62" n="GC5000 series" s=""/>
+        <sfPLE id="63" n="GC3000 series" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Primary__c" t="Primary" type="picklist">
+      <picklistEntryIds>64,65</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="64" n="No" s=""/>
+        <sfPLE id="65" n="Yes" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="100" n="CurrentGenerators__c" t="Current Generator(s)"/>
+    <sfField n="NumberofLocations__c" precision="3" t="Number of Locations" type="_double"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedEmailStatusList" childName="EmailStatus" field="WhoId" n="EmailStatuses" relationshipName="EmailStatuses" s="2-" t="EmailStatus"/>
+    <sfObjectRelationship alias="RelatedCampaignList" childName="CampaignMember" field="LeadId" n="CampaignMembers" relationshipName="CampaignMembers" s="2-" t="CampaignMember"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="Task" field="WhoId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="Event" field="WhoId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="TaskRelation" field="RelationId" n="TaskRelations" relationshipName="TaskRelations" s="2-" t="TaskRelation"/>
+    <sfObjectRelationship childName="EventRelation" field="RelationId" n="EventRelations" relationshipName="EventRelations" s="2-" t="EventRelation"/>
+    <sfObjectRelationship childName="TaskWhoRelation" field="RelationId" n="TaskWhoRelations" relationshipName="TaskWhoRelations" s="2-" t="TaskWhoRelation"/>
+    <sfObjectRelationship childName="EventWhoRelation" field="RelationId" n="EventWhoRelations" relationshipName="EventWhoRelations" s="2-" t="EventWhoRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeAccept" childName="AcceptedEventRelation" field="RelationId" n="AcceptedEventRelations" relationshipName="AcceptedEventRelations" s="2-" t="AcceptedEventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeNotDecided" childName="UndecidedEventRelation" field="RelationId" n="UndecidedEventRelations" relationshipName="UndecidedEventRelations" s="2-" t="UndecidedEventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeDecline" childName="DeclinedEventRelation" field="RelationId" n="DeclinedEventRelations" relationshipName="DeclinedEventRelations" s="2-" t="DeclinedEventRelation"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhoId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhoId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship alias="RelatedEmailMessagePeopleList" childName="EmailMessageRelation" field="RelationId" n="EmailMessageRelations" relationshipName="EmailMessageRelations" s="2-" t="EmailMessageRelation"/>
+    <sfObjectRelationship childName="VoiceCall" field="RelatedRecordId" n="RelatedRecords" relationshipName="RelatedRecords" s="2-" t="VoiceCall"/>
+    <sfObjectRelationship childName="ServiceAppointment" field="ParentRecordId" n="ServiceAppointments" relationshipName="ServiceAppointments" s="2-" t="ServiceAppointment"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship childName="LeadCleanInfo" field="LeadId" n="LeadCleanInfos" relationshipName="LeadCleanInfos" s="2-" t="LeadCleanInfo"/>
+    <sfObjectRelationship childName="NetworkActivityAudit" field="ParentEntityId" n="ParentEntities" relationshipName="ParentEntities" s="2-" t="NetworkActivityAudit"/>
+    <sfObjectRelationship childName="SocialPersona" field="ParentId" n="Personas" relationshipName="Personas" s="2-" t="SocialPersona"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="OutgoingEmailRelation" field="RelationId" n="OutgoingEmailRelations" relationshipName="OutgoingEmailRelations" s="2-" t="OutgoingEmailRelation"/>
+    <sfObjectRelationship childName="MessagingEndUser" field="LeadId" n="MessagingEndUsers" relationshipName="MessagingEndUsers" s="2-" t="MessagingEndUser"/>
+    <sfObjectRelationship childName="ListEmail" field="RelatedToId" n="ListEmails" relationshipName="ListEmails" s="2-" t="ListEmail"/>
+    <sfObjectRelationship childName="MessagingSession" field="LeadId" n="MessagingSessions" relationshipName="MessagingSessions" s="2-" t="MessagingSession"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhoId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ListEmailIndividualRecipient" field="RecipientId" n="ListEmailIndividualRecipients" relationshipName="ListEmailIndividualRecipients" s="2-" t="ListEmailIndividualRecipient"/>
+    <sfObjectRelationship childName="UserEmailPreferredPerson" field="PersonRecordId" n="PersonRecord" relationshipName="PersonRecord" s="2-" t="UserEmailPreferredPerson"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="FlowOrchestrationWorkItem" field="RelatedRecordId" n="FlowOrchestrationWorkItems" relationshipName="FlowOrchestrationWorkItems" s="2-" t="FlowOrchestrationWorkItem"/>
+    <sfObjectRelationship childName="WaitlistParticipant" field="ParticipantId" n="WaitlistParticipants" relationshipName="WaitlistParticipants" s="2-" t="WaitlistParticipant"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="LeadHistory" field="LeadId" n="Histories" relationshipName="Histories" s="2-" t="LeadHistory"/>
+    <sfObjectRelationship childName="LeadFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="LeadFeed"/>
+    <sfObjectRelationship childName="LeadShare" field="LeadId" n="Shares" relationshipName="Shares" s="2-" t="LeadShare"/>
+    <sfObjectRelationship childName="ProcessInstanceHistory" field="TargetObjectId" n="RelatedProcessHistoryList" relationshipName="RelatedProcessHistoryList" s="2-"/>
+    <sfObjectRelationship alias="RelatedOpportunityList" childName="Opportunity" field="LeadId" n="Opportunities" relationshipName="Opportunities" s="2-" t="Opportunity"/>
+    <sfObjectRelationship alias="RelatedContentDistributionList" childName="ContentDistribution" field="RelatedRecordId" n="RelatedContentDistributionList" relationshipName="RelatedContentDistributionList" s="2-" t="Content Deliveries"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink n="Tab" s="" t="Leads Tab"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="View Leads" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Leads" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink n="Convert" requiresRow="true" s="2"/>
+    <sfActionLink buttonName="dupes" modes="View" n="FindDup" t="Find Duplicates"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink n="AddToCampaign" s="" t="Add to Campaign"/>
+    <sfActionLink modes="View" n="XClean" t="Check Integration Status"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink n="MassAccept" s="" t="Accept"/>
+    <sfActionLink n="MassChangeStatus" s="" t="Change Status"/>
+    <sfActionLink n="MassCreateCallList" s="" t="Add to Call List"/>
+    <sfActionLink n="CreateCallList" s="" t="Add to Call List"/>
+    <sfActionLink modes="ObjectHome Leads List" n="New"/>
+    <sfActionLink n="CreateSurveyInvitation" s="" t="Get Survey Invitation"/>
+    <sfActionLink n="StartOutboundConversation" s="" t="Start Conversation"/>
+    <sfActionLink n="BookTestDrive" s="" t="Schedule Test Drive"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View Leads" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Leads" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="EmailHighlightAction" t="Send Email"/>
+    <sfActionLink modes="View" n="CallHighlightAction" t="Call"/>
+    <sfActionLink modes="View" n="SmsHighlightAction" t="Send Text"/>
+    <sfActionLink buttonName="datadotcomclean" modes="View" n="ListClean" t="Clean"/>
+    <sfActionLink lightningActionName="MassChangeStatus" massAction="true" modes="List" n="2" t="Change Status"/>
+    <sfActionLink massAction="true" modes="List" n="assign" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="List" n="3" t="Add to Campaign"/>
+    <sfActionLink modes="View" n="ChooseCampaign" t="Choose a Campaign"/>
+    <sfActionLink modes="List Home" n="MassAddToCampaign" t="Add to Campaign"/>
+    <sfActionLink modes="List Home" n="SendListEmailAction" t="Send List Email"/>
+    <sfActionLink modes="View" n="ChangeStatus" t="Change Status"/>
+  </standardActions>
+  <homeListColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.COMPANY</string>
+    <string>LEAD.PHONE</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.COMPANY</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>FULL_NAME</string>
+    <string>LEAD.TITLE</string>
+    <string>LEAD.COMPANY</string>
+    <string>LEAD.PHONE</string>
+    <string>LEAD.MOBILE_PHONE</string>
+    <string>LEAD.EMAIL</string>
+    <string>LEAD.STATUS</string>
+    <string>CORE.USERS.ALIAS</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Name</string>
+    <string>Title</string>
+    <string>Company</string>
+    <string>Phone</string>
+    <string>MobilePhone</string>
+    <string>Email</string>
+  </compactLayoutFields>
+  <listViewActions/>
+</sfObject>

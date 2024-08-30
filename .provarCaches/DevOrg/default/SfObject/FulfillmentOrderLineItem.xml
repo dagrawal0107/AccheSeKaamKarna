@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" feedEnabled="true" keyPrefix="0a4" label="Fulfillment Order Product" labelPlural="Fulfillment Order Products" layoutable="true" n="FulfillmentOrderLineItem" queryable="true" readPermission="false" retrieveable="true" s="" t="Fulfillment Order Product (0a4)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome FulfillmentOrderLineItems" n="New"/>
+    <sfActionLink modes="View FulfillmentOrderLineItems" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View FulfillmentOrderLineItems" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View FulfillmentOrderLineItems" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View FulfillmentOrderLineItems" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

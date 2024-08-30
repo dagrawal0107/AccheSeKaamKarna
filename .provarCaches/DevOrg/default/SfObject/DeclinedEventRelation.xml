@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" label="Declined Event Relation" labelPlural="Declined Event Relations" n="DeclinedEventRelation" queryable="true" readPermission="false" retrieveable="true" s="" t="Declined Event Relation">
+  <standardActions>
+    <sfActionLink modes="ObjectHome DeclinedEventRelations" n="New"/>
+    <sfActionLink modes="View DeclinedEventRelations" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View DeclinedEventRelations" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View DeclinedEventRelations" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View DeclinedEventRelations" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="adb54649-b7d1-4af8-8bc2-97b24dfd6625" id="11">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.io.Read" guid="aa29800b-1979-47bc-b07a-91d30585d88f" name="Read" testItemId="5" title="Read: D:/Deepak/Download/Chrome/Provar_Trial_Guide_2022.pdf=&gt;Contents">
+      <arguments>
+        <argument id="urlString">
+          <value class="url">D:/Deepak/Download/Chrome/Provar_Trial_Guide_2022.pdf</value>
+        </argument>
+        <argument id="contentFormat">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+        <argument id="contentEncoding">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Contents</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="storeAs">
+          <value class="value" valueClass="string">Parsed</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.string.Match" guid="d99039e9-3106-4f45-ba37-9b240303e528" name="Match" testItemId="6" title="Match: {Contents.contentText}=&gt;Provar=&gt;Hello">
+      <arguments>
+        <argument id="input">
+          <value class="variable">
+            <path element="Contents"/>
+            <path element="contentText"/>
+          </value>
+        </argument>
+        <argument id="regex">
+          <value class="value" valueClass="string">Provar</value>
+        </argument>
+        <argument id="caseInsensitive">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Hello</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

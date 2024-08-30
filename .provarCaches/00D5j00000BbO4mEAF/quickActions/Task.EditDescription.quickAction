@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><QuickAction xmlns="http://soap.sforce.com/2006/04/metadata"
+   >
+ <fullName>Task.EditDescription</fullName>
+     <height>0</height>
+  <isProtected>false</isProtected>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+  <quickActionLayout>
+  <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+  <quickActionLayoutColumns>
+   <quickActionLayoutItems>
+    <emptySpace>false</emptySpace>
+    <field>Description</field>
+    <uiBehavior>Edit</uiBehavior>
+   </quickActionLayoutItems>
+  </quickActionLayoutColumns>
+  <quickActionLayoutColumns />
+ </quickActionLayout>
+  <standardLabel>EditDescription</standardLabel>
+     <type>Update</type>
+ <width>0</width>
+</QuickAction>

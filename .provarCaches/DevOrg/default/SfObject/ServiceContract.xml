@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="810" label="Service Contract" labelPlural="Service Contracts" layoutable="true" n="ServiceContract" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Service Contract (810)" updatable="true" urlDetail="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}" urlEdit="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}/e" urlNew="https://provar-9a-dev-ed.develop.my.salesforce.com/810/e">
+  <fields>
+    <sfField createable="false" length="18" n="Id" t="Service Contract ID" type="id" updateable="false"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Service Contract Owner" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="255" n="Name" nameField="true" required="true" t="Contract Name"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField internalLabel="Account ID" length="18" n="AccountId" relationshipName="Account" t="Account Name" type="reference">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField internalLabel="Contact ID" length="18" n="ContactId" relationshipName="Contact" t="Contact Name" type="reference">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField digits="9" n="Term" t="Term (months)" type="_int"/>
+    <sfField n="StartDate" t="Start Date" type="date"/>
+    <sfField n="EndDate" t="End Date" type="date"/>
+    <sfField n="ActivationDate" t="Activation Date" type="datetime"/>
+    <sfField length="40" n="ApprovalStatus" t="Approval Status" type="picklist">
+      <picklistEntryIds>1,2,3</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="1" n="Draft" s=""/>
+        <sfPLE id="2" n="In Approval Process" s=""/>
+        <sfPLE id="3" n="Activated" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="BillingStreet" t="Billing Street" type="textarea"/>
+    <sfField length="40" n="BillingCity" t="Billing City"/>
+    <sfField length="80" n="BillingState" t="Billing State"/>
+    <sfField length="20" n="BillingPostalCode" t="Billing Zip"/>
+    <sfField length="80" n="BillingCountry" t="Billing Country"/>
+    <sfField n="BillingLatitude" precision="18" scale="15" t="Billing Latitude" type="_double"/>
+    <sfField n="BillingLongitude" precision="18" scale="15" t="Billing Longitude" type="_double"/>
+    <sfField length="255" n="BillingGeocodeAccuracy" restrictedPicklist="true" t="Billing Geocode Accuracy" type="picklist">
+      <picklistEntryIds>4,5,6,7,8,9,10,11,12,13,14</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="4" n="Address" s=""/>
+        <sfPLE id="5" n="NearAddress" s="" t="Near Address"/>
+        <sfPLE id="6" n="Block" s=""/>
+        <sfPLE id="7" n="Street" s=""/>
+        <sfPLE id="8" n="ExtendedZip" s="" t="Extended Zip"/>
+        <sfPLE id="9" n="Zip" s=""/>
+        <sfPLE id="10" n="Neighborhood" s=""/>
+        <sfPLE id="11" n="City" s=""/>
+        <sfPLE id="12" n="County" s=""/>
+        <sfPLE id="13" n="State" s=""/>
+        <sfPLE id="14" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="BillingAddress" t="Billing Address" type="address" updateable="false"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="ShippingStreet" t="Shipping Street" type="textarea"/>
+    <sfField length="40" n="ShippingCity" t="Shipping City"/>
+    <sfField length="80" n="ShippingState" t="Shipping State"/>
+    <sfField length="20" n="ShippingPostalCode" t="Shipping Zip"/>
+    <sfField length="80" n="ShippingCountry" t="Shipping Country"/>
+    <sfField n="ShippingLatitude" precision="18" scale="15" t="Shipping Latitude" type="_double"/>
+    <sfField n="ShippingLongitude" precision="18" scale="15" t="Shipping Longitude" type="_double"/>
+    <sfField length="255" n="ShippingGeocodeAccuracy" restrictedPicklist="true" t="Shipping Geocode Accuracy" type="picklist">
+      <picklistEntryIds>4,5,6,7,8,9,10,11,12,13,14</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="4" n="Address" s=""/>
+        <sfPLE id="5" n="NearAddress" s="" t="Near Address"/>
+        <sfPLE id="6" n="Block" s=""/>
+        <sfPLE id="7" n="Street" s=""/>
+        <sfPLE id="8" n="ExtendedZip" s="" t="Extended Zip"/>
+        <sfPLE id="9" n="Zip" s=""/>
+        <sfPLE id="10" n="Neighborhood" s=""/>
+        <sfPLE id="11" n="City" s=""/>
+        <sfPLE id="12" n="County" s=""/>
+        <sfPLE id="13" n="State" s=""/>
+        <sfPLE id="14" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="ShippingAddress" t="Shipping Address" type="address" updateable="false"/>
+    <sfField length="18" n="Pricebook2Id" relationshipName="Pricebook2" t="Price Book" type="reference">
+      <referenceTos>
+        <string>Pricebook2</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="ShippingHandling" precision="18" scale="2" t="Shipping and Handling" type="currency"/>
+    <sfField n="Tax" precision="18" scale="2" type="currency"/>
+    <sfField calculated="true" createable="false" n="Subtotal" precision="18" scale="2" type="currency" updateable="false"/>
+    <sfField calculated="true" createable="false" n="TotalPrice" precision="18" scale="2" t="Total Price" type="currency" updateable="false"/>
+    <sfField calculated="true" createable="false" digits="9" n="LineItemCount" t="Line Items" type="_int" updateable="false"/>
+    <sfField autoNumberField="true" createable="false" length="30" n="ContractNumber" t="Contract Number" updateable="false"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="SpecialTerms" t="Special Terms" type="textarea"/>
+    <sfField createable="false" n="Discount" precision="5" scale="2" type="percent" updateable="false"/>
+    <sfField createable="false" n="GrandTotal" precision="18" scale="2" t="Grand Total" type="currency" updateable="false"/>
+    <sfField createable="false" length="255" n="Status" restrictedPicklist="true" type="picklist" updateable="false">
+      <picklistEntryIds>15,16,17</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="15" n="Inactive" s=""/>
+        <sfPLE id="16" n="Active" s=""/>
+        <sfPLE id="17" n="Expired" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="18" n="ParentServiceContractId" relationshipName="ParentServiceContract" t="Parent Service Contract" type="reference">
+      <referenceTos>
+        <string>ServiceContract</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="18" n="RootServiceContractId" relationshipName="RootServiceContract" t="Root Service Contract" type="reference" updateable="false">
+      <referenceTos>
+        <string>ServiceContract</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="AdditionalDiscount" precision="5" scale="2" t="Additional Discount" type="percent"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedContractLineItemList" childName="ContractLineItem" field="ServiceContractId" n="ContractLineItems" relationshipName="ContractLineItems" s="2-" t="ContractLineItem"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship alias="RelatedEntitlementList" childName="Entitlement" field="ServiceContractId" n="Entitlements" relationshipName="Entitlements" s="2-" t="Entitlement"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="FlowOrchestrationWorkItem" field="RelatedRecordId" n="FlowOrchestrationWorkItems" relationshipName="FlowOrchestrationWorkItems" s="2-" t="FlowOrchestrationWorkItem"/>
+    <sfObjectRelationship childName="NetworkActivityAudit" field="ParentEntityId" n="ParentEntities" relationshipName="ParentEntities" s="2-" t="NetworkActivityAudit"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="ServiceContract" field="ParentServiceContractId" n="ChildServiceContracts" relationshipName="ChildServiceContracts" s="2-" t="ServiceContract"/>
+    <sfObjectRelationship childName="ServiceContract" field="RootServiceContractId" n="DescendantServiceContracts" relationshipName="DescendantServiceContracts" s="2-" t="ServiceContract"/>
+    <sfObjectRelationship childName="ServiceContractFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="ServiceContractFeed"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="ServiceContractHistory" field="ServiceContractId" n="Histories" relationshipName="Histories" s="2-" t="ServiceContractHistory"/>
+    <sfObjectRelationship childName="ServiceContractShare" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="ServiceContractShare"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="WorkOrder" field="ServiceContractId" n="WorkOrders" relationshipName="WorkOrders" s="2-" t="WorkOrder"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome ServiceContracts List ChildServiceContracts DescendantServiceContracts" n="New"/>
+    <sfActionLink modes="View ServiceContracts ChildServiceContracts DescendantServiceContracts" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View ServiceContracts ChildServiceContracts DescendantServiceContracts" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View ServiceContracts ChildServiceContracts DescendantServiceContracts" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View ServiceContracts ChildServiceContracts DescendantServiceContracts" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

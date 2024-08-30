@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" label="User Owned File" labelPlural="User Owned File" n="OwnedContentDocument" readPermission="false" s="" t="User Owned File">
+  <standardActions>
+    <sfActionLink modes="ObjectHome OwnedContentDocuments" n="New"/>
+    <sfActionLink modes="View OwnedContentDocuments" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View OwnedContentDocuments" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OwnedContentDocuments" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OwnedContentDocuments" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

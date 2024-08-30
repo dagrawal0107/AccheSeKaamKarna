@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="1WL" label="Work Order Line Item" labelPlural="Work Order Line Items" layoutable="true" n="WorkOrderLineItem" queryable="true" readPermission="false" retrieveable="true" s="" t="Work Order Line Item (1WL)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome WorkOrderLineItems" n="New"/>
+    <sfActionLink modes="View WorkOrderLineItems" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View WorkOrderLineItems" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View WorkOrderLineItems" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View WorkOrderLineItems" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

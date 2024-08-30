@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Feed" IsAvailableInLightning="true" Label="Chatter" Name="standard-Feed" SobjectName="Feed"/>
+</toolingTabInfo>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="a126fbf4-80a2-4e5a-bfdb-5e785fbd681a" id="10" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="21d1f11f-0c90-4152-998c-f5a7ae73f9ad" name="ApexConnect" testItemId="1" title="Salesforce Connect: DevOrg (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">DevOrg</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="953b38ee-e45b-49f3-b961-d898dbc553ea" name="ForEach" testItemId="2" title="For Each: {SourceData}=&gt;Row">
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="SourceData"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">5</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">Row</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>D:/Deepak/Download/Chrome/ExcelData1 (1).xlsx;1692174224433</cacheToken>
+          <cachedParameters>
+            <apiParam name="Stage"/>
+            <apiParam name="AccountId"/>
+            <apiParam name="Type"/>
+            <apiParam name="Amount"/>
+            <apiParam name="Name"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">D:/Deepak/Download/Chrome/ExcelData1 (1).xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">StageValues</worksheetName>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="substeps" testItemId="3">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="1cdae9e2-ad8d-4c9d-869d-fd5b19ffe3bd" name="If" testItemId="5" title="If: {Row.AccountId = &quot;DeepakY2X&quot;}">
+              <arguments>
+                <argument id="condition">
+                  <value class="eq">
+                    <lhs class="variable">
+                      <path element="Row"/>
+                      <path element="AccountId"/>
+                    </lhs>
+                    <rhs class="value" valueClass="string">DeepakY2X</rhs>
+                  </value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="then" testItemId="6">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="cdea556f-e956-4ed9-abab-f6df3d962db2" name="SetValues" testItemId="11" title="Set Values: Stage">
+                      <arguments>
+                        <argument id="values">
+                          <value class="valueList" mutable="Mutable">
+                            <namedValues mutable="Mutable">
+                              <namedValue name="valuePath">
+                                <value class="value" valueClass="string">Stage</value>
+                              </namedValue>
+                              <namedValue name="value">
+                                <value class="value" valueClass="string">"Need Analysis"</value>
+                              </namedValue>
+                              <namedValue name="valueScope">
+                                <value class="value" valueClass="string">Test</value>
+                              </namedValue>
+                            </namedValues>
+                          </value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="c42e9869-8b26-47eb-b4ce-d21c8b19cf42" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="19" title="Create Object: Opportunity=&gt;OpportunityId">
+                      <arguments>
+                        <argument id="objectType">
+                          <value class="value" valueClass="string">Opportunity</value>
+                        </argument>
+                        <argument id="resultIdName">
+                          <value class="value" valueClass="string">OpportunityId</value>
+                        </argument>
+                        <argument id="apexConnectionName">
+                          <value class="value" valueClass="string">DevOrg</value>
+                        </argument>
+                        <argument id="assignmentRuleId"/>
+                        <argument id="resultScope">
+                          <value class="value" valueClass="string">Test</value>
+                        </argument>
+                        <argument id="Name">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Name"/>
+                          </value>
+                        </argument>
+                        <argument id="StageName">
+                          <value class="variable">
+                            <path element="Stage"/>
+                          </value>
+                        </argument>
+                        <argument id="CloseDate">
+                          <value class="funcCall" id="DateAdd">
+                            <argument id="date">
+                              <value class="variable">
+                                <path element="TODAY"/>
+                              </value>
+                            </argument>
+                            <argument id="amount">
+                              <value class="value" valueClass="decimal">3</value>
+                            </argument>
+                          </value>
+                        </argument>
+                        <argument id="Amount">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Amount"/>
+                          </value>
+                        </argument>
+                        <argument id="Type">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Type"/>
+                          </value>
+                        </argument>
+                        <argument id="AccountId">
+                          <value class="value" valueClass="string">0015j000013P9oeAAC</value>
+                        </argument>
+                      </arguments>
+                      <parameterGeneratorProperties>
+                        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">DevOrg</propertyValue>
+                        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Opportunity</propertyValue>
+                      </parameterGeneratorProperties>
+                      <generatedParameters>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="Name" title="Name"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" title="StageName"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="CloseDate" title="CloseDate"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="Amount" title="Amount"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Type" name="Type" title="Type"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=AccountId" name="AccountId" title="AccountId"/>
+                      </generatedParameters>
+                    </apiCall>
+                  </steps>
+                </clause>
+                <clause name="else" testItemId="12">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="f430e3f3-1082-4ac2-a1d6-7e7da87796c6" name="SetValues" testItemId="22" title="Set Values: Stage">
+                      <arguments>
+                        <argument id="values">
+                          <value class="valueList" mutable="Mutable">
+                            <namedValues mutable="Mutable">
+                              <namedValue name="valuePath">
+                                <value class="value" valueClass="string">Stage</value>
+                              </namedValue>
+                              <namedValue name="value">
+                                <value class="value" valueClass="string">Closed Won</value>
+                              </namedValue>
+                              <namedValue name="valueScope">
+                                <value class="value" valueClass="string">Test</value>
+                              </namedValue>
+                            </namedValues>
+                          </value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" guid="208f88f6-6389-4a76-a7a2-708e741a9d08" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="20" title="Create Object: Opportunity=&gt;OpportunityId">
+                      <arguments>
+                        <argument id="objectType">
+                          <value class="value" valueClass="string">Opportunity</value>
+                        </argument>
+                        <argument id="resultIdName">
+                          <value class="value" valueClass="string">OpportunityId</value>
+                        </argument>
+                        <argument id="apexConnectionName">
+                          <value class="value" valueClass="string">DevOrg</value>
+                        </argument>
+                        <argument id="assignmentRuleId"/>
+                        <argument id="resultScope">
+                          <value class="value" valueClass="string">Test</value>
+                        </argument>
+                        <argument id="Name">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Name"/>
+                          </value>
+                        </argument>
+                        <argument id="StageName">
+                          <value class="variable">
+                            <path element="Stage"/>
+                          </value>
+                        </argument>
+                        <argument id="CloseDate">
+                          <value class="funcCall" id="DateAdd">
+                            <argument id="date">
+                              <value class="variable">
+                                <path element="TODAY"/>
+                              </value>
+                            </argument>
+                            <argument id="amount">
+                              <value class="value" valueClass="decimal">3</value>
+                            </argument>
+                          </value>
+                        </argument>
+                        <argument id="Amount">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Amount"/>
+                          </value>
+                        </argument>
+                        <argument id="Type">
+                          <value class="variable">
+                            <path element="Row"/>
+                            <path element="Type"/>
+                          </value>
+                        </argument>
+                        <argument id="AccountId">
+                          <value class="value" valueClass="string">0015j000013PDPoAAO</value>
+                        </argument>
+                      </arguments>
+                      <parameterGeneratorProperties>
+                        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">DevOrg</propertyValue>
+                        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Opportunity</propertyValue>
+                      </parameterGeneratorProperties>
+                      <generatedParameters>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="Name" title="Name"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" title="StageName"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="CloseDate" title="CloseDate"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="Amount" title="Amount"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Type" name="Type" title="Type"/>
+                        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=AccountId" name="AccountId" title="AccountId"/>
+                      </generatedParameters>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

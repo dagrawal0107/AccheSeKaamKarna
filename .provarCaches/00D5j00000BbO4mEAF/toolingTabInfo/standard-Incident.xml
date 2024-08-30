@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Incident" IsAvailableInLightning="true" Label="Incidents" Name="standard-Incident" SobjectName="Incident" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0ny/o"/>
+</toolingTabInfo>

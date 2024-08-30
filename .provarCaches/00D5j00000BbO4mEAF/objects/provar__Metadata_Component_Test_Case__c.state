@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<retrieveStates class="list">
+  <retrieveState>
+    <problem message="Timeout waiting for metadata retrieve to complete" remedy="RETRY_METADATA_DOWNLOAD" remedyData="CustomObject:provar__Metadata_Component_Test_Case__c"/>
+  </retrieveState>
+</retrieveStates>

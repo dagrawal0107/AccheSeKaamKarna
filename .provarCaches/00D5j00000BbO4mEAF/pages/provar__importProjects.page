@@ -1,0 +1,33 @@
+<apex:page standardController="provar__Project__c" extensions="provar.ReleaseManagementImportController" recordSetVar="projects" lightningStylesheets="true" standardstylesheets="false" showHeader="false" title="Import Projects">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <apex:outputPanel id="page">
+        <apex:form rendered="{! selectedTool = null }">
+            <apex:pageBlock mode="edit">
+                <apex:pageBlockSection title="Select a Release Management Tool" columns="1" rendered="{! releaseManagementToolOptions.size > 0 }">
+                    <apex:selectRadio value="{! selectedToolOption }">
+                        <apex:selectOptions value="{! releaseManagementToolOptions }"/>
+                        <apex:actionSupport event="onchange" rerender="page"/>
+                    </apex:selectRadio>
+                </apex:pageBlockSection>
+                <apex:pageMessage rendered="{! releaseManagementToolOptions.size == 0 }" summary="Please, install the corresponding plugin to connect to your release management tool." severity="warning" strength="3"/>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{! cancel }" value="Cancel"/>
+                    <apex:commandButton action="{! selectTool }" rendered="{! selectedToolOption != null }" value="Continue"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:form>
+
+        <apex:outputPanel rendered="{! selectedTool != null }">
+            <script>
+                $Lightning.use("{! selectedTool.importProjectsAuraComponent }", function () {
+                    $Lightning.createComponent("{! selectedTool.importProjectsLightningWebComponent }",
+                        {},
+                        "lightning",
+                        function() {});
+                });
+            </script>
+        </apex:outputPanel>
+    </apex:outputPanel>
+</apex:page>

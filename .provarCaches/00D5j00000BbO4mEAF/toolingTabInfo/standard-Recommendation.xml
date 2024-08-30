@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Recommendation" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Recommendations" Name="standard-Recommendation" SobjectName="Recommendation" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0pr/o"/>
+</toolingTabInfo>

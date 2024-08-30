@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="d3419fd2-418a-45e3-a85e-7744422c456c" id="5">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="8c0fce23-f459-43f9-babb-1c7f13c7e438" name="SetValues" testItemId="1" title="Set Values: Hello">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Hello</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="invalid">&lt;!DOCTYPE html\\r\\n    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;&lt;!-- template name: message-template-email-ownership-verification.html --&gt;\\r\\n&lt;html&gt;\\r\\n&lt;head&gt;\\r\\n&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;\\r\\n&lt;title&gt;Standard Bank - Link &amp;amp; Secure&lt;/title&gt;\\r\\n&lt;style type="text/css"&gt;\\r\\n        a:link {\\r\\n            color: #0542A6;\\r\\n        }\\r\\n\\r\\n        a:visited {\\r\\n            color: #0542A6;\\r\\n        }\\r\\n\\r\\n        a:hover {\\r\\n            color: #0542A6;\\r\\n        }\\r\\n\\r\\n        a:active {\\r\\n            color: #0542A6;\\r\\n        }\\r\\n    &lt;/style&gt;\\r\\n&lt;/head&gt;\\r\\n&lt;body bgcolor="#f6f5f5"&gt;\\r\\n&lt;table width="640" border="0" align="center" cellpadding="0" cellspacing="0"&gt;\\r\\n&lt;tbody&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#FFFFFF"&gt;\\r\\n&lt;table width="640" border="0" align="center" cellpadding="0" cellspacing="0"&gt;\\r\\n&lt;tbody&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&lt;img src="https://www.standardbank.co.za/static_file/Campaigns/Studio/online2019/OTP-mailer/Header1.jpg" width="640" height="112" alt=""&gt;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;/tbody&gt;\\r\\n&lt;/table&gt;\\r\\n&lt;table width="640" border="0" align="center" cellpadding="0" cellspacing="0"&gt;\\r\\n&lt;tbody&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td width="30" bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td width="580" bgcolor="#ffffff"&gt;&lt;font face="Arial" size="-1" color="#333333"&gt;&lt;strong&gt;Standard Bank Centre&lt;br&gt;\\r\\n&lt;/strong&gt;5 Simmonds Street&lt;br&gt;\\r\\nJohannesburg&lt;br&gt;\\r\\n2001&lt;br&gt;\\r\\nP.O. Box 7725 &lt;br&gt;\\r\\nJohannesburg 2000&lt;br&gt;\\r\\nTelephone: 086 120 1311&lt;br&gt;\\r\\nWebsite:&lt;strong&gt; &lt;font color="#0256AA"&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/font&gt;&lt;font face="Arial" size="-1" color="#0256AA"&gt;&lt;strong&gt;www.standardbank.co.za&lt;/strong&gt;\\r\\n&lt;/font&gt;&lt;/td&gt;\\r\\n&lt;td width="30" bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;\\r\\n&lt;p&gt;&lt;font face="Arial" size="-1" color="#333333"&gt;Your Verification Code &lt;br&gt;\\r\\nPlease enter this code into the field. &lt;br&gt;\\r\\n&lt;br&gt;\\r\\n&lt;/font&gt;&lt;font face="Arial" size="-1" color="#333333"&gt;&lt;strong&gt;kv9xmvSG&lt;/strong&gt;&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nKind Regards&lt;br&gt;\\r\\nStandard Bank / Stanbic Bank&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nContact us if you received this mail in error, or have any further queries.&lt;br&gt;\\r\\n&lt;strong&gt;South Africa: 0860123 000 / International: +27 01 249 0423&lt;/strong&gt;&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nPlease do not reply to this mail, as it was sent from an unattended mailbox. &lt;/font&gt;\\r\\n&lt;/p&gt;\\r\\n&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td colspan="3" bgcolor="#ffffff"&gt;&lt;img src="https://www.standardbank.co.za/static_file/Campaigns/Studio/online2019/Beneficiary-details-DigiME/DigiMe-November_05.jpg" width="640" height="39" alt=""&gt;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&lt;font face="Arial" size="-2" color="#333333"&gt;The Standard Bank of South Africa Limited (Reg. No. 1962/000738/06). Authorised financial services provider. Registered credit provider NCR CP15.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nStandard Bank Isle of Man Limited is licensed by the Isle of Man Financial Services Authority. Standard Bank Jersey Limited is regulated by the Jersey Financial Services Commission.\\r\\n&lt;br&gt;\\r\\nThe Standard Bank email disclaimer and confidentiality note.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nThis email, its attachments and any rights attaching hereto are, unless the context clearly indicates otherwise, the property of the Standard Bank Group Limited and/or its subsidiaries (&amp;quot;the group&amp;quot;). It is confidential, private and intended for the addressee\\r\\n only.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nShould you not be the addressee and receive this email by mistake, kindly notify the sender, and delete it immediately. Do not disclose or use the email in any manner whatsoever.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nViews and opinions expressed in this email are those of the sender unless clearly stated as those of the group.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nhe group accepts no liability whatsoever for any loss or damages - whatsoever and howsoever incurred - or suffered resulting or arising from the use of this email or its attachments. The group does not warrant the integrity of this email nor that it is free\\r\\n of errors, viruses, interception or interference.&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nThe group will never send you any email or other communication asking you to update or provide confidential information about you or your account. If you have any doubts about the legitimacy of this email or other emails you receive claiming to be from Standard\\r\\n Bank please forward them to phishing@standardbank.co.za&lt;br&gt;\\r\\n&lt;br&gt;\\r\\nFor more information about Standard Bank Group Limited see www.standardbank.com &lt;/font&gt;\\r\\n&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;tr&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;td bgcolor="#ffffff"&gt;&amp;nbsp;&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;/tbody&gt;\\r\\n&lt;/table&gt;\\r\\n&lt;/td&gt;\\r\\n&lt;/tr&gt;\\r\\n&lt;/tbody&gt;\\r\\n&lt;/table&gt;\\r\\n&lt;div&gt;&amp;nbsp;\\r\\n&lt;p style="color: #0033cc"&gt;Standard Bank email disclaimer and confidentiality note Please go to www.standardbank.co.za/site/homepage/emaildisclaimer.html to read our email disclaimer and confidentiality note. Kindly email disclaimer@standardbank.co.za (no content\\r\\n or subject line necessary) if you cannot view that page and we will email our email disclaimer and confidentiality note to you.&lt;/p&gt;\\r\\n&lt;/div&gt;\\r\\n&lt;/body&gt;\\r\\n&lt;/html&gt;\\r\\n</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.string.Split" guid="1a937d45-9275-4f24-8574-92a23ffd608d" name="Split" testItemId="2" title="Split: {Hello}=&gt;&lt;strong&gt;=&gt;Tokens">
+      <arguments>
+        <argument id="input">
+          <value class="variable">
+            <path element="Hello"/>
+          </value>
+        </argument>
+        <argument id="separator">
+          <value class="value" valueClass="string">&lt;strong&gt;</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Tokens</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.string.Split" guid="b2beaf4c-23c3-4d40-b8b0-86de177ef00a" name="Split" testItemId="3" title="Split: {Tokens[5]}=&gt;&lt;/strong&gt;=&gt;Tokens">
+      <tags/>
+      <arguments>
+        <argument id="input">
+          <value class="variable">
+            <path element="Tokens">
+              <filter class="index">
+                <index valueClass="decimal">4</index>
+              </filter>
+            </path>
+          </value>
+        </argument>
+        <argument id="separator">
+          <value class="value" valueClass="string">&lt;/strong&gt;</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Tokens</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="cbeaa13c-4ae0-4f7b-9461-b01a16863f46" name="SetValues" testItemId="4" title="Set Values: code">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">code</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="variable">
+                  <path element="Tokens">
+                    <filter class="index">
+                      <index valueClass="decimal">0</index>
+                    </filter>
+                  </path>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="bcdd638a-b1e1-4079-9210-f69e777a0257">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="c15f9b4b-4319-4486-9223-7f9b789d8bd0" name="UiConnect" testItemId="5" title="UI Connect: NewUI">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">3845d226-4765-471f-809a-5b3738f66875</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="privateBrowsingMode"/>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="85b64c9d-8c97-439e-9c79-5bce5f7f6544" name="UiWithScreen" testItemId="6" title="On P2.Empty page">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget" uri="ui:pageobject:target?pageId=pageobjects.P1.Empty"/>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On P2.Empty page</value>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">IfNeccessary</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="captureAfter">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="uiTargetUrl"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="7">
+          <steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="232c9129-4274-4d0d-b704-96b3624e61ba" name="UiDoAction" testItemId="10" title="Do Action">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:method?pageId=pageobjects.P1.Empty"/>
+                </argument>
+                <argument id="locatorParams"/>
+                <argument id="interaction">
+                  <value class="uiInteraction"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Do Action</value>
+                </argument>
+                <argument id="beforeWait"/>
+                <argument id="afterWait"/>
+                <argument id="autoRetry"/>
+                <argument id="captureBefore">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="captureAfter">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+      <generatedParameters/>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexBulk" guid="33cb1cce-a6ce-491c-aa0e-6be012d581d7" name="ApexBulk" testItemId="11" title="Apex Bulk: insert=&gt;">
+      <arguments>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">ApexConnection</value>
+        </argument>
+        <argument id="objectType"/>
+        <argument id="operation">
+          <value class="value" valueClass="string">insert</value>
+        </argument>
+        <argument id="externalIdFieldName"/>
+        <argument id="assignmentRuleId"/>
+        <argument id="data"/>
+        <argument id="contentType">
+          <value class="value" valueClass="string">CSV</value>
+        </argument>
+        <argument id="resultIdName"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="72c762f8-bdf1-4d14-97ee-7bee1534a3a6" name="UiWithScreen" testItemId="12" title="On Screen">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget" uri=""/>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On Screen</value>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">IfNeccessary</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="captureAfter">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="13"/>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

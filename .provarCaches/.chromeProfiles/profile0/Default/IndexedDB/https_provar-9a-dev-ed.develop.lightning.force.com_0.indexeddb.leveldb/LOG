@@ -1,0 +1,6 @@
+2024/05/10-16:52:43.258 42bc Reusing MANIFEST C:\Users\deepak.agrawal\Provar\Workspace1\Traning1\.provarCaches\.chromeProfiles\profile0\Default\IndexedDB\https_provar-9a-dev-ed.develop.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/10-16:52:43.258 42bc Recovering log #29
+2024/05/10-16:52:43.270 42bc Reusing old log C:\Users\deepak.agrawal\Provar\Workspace1\Traning1\.provarCaches\.chromeProfiles\profile0\Default\IndexedDB\https_provar-9a-dev-ed.develop.lightning.force.com_0.indexeddb.leveldb/000029.log 
+2024/05/10-16:52:53.084 42bc Level-0 table #35: started
+2024/05/10-16:52:53.115 42bc Level-0 table #35: 2938181 bytes OK
+2024/05/10-16:52:53.118 42bc Delete type=0 #29

@@ -1,0 +1,14 @@
+2024/05/10-16:48:46.751 8a28 Reusing MANIFEST C:\Users\deepak.agrawal\Provar\Workspace1\Traning1\.provarCaches\.chromeProfiles\profile0\Default\IndexedDB\https_provar-9a-dev-ed.develop.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/10-16:48:46.754 8a28 Recovering log #24
+2024/05/10-16:48:46.764 8a28 Reusing old log C:\Users\deepak.agrawal\Provar\Workspace1\Traning1\.provarCaches\.chromeProfiles\profile0\Default\IndexedDB\https_provar-9a-dev-ed.develop.lightning.force.com_0.indexeddb.leveldb/000024.log 
+2024/05/10-16:48:55.291 2058 Level-0 table #30: started
+2024/05/10-16:48:55.312 2058 Level-0 table #30: 2905564 bytes OK
+2024/05/10-16:48:55.315 2058 Delete type=0 #24
+2024/05/10-16:49:50.004 8a28 Compacting 1@1 + 2@2 files
+2024/05/10-16:49:50.043 8a28 Generated table #31@1: 911 keys, 2563170 bytes
+2024/05/10-16:49:50.057 8a28 Generated table #32@1: 768 keys, 689429 bytes
+2024/05/10-16:49:50.057 8a28 Compacted 1@1 + 2@2 files => 3252599 bytes
+2024/05/10-16:49:50.059 8a28 compacted to: files[ 0 0 2 0 0 0 0 ]
+2024/05/10-16:49:50.060 8a28 Delete type=2 #26
+2024/05/10-16:49:50.060 8a28 Delete type=2 #27
+2024/05/10-16:49:50.060 8a28 Delete type=2 #30

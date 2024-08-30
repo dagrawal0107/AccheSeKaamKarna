@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="OtherUserProfile" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="People" Name="standard-OtherUserProfile" SobjectName="User" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/chatter/people/PeopleListPage"/>
+</toolingTabInfo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0XU" label="External Data User Authentication" labelPlural="External Data User Authentications" n="ExternalDataUserAuth" queryable="true" readPermission="false" retrieveable="true" s="" t="External Data User Authentication (0XU)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome ExternalDataUserAuths" n="New"/>
+    <sfActionLink modes="View ExternalDataUserAuths" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View ExternalDataUserAuths" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View ExternalDataUserAuths" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View ExternalDataUserAuths" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

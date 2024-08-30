@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ProcessException" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Process Exceptions" Name="standard-ProcessException" SobjectName="ProcessException" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/2Pe/o"/>
+</toolingTabInfo>

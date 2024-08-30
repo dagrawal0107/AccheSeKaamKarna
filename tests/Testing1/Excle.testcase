@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="42d1669b-d287-45ba-9137-a26c64bb9fd8">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="f9fb1901-bd10-41bd-a7ca-15a4e65c9057" name="UiConnect" testItemId="1" title="UI Connect: ThridUI">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">ThridUI</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">55544404-11ce-4bde-bbab-b50928938bfb</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ThridUI</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="privateBrowsingMode"/>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="85d91603-0a88-4b5a-b252-d82e67c0f9e8" name="UiWithScreen" testItemId="2" title="On Screen">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">UiConnection</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget"/>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On Screen</value>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">IfNeccessary</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="captureAfter">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="3"/>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

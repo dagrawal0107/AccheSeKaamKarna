@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ServiceAppointment" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Service Appointments" Name="standard-ServiceAppointment" SobjectName="ServiceAppointment" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/08p/o"/>
+</toolingTabInfo>

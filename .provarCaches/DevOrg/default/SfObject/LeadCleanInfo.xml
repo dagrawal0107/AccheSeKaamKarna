@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="1CL" label="Lead Clean Info" labelPlural="Lead Clean Info" n="LeadCleanInfo" queryable="true" readPermission="false" retrieveable="true" s="" t="Lead Clean Info (1CL)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome LeadCleanInfos LeadCleanInfoReviewers" n="New"/>
+    <sfActionLink modes="View LeadCleanInfos LeadCleanInfoReviewers" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View LeadCleanInfos LeadCleanInfoReviewers" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View LeadCleanInfos LeadCleanInfoReviewers" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View LeadCleanInfos LeadCleanInfoReviewers" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

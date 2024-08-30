@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="50d478c2-608c-41b0-b314-d8fe04000d60">
+  <summary/>
+  <parameterValueSources>
+    <parameterValueSource variableName="SourceData" variableScope="Test">
+      <cacheToken>C:/Users/deepak.agrawal/Provar/ProavrManager/Manager/lib/w.xlsx;1718179595897</cacheToken>
+      <cachedParameters>
+        <apiParam name="Hello"/>
+      </cachedParameters>
+      <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+        <workbookPath class="value" valueClass="string">C:\\Users\\deepak.agrawal\\Provar\\ProavrManager\\Manager\\lib\\w.xlsx</workbookPath>
+        <worksheetName class="value" valueClass="string"/>
+        <valuesRange class="value" valueClass="string"/>
+      </sourceValue>
+    </parameterValueSource>
+  </parameterValueSources>
+</testCase>

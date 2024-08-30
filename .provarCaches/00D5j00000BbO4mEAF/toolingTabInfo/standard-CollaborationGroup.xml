@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CollaborationGroup" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Groups" Name="standard-CollaborationGroup" SobjectName="CollaborationGroup" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/chatter/groups/GroupListPage"/>
+</toolingTabInfo>

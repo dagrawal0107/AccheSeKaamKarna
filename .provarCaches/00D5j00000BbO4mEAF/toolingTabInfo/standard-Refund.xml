@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Refund" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Refunds" Name="standard-Refund" SobjectName="Refund" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0cb/o"/>
+</toolingTabInfo>

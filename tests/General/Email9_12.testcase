@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="34297a3f-582e-4ced-80f5-31c7a3317fa4" id="7">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.Subscribe" guid="d970af30-c003-40a6-b28e-258ea5a0182f" name="Subscribe" testItemId="2" title="Subscribe: GoogleConnection">
+      <arguments>
+        <argument id="sourceConnectionName">
+          <value class="value" valueClass="string">GoogleConnection</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Mail</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="folder">
+          <value class="value" valueClass="string">Inbox</value>
+        </argument>
+        <argument id="from"/>
+        <argument id="subject"/>
+        <argument id="parseAttachment"/>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">d916a2a6-b996-48fb-bc0b-0f9093bb8723</value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="folder" title="Folder">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="from" title="From">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="subject" title="Subject">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="source" linkedToUrl="connectionParam:sourceConnectionName" name="parseAttachment" title="Read Email Attachments">
+          <type>
+            <booleanType/>
+          </type>
+        </param>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.messaging.SendMessage" guid="97713fb4-69ad-4637-a747-8b6a669f4500" name="SendMessage" testItemId="3" title="Send Message: GoogleConnection">
+      <arguments>
+        <argument id="destinationConnectionName">
+          <value class="value" valueClass="string">GoogleConnection</value>
+        </argument>
+        <argument id="body">
+          <value class="value" valueClass="string">Hi\nPlease Find the New attached link \nhttps://www.amzon.in \n\nthanks \nDeepak A</value>
+        </argument>
+        <argument id="payloadFormat">
+          <value class="value" valueClass="string">Auto</value>
+        </argument>
+        <argument id="attachments">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="to">
+          <value class="value" valueClass="string">deepak.agrawal@provartesting.com</value>
+        </argument>
+        <argument id="cc"/>
+        <argument id="bcc"/>
+        <argument id="subject">
+          <value class="value" valueClass="string">Testing123</value>
+        </argument>
+        <argument id="signature"/>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">d916a2a6-b996-48fb-bc0b-0f9093bb8723</value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" mandatory="true" name="to" title="To">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="cc" title="CC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="destination" linkedToUrl="connectionParam:destinationConnectionName" name="bcc" title="BCC">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="subject" title="Subject">
+          <type>
+            <textType/>
+          </type>
+        </param>
+        <param group="payload" linkedToUrl="connectionParam:destinationConnectionName" name="signature" title="Signature">
+          <type>
+            <textType/>
+          </type>
+        </param>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" guid="16d38b84-3513-4210-8f16-ac39c3c5bfc3" name="Sleep" testItemId="6" title="Sleep for {10} seconds">
+      <arguments>
+        <argument id="sleepSecs">
+          <value class="value" valueClass="decimal">10</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.string.Match" guid="7385b756-de38-4a51-8f2e-b4bc41699a44" name="Match" testItemId="8" title="Match: {Mail.messages.bodyText}=&gt;https://www\\.amzon\\.in=&gt;Amzon">
+      <arguments>
+        <argument id="input">
+          <value class="variable">
+            <path element="Mail"/>
+            <path element="messages"/>
+            <path element="bodyText"/>
+          </value>
+        </argument>
+        <argument id="regex">
+          <value class="value" valueClass="string">https://www\\.amzon\\.in</value>
+        </argument>
+        <argument id="caseInsensitive">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Amzon</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testPlan guid="50e08d99-0d5b-4231-ab72-12ed9f00e78c">
+  <planSettings/>
+  <planFeatures>
+    <planFeature enabled="true" name="PIECHART" type="OUTPUT">
+      <settings mutable="Mutable">
+        <namedValue name="enabled">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeLegend">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="artifactName">
+          <value class="value" valueClass="string">pieChart.png</value>
+        </namedValue>
+      </settings>
+    </planFeature>
+    <planFeature enabled="true" name="PDF" type="OUTPUT">
+      <settings mutable="Mutable">
+        <namedValue name="enabled">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeTestCaseSummary">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeAllFailuresInSummary">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeTestCaseDetails">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeTestCasePathHierarchy">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeBdd">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeSkippedTestSteps">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeTestCaseShowSummary">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeTestStepTime">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeNoLogs">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeBasicLogs">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeDetailLogs">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeScreenshotThumbnail">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeFullScreenShot">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeNoScreenshots">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeDiagnosticTrace">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="artifactName">
+          <value class="value" valueClass="string">executionReport.pdf</value>
+        </namedValue>
+      </settings>
+    </planFeature>
+    <planFeature enabled="true" name="EMAIL" type="NOTIFICATION">
+      <settings mutable="Mutable">
+        <namedValue name="cc">
+          <value class="value"/>
+        </namedValue>
+        <namedValue name="subject">
+          <value class="value" valueClass="string">Test Plan Execution</value>
+        </namedValue>
+        <namedValue name="to">
+          <value class="value" valueClass="string">deepak.agrawal@provartesting.com</value>
+        </namedValue>
+        <namedValue name="emailBody">
+          <value class="value" valueClass="string">&lt;p&gt;Test Plan Run Report&lt;/p&gt;&lt;p&gt;hello : executionReport&lt;/p&gt;</value>
+        </namedValue>
+      </settings>
+    </planFeature>
+    <planFeature connectionId="3a37e4d2-f39d-4fdb-9360-d9ae03e64193" enabled="true" name="TEST_MANAGER" type="REPORTING">
+      <settings mutable="Mutable"/>
+    </planFeature>
+  </planFeatures>
+  <associations>
+    <association assocationType="TM.TEST_PLAN" connectionId="3a37e4d2-f39d-4fdb-9360-d9ae03e64193" entityKey="a0h5j000002Oig8AAC"/>
+  </associations>
+</testPlan>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Individual" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Individuals" Name="standard-Individual" SobjectName="Individual" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0PK/o"/>
+</toolingTabInfo>

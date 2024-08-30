@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ProductCatalog" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Catalogs" Name="standard-ProductCatalog" SobjectName="ProductCatalog" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0ZS/o"/>
+</toolingTabInfo>

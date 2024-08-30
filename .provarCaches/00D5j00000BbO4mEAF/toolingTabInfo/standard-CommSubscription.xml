@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CommSubscription" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Communication Subscriptions" Name="standard-CommSubscription" SobjectName="CommSubscription" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0Xl/o"/>
+</toolingTabInfo>

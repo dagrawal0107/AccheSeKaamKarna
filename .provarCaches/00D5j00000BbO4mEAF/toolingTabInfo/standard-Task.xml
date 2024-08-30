@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Task" IsAvailableInLightning="true" Label="Tasks" Name="standard-Task" SobjectName="Task" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/00T/o"/>
+</toolingTabInfo>

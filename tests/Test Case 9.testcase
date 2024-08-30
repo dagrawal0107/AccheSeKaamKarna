@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="d6baeab0-dfb3-4284-83bc-33349c286c24" id="2">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="f49aac03-d676-4590-8bd6-1c5f61628abb" name="ApexConnect" testItemId="1" title="Salesforce Connect: SFNew (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SFNew</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">1d2a3921-93b2-4bc8-8b4f-745023892ede</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SFNew</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <caseCall guid="b228738b-d345-41e2-bcc0-a160cfd58030" testCaseId="7fd6f051-9bd0-4fc1-b637-7c9229e0bf9f" testCasePath="tests/Assignment/SubmissionAssertions_TestCase.testcase" testItemId="2"/>
+    <caseCall guid="6456574c-844a-4e93-8673-05f93a2cec9e" testCaseId="7857fa3f-ff2a-4e8d-aeda-5cdcacc86577" testCasePath="tests/Assignment/Frame.testcase" testItemId="3"/>
+  </steps>
+</testCase>

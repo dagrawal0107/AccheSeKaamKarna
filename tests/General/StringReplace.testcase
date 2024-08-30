@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="bb6f536f-0d25-41c9-94f6-e10725e0d1c7" id="0">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="527269f1-8cf1-4ba6-8e11-a322a4d51e80" name="SetValues" testItemId="5" title="Set Values: CustomerName">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">CustomerName</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">Sudarshan Singh</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="c3dfed07-2357-48f2-a508-853dd92436ac" name="SetValues" testItemId="4" title="Set Values: NewString">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">NewString</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="funcCall" id="StringReplace">
+                  <argument id="sourceString">
+                    <value class="value" valueClass="string">How are you Mr. Name</value>
+                  </argument>
+                  <argument id="findString">
+                    <value class="value" valueClass="string">Name</value>
+                  </argument>
+                  <argument id="replacementString">
+                    <value class="variable">
+                      <path element="CustomerName"/>
+                    </value>
+                  </argument>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+  <tags/>
+</testCase>

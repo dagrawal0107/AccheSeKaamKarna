@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="4fp" label="User Field Access" labelPlural="User Field Access" n="UserFieldAccess" queryable="true" readPermission="false" s="" t="User Field Access (4fp)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome UserFieldAccessRights" n="New"/>
+    <sfActionLink modes="View UserFieldAccessRights" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View UserFieldAccessRights" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View UserFieldAccessRights" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View UserFieldAccessRights" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

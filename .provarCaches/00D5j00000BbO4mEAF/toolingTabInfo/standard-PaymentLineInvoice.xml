@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="PaymentLineInvoice" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Payment Line Invoices" Name="standard-PaymentLineInvoice" SobjectName="PaymentLineInvoice" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/1PL/o"/>
+</toolingTabInfo>

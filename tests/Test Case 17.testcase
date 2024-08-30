@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="2">
+  <summary/>
+  <steps>
+    <caseCall testCaseId="12528cc7-fa9c-4ff6-a64c-ae3acf1e1a16" testCasePath="tests/testingcy1/Test Case 1.testcase" testItemId="1"/>
+    <caseCall testCaseId="385f273b-e15d-4597-acaa-92c41c59e78c" testCasePath="tests/tc2/yy.testcase" testItemId="3">
+      <tags>
+        <string>disabled</string>
+      </tags>
+    </caseCall>
+  </steps>
+</testCase>

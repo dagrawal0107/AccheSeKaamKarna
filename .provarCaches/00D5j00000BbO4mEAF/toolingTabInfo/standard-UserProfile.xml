@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="UserProfile" IsAvailableInAloha="true" Label="Profile" Name="standard-UserProfile" SobjectName="User" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/userprofile/UserProfilePage"/>
+</toolingTabInfo>

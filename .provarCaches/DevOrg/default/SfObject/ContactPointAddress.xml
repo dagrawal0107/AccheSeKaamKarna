@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="8lW" label="Contact Point Address" labelPlural="Contact Point Addresses" layoutable="true" n="ContactPointAddress" queryable="true" readPermission="false" retrieveable="true" s="" t="Contact Point Address (8lW)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome ContactPointAddresses" n="New"/>
+    <sfActionLink modes="View ContactPointAddresses" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View ContactPointAddresses" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View ContactPointAddresses" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View ContactPointAddresses" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

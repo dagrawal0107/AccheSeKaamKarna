@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00I" label="Account Partner" labelPlural="Account Partner" layoutable="true" n="AccountPartner" queryable="true" retrieveable="true" s="" standardLabel="Account Partner" t="Account Partner (00I)">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Account Partner ID" type="id" updateable="false"/>
+    <sfField length="18" n="AccountFromId" relationshipName="AccountFrom" required="true" t="Account" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="AccountToId" relationshipName="AccountTo" required="true" t="Account" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="OpportunityId" relationshipName="Opportunity" t="Opportunity" type="reference" updateable="false">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="Role" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="System Integrator" s=""/>
+        <sfPLE id="2" n="Agency" s=""/>
+        <sfPLE id="3" n="Advertiser" s=""/>
+        <sfPLE id="4" n="VAR/Reseller" s=""/>
+        <sfPLE id="5" n="Distributor" s=""/>
+        <sfPLE id="6" n="Developer" s=""/>
+        <sfPLE id="7" n="Broker" s=""/>
+        <sfPLE id="8" n="Lender" s=""/>
+        <sfPLE id="9" n="Supplier" s=""/>
+        <sfPLE id="10" n="Institution" s=""/>
+        <sfPLE id="11" n="Contractor" s=""/>
+        <sfPLE id="12" n="Dealer" s=""/>
+        <sfPLE id="13" n="Consultant" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField editPermission="false" n="IsPrimary" t="Primary" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="18" n="ReversePartnerId" t="Reverse Partner" type="reference" updateable="false">
+      <referenceTos>
+        <string>AccountPartner</string>
+      </referenceTos>
+    </sfField>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome AccountPartnersFrom AccountPartnersTo detail List" n="New"/>
+    <sfActionLink modes="View AccountPartnersFrom AccountPartnersTo" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, 'deleteredirect.jsp')]" modes="View AccountPartnersFrom AccountPartnersTo" n="Delete" requiresRow="true" t="Del"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View AccountPartnersFrom AccountPartnersTo" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View AccountPartnersFrom AccountPartnersTo" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink massAction="true" modes="AccountPartnersFrom" n="NewPartner" newAction="true" t="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

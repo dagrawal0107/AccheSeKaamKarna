@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Invoice" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Invoices" Name="standard-Invoice" SobjectName="Invoice" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/3tt/o"/>
+</toolingTabInfo>

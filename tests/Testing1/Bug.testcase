@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="70baf607-8ba7-4e33-9e43-69e1db4f64a5" id="8">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="ab1d4130-748d-40da-81ba-7f9f14bf818f" name="SetValues" testItemId="1" title="Set Values: D">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">A</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">6</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">B</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">10</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">C</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">15</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">D</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">20</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="30170573-ebeb-4edf-8ebd-a87c2d171f3c" name="If" testItemId="2" title="If: {A &gt; 1 OR B &gt; 20 OR c &gt; 1 AND d &gt; 100}">
+      <arguments>
+        <argument id="condition">
+          <value class="or">
+            <lhs class="or">
+              <lhs class="gt">
+                <lhs class="variable">
+                  <path element="A"/>
+                </lhs>
+                <rhs class="value" valueClass="decimal">1</rhs>
+              </lhs>
+              <rhs class="gt">
+                <lhs class="variable">
+                  <path element="B"/>
+                </lhs>
+                <rhs class="value" valueClass="decimal">20</rhs>
+              </rhs>
+            </lhs>
+            <rhs class="and">
+              <lhs class="gt">
+                <lhs class="variable">
+                  <path element="c"/>
+                </lhs>
+                <rhs class="value" valueClass="decimal">1</rhs>
+              </lhs>
+              <rhs class="gt">
+                <lhs class="variable">
+                  <path element="d"/>
+                </lhs>
+                <rhs class="value" valueClass="decimal">100</rhs>
+              </rhs>
+            </rhs>
+          </value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="then" testItemId="3">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="b25417c0-ef16-4e5e-a8e0-349f6ea5b81c" name="SetValues" testItemId="4" title="Set Values: sd">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">sd</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="value" valueClass="string">12</value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="6e8b926e-49e3-4637-8d4c-51f3286e660d" name="If" testItemId="5" title="If: {A &gt; 1 OR B &gt; 20 OR c &gt; 1 AND d &gt; 100}">
+      <arguments>
+        <argument id="condition">
+          <value class="and">
+            <lhs class="or">
+              <lhs class="gt">
+                <lhs class="variable">
+                  <path element="A"/>
+                </lhs>
+                <rhs class="value" valueClass="decimal">1</rhs>
+              </lhs>
+              <rhs class="or">
+                <lhs class="gt">
+                  <lhs class="variable">
+                    <path element="B"/>
+                  </lhs>
+                  <rhs class="value" valueClass="decimal">20</rhs>
+                </lhs>
+                <rhs class="gt">
+                  <lhs class="variable">
+                    <path element="c"/>
+                  </lhs>
+                  <rhs class="value" valueClass="decimal">1</rhs>
+                </rhs>
+              </rhs>
+            </lhs>
+            <rhs class="gt">
+              <lhs class="variable">
+                <path element="d"/>
+              </lhs>
+              <rhs class="value" valueClass="decimal">100</rhs>
+            </rhs>
+          </value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="then" testItemId="6">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="c9292e69-98ae-4319-9769-5aeb0928ce37" name="SetValues" testItemId="7" title="Set Values: sd">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">sd</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="value" valueClass="string">12</value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

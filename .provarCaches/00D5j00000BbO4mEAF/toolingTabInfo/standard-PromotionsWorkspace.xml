@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="PromotionsWorkspace" IsAvailableInLightning="true" Label="Promotion Workspace" Name="standard-PromotionsWorkspace" SobjectName="PromotionsWorkspace"/>
+</toolingTabInfo>

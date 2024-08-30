@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="CmsChannel" IsAvailableInLightning="true" Label="CMS Channels" Name="standard-CmsChannel" SobjectName="CmsChannel"/>
+</toolingTabInfo>

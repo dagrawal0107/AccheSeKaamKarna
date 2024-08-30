@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="058df2f8-4c4b-4e85-81fb-dd526ee52c9f">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="a246fe2f-9a07-4300-930b-64e964d94998" name="UiConnect" testItemId="1" title="UI Connect: NewUI">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">NewUI</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="privateBrowsingMode"/>
+        <argument id="webBrowser"/>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">3845d226-4765-471f-809a-5b3738f66875</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

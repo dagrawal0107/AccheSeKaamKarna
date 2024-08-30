@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LightningSchedulerSetupAssistant" IsAvailableInLightning="true" Label="Salesforce Scheduler Setup Assistant" Name="standard-LightningSchedulerSetupAssistant" SobjectName="LightningSchedulerSetupAssistant"/>
+</toolingTabInfo>

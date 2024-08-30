@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="eca61bdb-28d7-4ccd-abcc-bedde9e55605" id="0">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="98df2b2c-b87e-41e1-8e56-732c993301d5" name="SetValues" testItemId="6" title="Set Values: c">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">a</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">5</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">b</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">8</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">c</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">11</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="555177ab-0e0e-49a1-b776-fb3a995c8768" name="If" testItemId="2" title="If: {a &gt;= 5 AND b not &gt;= 4}">
+      <arguments>
+        <argument id="condition">
+          <value class="and">
+            <lhs class="ge">
+              <lhs class="variable">
+                <path element="a"/>
+              </lhs>
+              <rhs class="value" valueClass="decimal">5</rhs>
+            </lhs>
+            <rhs class="ge">
+              <lhs class="variable">
+                <path element="b not"/>
+              </lhs>
+              <rhs class="value" valueClass="decimal">4</rhs>
+            </rhs>
+          </value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="then" testItemId="3">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="55f50ae9-b130-48f7-b483-1d14a2ffc08f" name="SetValues" testItemId="5" title="Set Values: v">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">v</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="value" valueClass="string">3</value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+        <clause name="else" testItemId="4"/>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexExecute" guid="2b97a6ef-3f08-4aae-9d28-3c87d74d25d1" name="ApexExecute" testItemId="7" title="Apex Execute">
+      <arguments>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">ApexConnection</value>
+        </argument>
+        <argument id="apexBlock"/>
+        <argument id="results">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="resultName">
+                <value class="value" valueClass="string">ExecuteResult</value>
+              </namedValue>
+              <namedValue name="resultScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+              <namedValue name="regularExpression"/>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

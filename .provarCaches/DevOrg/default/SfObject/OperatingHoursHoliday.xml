@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0jG" label="Operating Hours Holiday" labelPlural="Operating Hours Holidays" layoutable="true" n="OperatingHoursHoliday" queryable="true" readPermission="false" retrieveable="true" s="" t="Operating Hours Holiday (0jG)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome OperatingHoursHolidays" n="New"/>
+    <sfActionLink modes="View OperatingHoursHolidays" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View OperatingHoursHolidays" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OperatingHoursHolidays" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OperatingHoursHolidays" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

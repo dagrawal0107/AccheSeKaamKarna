@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="665ee2b8-c4de-4638-ab02-aad769739a1d" id="0" registryId="d9a0200a-84d0-41a2-8618-09beb562e61e" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="989a1b29-fc96-4459-bb00-e4edabf37afa" name="StepGroup" testItemId="1" title="Actions ">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Actions </value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>C:\\Users\\ssadashivan\\git\\sf_financialforce\\templates\\Input\\Others\\MapUserTypeWithUserName.xlsx;1707096129611</cacheToken>
+          <cachedParameters>
+            <apiParam name="RowNumber"/>
+            <apiParam name="SL_No"/>
+            <apiParam name="UserType"/>
+            <apiParam name="UserName"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="UserType" whereValue="{UserType}">
+            <workbookPath class="value" valueClass="string">templates/Input/Others/MapUserTypeWithUserName.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">MapUsers</worksheetName>
+            <valuesRange class="value" valueClass="string">A1:C15</valuesRange>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="2">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="1770ceb3-a539-480f-9cca-3139a1a7a332" name="ForEach" testItemId="3" title="For Each: {SourceData}=&gt;iter">
+              <arguments>
+                <argument id="list">
+                  <value class="variable">
+                    <path element="SourceData"/>
+                  </value>
+                </argument>
+                <argument id="fromItem">
+                  <value class="value" valueClass="decimal">1</value>
+                </argument>
+                <argument id="valueName">
+                  <value class="value" valueClass="string">iter</value>
+                </argument>
+                <argument id="continueOnFailure">
+                  <value class="value" valueClass="boolean">true</value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="substeps" testItemId="4">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="46095382-05df-4b1e-b2ab-c431ca07529e" name="SetValues" testItemId="5" title="Set Values: UserName">
+                      <arguments>
+                        <argument id="values">
+                          <value class="valueList" mutable="Mutable">
+                            <namedValues mutable="Mutable">
+                              <namedValue name="valuePath">
+                                <value class="value" valueClass="string">UserName</value>
+                              </namedValue>
+                              <namedValue name="value">
+                                <value class="variable">
+                                  <path element="iter"/>
+                                  <path element="UserName"/>
+                                </value>
+                              </namedValue>
+                              <namedValue name="valueScope">
+                                <value class="value" valueClass="string">Test</value>
+                              </namedValue>
+                            </namedValues>
+                          </value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+  <params>
+    <param name="UserType" passwordVariableAllowed="true" title="UserType">
+      <summary/>
+      <type>
+        <textType>
+          <constraints>
+            <valueConstraint name="minLength">0</valueConstraint>
+            <valueConstraint name="maxLength">9999</valueConstraint>
+          </constraints>
+        </textType>
+      </type>
+    </param>
+  </params>
+  <outputParams>
+    <param name="UserName" passwordVariableAllowed="true" title="UserName">
+      <summary/>
+      <type>
+        <textType>
+          <constraints>
+            <valueConstraint name="minLength">0</valueConstraint>
+            <valueConstraint name="maxLength">9999</valueConstraint>
+          </constraints>
+        </textType>
+      </type>
+      <sourceValue class="variable">
+        <path element="UserName"/>
+      </sourceValue>
+    </param>
+  </outputParams>
+  <args>
+    <argument id="UserType">
+      <value class="variable">
+        <path element="UserType"/>
+      </value>
+    </argument>
+  </args>
+  <outputArgs>
+    <outputArgument id="UserName">
+      <name class="value" valueClass="string">UserName</name>
+    </outputArgument>
+  </outputArgs>
+</testCase>

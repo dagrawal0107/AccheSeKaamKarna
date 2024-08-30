@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="AsyncOperationLog" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Async Operation Logs" Name="standard-AsyncOperationLog" SobjectName="AsyncOperationLog" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/1ao/o"/>
+</toolingTabInfo>

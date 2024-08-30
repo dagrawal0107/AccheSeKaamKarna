@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Chatter" IsAvailableInAloha="true" Label="Chatter" Name="standard-Chatter" SobjectName="Chatter" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/core/chatter/ui/ChatterPage"/>
+</toolingTabInfo>

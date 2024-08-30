@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" hostname="ibm-deepakagrawal" id="0" name="Traning1/tests" package="" skipped="0" tests="1" time="2.515" timestamp="Wed May 08 12:32:12 IST 2024">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="false" />
+
+		      <property name="testEnvironment" value="NewTest" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value=".." />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="INFO" />
+
+		      <property name="webBrowserType" value="Chrome" />
+
+		      <property name="resultsPath" value="../ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="C:\Users\deepak.agrawal\Provar\Workspace1\Traning1\ANT\..\..\.provarCaches" />
+
+	    </properties>
+
+	    <testcase classname="tests/Testing1\Test Case 3.testcase" name="Test Case 3.testcase" time="2.499">
+	</testcase>
+
+	    <testcase classname="tests/Testing1\Test Case 8.teardown" name="Test Case 8.teardown" time="0.013">
+	</testcase>
+
+  </testsuite>
+</testsuites>

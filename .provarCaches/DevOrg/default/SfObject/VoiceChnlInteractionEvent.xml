@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" keyPrefix="0gD" label="Voice Channel Interaction Event" labelPlural="Voice Channel Interaction Events" n="VoiceChnlInteractionEvent" queryable="true" readPermission="false" retrieveable="true" s="" t="Voice Channel Interaction Event (0gD)">
+  <standardActions>
+    <sfActionLink modes="ObjectHome Contexts Sources" n="New"/>
+    <sfActionLink modes="View Contexts Sources" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Contexts Sources" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Contexts Sources" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Contexts Sources" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WorkOrder" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Work Orders" Name="standard-WorkOrder" SobjectName="WorkOrder" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0WO/o"/>
+</toolingTabInfo>

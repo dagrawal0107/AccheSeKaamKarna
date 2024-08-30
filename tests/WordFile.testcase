@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="a8cac7a0-712d-4f2f-84b5-9ba3364ecd4c" id="2">
+  <summary/>
+  <steps>
+    <apiCall apiId="customapis.CreateWordFile" guid="b2b3c4ec-f6be-437d-9cc3-dc400073415e" name="CreateWordFile" testItemId="1" title="Create Word File: ⇒ Path">
+      <arguments>
+        <argument id="filePath">
+          <value class="value" valueClass="string">c:\\demo\\hello.docx</value>
+        </argument>
+        <argument id="setBold">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="setItalic">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontSize">
+          <value class="value" valueClass="decimal">15</value>
+        </argument>
+        <argument id="text">
+          <value class="value" valueClass="string">Hi, My name is Anubhav. Test...</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Path</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="fontName">
+          <value class="value" valueClass="string">New Roman</value>
+        </argument>
+        <argument id="paragraphAlignment">
+          <value class="value" valueClass="string">Left</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.ReadWordFile" guid="d38a6b6a-4571-4418-b404-bb51c5bff5f9" name="ReadWordFile" testItemId="9" title="Read Word File: ⇒ WordFileData">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">WordFileData</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.ReadWordFileParagraphs" guid="399aba72-53bb-4b34-9e53-f84e6f231fbe" name="ReadWordFileParagraphs" testItemId="3" title="Read Paragraphs: ⇒ ReadParagraph">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ReadParagraph</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.CountWords" guid="cda974ec-b3f9-480b-a45d-ee28586858cc" name="CountWords" testItemId="7" title="Count Total Words: ⇒ TotalCount">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">TotalCount</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.WriteWordFile" guid="f616ee1c-95b0-4eee-b158-60ce559faa3d" name="WriteWordFile" testItemId="5" title="Write Word File: ⇒ Path">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="setBold">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="setItalic">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontSize">
+          <value class="value" valueClass="decimal">10</value>
+        </argument>
+        <argument id="text">
+          <value class="value" valueClass="string">My name Ashish</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Path</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="paragraph"/>
+        <argument id="paragraphNumber">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="newParagraph">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="fontName">
+          <value class="value" valueClass="string">New Roman</value>
+        </argument>
+        <argument id="paragraphAlignment">
+          <value class="value" valueClass="string">left</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.WriteWordFile" guid="75a4b228-c283-4f42-965a-22f76ad13eb4" name="WriteWordFile" testItemId="12" title="Write Word File: ⇒ Path">
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="setBold"/>
+        <argument id="setItalic">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontSize">
+          <value class="value" valueClass="decimal">24</value>
+        </argument>
+        <argument id="text">
+          <value class="value" valueClass="string">My name is Anurag</value>
+        </argument>
+        <argument id="paragraphNumber"/>
+        <argument id="newParagraph">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="fontName">
+          <value class="value" valueClass="string">New Roman</value>
+        </argument>
+        <argument id="paragraphAlignment">
+          <value class="value" valueClass="string">right</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Path</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.ReadWordFileParagraphs" guid="3631c463-0bb0-408e-9000-4974cf839cd4" name="ReadWordFileParagraphs" testItemId="6" title="Read Paragraphs: ⇒ ReadParagraph">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ReadParagraph</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.CountWords" guid="0830cebb-fc9c-49bd-b918-ff11d9466744" name="CountWords" testItemId="8" title="Count Total Words: ⇒ TotalCount">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">TotalCount</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.ReadWordFile" guid="23036de4-a836-4377-b60b-593a72cbef70" name="ReadWordFile" testItemId="10" title="Read Word File: ⇒ WordFileData">
+      <tags/>
+      <arguments>
+        <argument id="filePath">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">WordFileData</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="customapis.ParagraphCount" guid="891cc9d3-2bc1-4e6c-aa95-2bfd7037c0e6" name="ParagraphCount" testItemId="11" title="Paragraph Count: ⇒ ParagraphCount">
+      <arguments>
+        <argument id="path">
+          <value class="variable">
+            <path element="Path"/>
+          </value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">ParagraphCount</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

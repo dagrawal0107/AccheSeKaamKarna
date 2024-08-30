@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ReturnOrder" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Return Orders" Name="standard-ReturnOrder" SobjectName="ReturnOrder" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/2oN/o"/>
+</toolingTabInfo>

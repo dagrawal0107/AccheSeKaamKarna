@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="a374bd76-ef4e-42f1-9fe1-11fd4fa6c4e7" id="0" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.WebConnect" guid="14bb1cbc-2ac3-4e04-8a07-8d3dcd4c8f18" name="WebConnect" testItemId="1" title="Web Connect: SOAPAPI">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SOAPAPI</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">509df05a-5a09-44cd-8cc5-e089f3c6e101</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SOAPAPI</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

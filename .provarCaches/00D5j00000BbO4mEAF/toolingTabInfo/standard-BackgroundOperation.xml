@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="BackgroundOperation" IsAvailableInLightning="true" Label="Background Operations" Name="standard-BackgroundOperation" SobjectName="BackgroundOperation" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/08P/o"/>
+</toolingTabInfo>

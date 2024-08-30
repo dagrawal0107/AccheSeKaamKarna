@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="AccountBrand" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Account Brands" Name="standard-AccountBrand" SobjectName="AccountBrand" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0TU/o"/>
+</toolingTabInfo>

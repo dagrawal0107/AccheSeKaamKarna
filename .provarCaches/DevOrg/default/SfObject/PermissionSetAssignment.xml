@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0Pa" label="Permission Set Assignment" labelPlural="Permission Set Assignments" n="PermissionSetAssignment" queryable="true" readPermission="false" retrieveable="true" s="" t="Permission Set Assignment (0Pa)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome PermissionSetAssignments" n="New"/>
+    <sfActionLink modes="View PermissionSetAssignments" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View PermissionSetAssignments" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View PermissionSetAssignments" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View PermissionSetAssignments" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase failureBehaviour="Continue" guid="bb3b97d1-69ac-439e-9d61-2c469e792308" id="3">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="dcf4985b-31ef-4efd-8a0b-4f4de6fffa1b" name="StepGroup" testItemId="1767" title="Data Preparation">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Data Preparation</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="Case_Role__cData" variableScope="Test">
+          <cacheToken>C:/Users/anl05871/git/Salesforce.Testing/templates/01-Pipeline Tests (API Level)/Base/Account/AccountData.xlsx;1689081214653</cacheToken>
+          <cachedParameters>
+            <apiParam name="CaseType"/>
+            <apiParam name="User"/>
+            <apiParam name="Scenario"/>
+            <apiParam name="ExceptionError"/>
+            <apiParam name="Rayon__c"/>
+            <apiParam name="Inspectienr__c"/>
+            <apiParam name="Relation_Number__c"/>
+            <apiParam name="Contractbeheerder__c"/>
+            <apiParam name="Sales_Support__c"/>
+            <apiParam name="EditAccount"/>
+            <apiParam name="Name"/>
+            <apiParam name="ParentId"/>
+            <apiParam name="Intermediair_nr__c"/>
+            <apiParam name="Hoofdvestiging__c"/>
+            <apiParam name="Contract_Legal_Services__c"/>
+            <apiParam name="Contract_Financial_Services__c"/>
+            <apiParam name="Klantsoort__c"/>
+            <apiParam name="Direct__c"/>
+            <apiParam name="ARAG_Direct_accountnaam__c"/>
+            <apiParam name="Adres_bedrijf__c"/>
+            <apiParam name="Financieel_afgesloten_op__c"/>
+            <apiParam name="Signaleringen_Fraude__c"/>
+            <apiParam name="Oprichtingsdatum__c"/>
+            <apiParam name="DiscountEligibility__c"/>
+            <apiParam name="BusinessOwner__c"/>
+            <apiParam name="Vlocity_PolicyHolder_id__c"/>
+            <apiParam name="Payment_Collector__c"/>
+            <apiParam name="Iscloned__c"/>
+            <apiParam name="Phone"/>
+            <apiParam name="Fax"/>
+            <apiParam name="Email_algemeen__c"/>
+            <apiParam name="Email_claim__c"/>
+            <apiParam name="Email_Polis__c"/>
+            <apiParam name="Email_financieel__c"/>
+            <apiParam name="Website"/>
+            <apiParam name="Industry"/>
+            <apiParam name="Klant_wil_graag_nieuwsbrief_ontvangen__c"/>
+            <apiParam name="Klant_wil_meedoen_met_online_klantpanel__c"/>
+            <apiParam name="Volmacht_Claim_Status_Ontvangen__c"/>
+            <apiParam name="ADN_messages__c"/>
+            <apiParam name="ADN_messages_to_main_broker__c"/>
+            <apiParam name="Receive_policy_copy__c"/>
+            <apiParam name="Receive_finacial_overview__c"/>
+            <apiParam name="StandardPremiumPayment__c"/>
+            <apiParam name="Broker_Deviated_From_Standard__c"/>
+            <apiParam name="Type"/>
+            <apiParam name="Segment__c"/>
+            <apiParam name="Reden_segmentwijziging__c"/>
+            <apiParam name="Geen_ServiceProvider_wel_subagenten__c"/>
+            <apiParam name="Inkoop_RB__c"/>
+            <apiParam name="Beslissingscriteria_Inkoop_RB__c"/>
+            <apiParam name="Rating"/>
+            <apiParam name="Provisie__c"/>
+            <apiParam name="VolmachtvergoedingNetto__c"/>
+            <apiParam name="Volmachtvergoeding_Bruto__c"/>
+            <apiParam name="Afslagmodel__c"/>
+            <apiParam name="Afwijkende_beloningsregeling__c"/>
+            <apiParam name="Details_afw_beloningsregeling__c"/>
+            <apiParam name="Bijzonderheden_geboekte_provisie__c"/>
+            <apiParam name="Afwijkende_administratiekosten__c"/>
+            <apiParam name="Description"/>
+            <apiParam name="BillingCountry"/>
+            <apiParam name="BillingStreet"/>
+            <apiParam name="BillingPostalCode"/>
+            <apiParam name="BillingCity"/>
+            <apiParam name="ShippingCountry"/>
+            <apiParam name="ShippingStreet"/>
+            <apiParam name="ShippingPostalCode"/>
+            <apiParam name="ShippingCity"/>
+            <apiParam name="Startdatum_locatie__c"/>
+            <apiParam name="Einddatum_locatie__c"/>
+            <apiParam name="Aantal_Vestigingen__c"/>
+            <apiParam name="Aantal_Agenten__c"/>
+            <apiParam name="AFM_nr__c"/>
+            <apiParam name="Aanstellingsdatum__c"/>
+            <apiParam name="KvK_nummer__c"/>
+            <apiParam name="Wbp__c"/>
+            <apiParam name="Kifid__c"/>
+            <apiParam name="POR_code__c"/>
+            <apiParam name="CRWAM__c"/>
+            <apiParam name="Lid_NVGA__c"/>
+            <apiParam name="Lid_ADFIZ__c"/>
+            <apiParam name="VPI_aangesloten__c"/>
+            <apiParam name="BedrijfsActivite__c"/>
+            <apiParam name="Doelgroep__c"/>
+            <apiParam name="Lid_van_samenwerkingsgroep__c"/>
+            <apiParam name="Webmodule__c"/>
+            <apiParam name="Risico_Indicator__c"/>
+            <apiParam name="Premie_Indicator_klant__c"/>
+            <apiParam name="Premie_Indicator_ATP__c"/>
+            <apiParam name="Standaard_Betaalwijze_Code__c"/>
+            <apiParam name="ADN_Postbus__c"/>
+            <apiParam name="Connect_postbusnummer__c"/>
+            <apiParam name="Bankrekeningnummer__c"/>
+            <apiParam name="Volmacht_Beeindigd__c"/>
+            <apiParam name="Subagenten__c"/>
+            <apiParam name="Bemiddelaars__c"/>
+            <apiParam name="Ovk_aanwezig__c"/>
+            <apiParam name="Aansluitstatus_polischeck__c"/>
+            <apiParam name="Toelichting_op_aansluitstatus__c"/>
+            <apiParam name="Fusie_Overname__c"/>
+            <apiParam name="Toelichting_op_fusie_overname__c"/>
+            <apiParam name="Uitsl_eigen_huis_tekening__c"/>
+            <apiParam name="Agenstchapnr_prov__c"/>
+            <apiParam name="Concurrentie_In_Volmacht__c"/>
+            <apiParam name="Concurrentie_Provinciaal__c"/>
+            <apiParam name="Gebruik_Systemen__c"/>
+            <apiParam name="NumberOfEmployees"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="compound">
+              <parts>
+                <value valueClass="string">templates</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">01-Pipeline Tests (API Level)</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Claims</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Case</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Case_Role__cData.xlsx</value>
+              </parts>
+            </workbookPath>
+            <worksheetName class="value" valueClass="string">Case_Role__c</worksheetName>
+            <valuesRange class="value"/>
+          </sourceValue>
+        </parameterValueSource>
+        <parameterValueSource variableName="MandatoryData" variableScope="Test">
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="compound">
+              <parts>
+                <value valueClass="string">templates</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">01-Pipeline Tests (API Level)</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Claims</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Case</value>
+                <variable>
+                  <path element="FilePathSeparator"/>
+                </variable>
+                <value valueClass="string">Case_Role__cData.xlsx</value>
+              </parts>
+            </workbookPath>
+            <worksheetName class="value" valueClass="string">CaseMandatory</worksheetName>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="2">
+          <steps/>
+        </clause>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.string.Split" guid="364017bb-f752-4882-a3a9-ced27ea31dbb" name="Split" testItemId="1768" title="Split: Case_Role__c,Validate,Mandatory=&gt;,=&gt;Case_Role__cTokens">
+      <arguments>
+        <argument id="input">
+          <value class="value" valueClass="string">Case_Role__c,Validate,Mandatory</value>
+        </argument>
+        <argument id="separator">
+          <value class="value" valueClass="string">,</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Case_Role__cTokens</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="6fd3a931-d856-4b1b-8063-c91c7691c854" name="StepGroup" testItemId="1769" title="Test Execution \n">
+      <tags/>
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Test Execution \n</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="hidden" testItemId="1586">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="705ba88b-8eca-4fc0-becc-3fad21dbb3e3" name="StepGroup" testItemId="703" title="Database Level">
+              <tags/>
+              <arguments>
+                <argument id="description">
+                  <value class="value" valueClass="string">Database Level</value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="hidden" testItemId="704">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="fb83ad49-ba9c-409b-8610-6791f5f2ac49" name="ForEach" testItemId="1642" title="For Each: {Case_Role__cTokens}=&gt;Case_Role__cType">
+                      <arguments>
+                        <argument id="list">
+                          <value class="variable">
+                            <path element="Case_Role__cTokens"/>
+                          </value>
+                        </argument>
+                        <argument id="fromItem">
+                          <value class="value" valueClass="decimal">1</value>
+                        </argument>
+                        <argument id="valueName">
+                          <value class="value" valueClass="string">Case_Role__cType</value>
+                        </argument>
+                        <argument id="continueOnFailure">
+                          <value class="value" valueClass="boolean">true</value>
+                        </argument>
+                      </arguments>
+                      <clauses>
+                        <clause name="substeps" testItemId="1643">
+                          <steps>
+                            <apiCall apiId="com.provar.plugins.bundled.apis.Switch" guid="6432ea97-4bce-400e-9790-502b9b8c4097" name="Switch" testItemId="1668" title="Switch: {Case_Role__cType}">
+                              <arguments>
+                                <argument id="value">
+                                  <value class="variable">
+                                    <path element="Case_Role__cType"/>
+                                  </value>
+                                </argument>
+                              </arguments>
+                              <clauses>
+                                <clause name="case" testItemId="1700">
+                                  <steps>
+                                    <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="f4495922-3f40-4910-84cb-d465e54cdf29" name="SwitchCase" testItemId="1730" title="Case: Case_Role__c">
+                                      <tags>
+                                        <string>disabled</string>
+                                      </tags>
+                                      <arguments>
+                                        <argument id="value">
+                                          <value class="value" valueClass="string">Case_Role__c</value>
+                                        </argument>
+                                        <argument id="caseSensitive">
+                                          <value class="value" valueClass="string">No</value>
+                                        </argument>
+                                        <argument id="alreadyMatched"/>
+                                        <argument id="switchValue"/>
+                                      </arguments>
+                                      <clauses>
+                                        <clause name="steps" testItemId="1731">
+                                          <steps>
+                                            <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="244bad91-bb02-4867-9c48-7a951018cf1d" name="ForEach" testItemId="1732" title="For Each: {Case_Role__cData}=&gt;crl">
+                                              <tags/>
+                                              <arguments>
+                                                <argument id="list">
+                                                  <value class="variable">
+                                                    <path element="Case_Role__cData"/>
+                                                  </value>
+                                                </argument>
+                                                <argument id="fromItem">
+                                                  <value class="value" valueClass="decimal">1</value>
+                                                </argument>
+                                                <argument id="valueName">
+                                                  <value class="value" valueClass="string">crl</value>
+                                                </argument>
+                                                <argument id="continueOnFailure">
+                                                  <value class="value" valueClass="boolean">true</value>
+                                                </argument>
+                                              </arguments>
+                                              <clauses>
+                                                <clause name="substeps" testItemId="1733">
+                                                  <steps>
+                                                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="f26f0714-c009-4eb6-b186-a10942392b03" name="SetValues" testItemId="1734" title="Set Values: Scenario">
+                                                      <arguments>
+                                                        <argument id="values">
+                                                          <value class="valueList" mutable="Mutable">
+                                                            <namedValues mutable="Mutable">
+                                                              <namedValue name="valuePath">
+                                                                <value class="value" valueClass="string">Scenario</value>
+                                                              </namedValue>
+                                                              <namedValue name="value">
+                                                                <value class="compound">
+                                                                  <parts>
+                                                                    <value valueClass="string">Callable Testcase : </value>
+                                                                    <variable>
+                                                                      <path element="crl"/>
+                                                                      <path element="Scenario"/>
+                                                                    </variable>
+                                                                  </parts>
+                                                                </value>
+                                                              </namedValue>
+                                                              <namedValue name="valueScope">
+                                                                <value class="value" valueClass="string">Test</value>
+                                                              </namedValue>
+                                                            </namedValues>
+                                                          </value>
+                                                        </argument>
+                                                      </arguments>
+                                                    </apiCall>
+                                                    <apiCall apiId="com.provar.plugins.bundled.apis.Switch" guid="096cd71c-dd52-4d4a-b7d3-020daa9a13c1" name="Switch" testItemId="1735" title="Switch: {crl.CaseType}">
+                                                      <arguments>
+                                                        <argument id="value">
+                                                          <value class="variable">
+                                                            <path element="crl"/>
+                                                            <path element="CaseType"/>
+                                                          </value>
+                                                        </argument>
+                                                      </arguments>
+                                                      <clauses>
+                                                        <clause name="case" testItemId="1736">
+                                                          <steps>
+                                                            <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="d4292296-b3f4-44ba-abf1-ea56c76a0fb5" name="SwitchCase" testItemId="1737" title="Case: Create">
+                                                              <arguments>
+                                                                <argument id="value">
+                                                                  <value class="value" valueClass="string">Create</value>
+                                                                </argument>
+                                                                <argument id="caseSensitive">
+                                                                  <value class="value" valueClass="string">No</value>
+                                                                </argument>
+                                                                <argument id="alreadyMatched"/>
+                                                                <argument id="switchValue"/>
+                                                              </arguments>
+                                                              <clauses>
+                                                                <clause name="steps" testItemId="1738">
+                                                                  <steps>
+                                                                    <caseCall guid="6319a694-545e-4384-bfff-aee1233cc30c" testCaseId="61f009c6-695c-4184-96e2-be3b05a30a69" testCasePath="tests/01-Pipeline Tests (API Level)/Claims/Case/JuridischeVraag_Create.testcase" testItemId="1811">
+                                                                      <arguments>
+                                                                        <argument id="reuseConnectionName">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="User"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ExceptionError">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ExceptionError"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Subject">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Subject"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ContactId">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ContactId"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Home_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Home_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Mobile_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Mobile_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Alternative_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Alternative_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Email__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Email__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Afwijkende_email__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Afwijkende_email__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Reason">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Reason"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="VAK__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="VAK__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Schadedatum__c">
+                                                                          <value class="funcCall" id="DateFormat">
+                                                                            <argument id="date">
+                                                                              <value class="funcCall" id="DateAdd">
+                                                                                <argument id="date">
+                                                                                  <value class="variable">
+                                                                                    <path element="juv"/>
+                                                                                    <path element="Schadedatum__c"/>
+                                                                                  </value>
+                                                                                </argument>
+                                                                              </value>
+                                                                            </argument>
+                                                                            <argument id="outputFormat">
+                                                                              <value class="value" valueClass="string">yyyy-MM-dd</value>
+                                                                            </argument>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Priority">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Priority"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Polisnummer_lookup__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Polisnummer_lookup__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Reason_s_not_Covered__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Reason_s_not_Covered__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="DescriptionRich__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="DescriptionRich__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Client_Type__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Client_Type__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Claim_Type__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Claim_Type__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Claim_Area__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Claim_Area__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Specification__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Specification__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Volmacht_Receive_Claim_Status_Update__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Volmacht_Receive_Claim_Status_Update__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary_Damage_Number__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary_Damage_Number__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary_Authorized__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary_Authorized__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ParentId">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ParentId"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Origin">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Origin"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Location_Dossier__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Location_Dossier__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="SuppliedEmail">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="SuppliedEmail"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Status">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Status"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Description">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Description"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Beschrijving__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Beschrijving__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Seen_by_SC__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Seen_by_SC__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Fraude__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Fraude__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                      </arguments>
+                                                                      <outputArguments>
+                                                                        <outputArgument id="RecordId">
+                                                                          <name class="value" valueClass="string">RecordId</name>
+                                                                        </outputArgument>
+                                                                      </outputArguments>
+                                                                    </caseCall>
+                                                                  </steps>
+                                                                </clause>
+                                                              </clauses>
+                                                            </apiCall>
+                                                          </steps>
+                                                        </clause>
+                                                        <clause name="case" testItemId="1740">
+                                                          <steps>
+                                                            <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="a8fb1cc9-2ee4-4dc1-9fef-a0504fc38f20" name="SwitchCase" testItemId="1741" title="Case: Edit">
+                                                              <tags/>
+                                                              <arguments>
+                                                                <argument id="value">
+                                                                  <value class="value" valueClass="string">Edit</value>
+                                                                </argument>
+                                                                <argument id="caseSensitive">
+                                                                  <value class="value" valueClass="string">No</value>
+                                                                </argument>
+                                                                <argument id="alreadyMatched"/>
+                                                                <argument id="switchValue"/>
+                                                              </arguments>
+                                                              <clauses>
+                                                                <clause name="steps" testItemId="1742">
+                                                                  <steps>
+                                                                    <caseCall guid="463f3939-bea9-4f93-bfc2-2dce1a83f977" testCaseId="e57e6ffe-d40c-4833-b317-6422e6f15283" testCasePath="tests/01-Pipeline Tests (API Level)/Claims/Case/JuridischeVraag_Edit.testcase" testItemId="1814">
+                                                                      <arguments>
+                                                                        <argument id="reuseConnectionName">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="User"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ExceptionError">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ExceptionError"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Subject">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Subject"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ContactId">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ContactId"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Home_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Home_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Mobile_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Mobile_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Alternative_Phone__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Alternative_Phone__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Email__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Email__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Afwijkende_email__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Afwijkende_email__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Reason">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Reason"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="VAK__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="VAK__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Schadedatum__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Schadedatum__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Priority">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Priority"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Polisnummer_lookup__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Polisnummer_lookup__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Fraude__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Fraude__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Reason_s_not_Covered__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Reason_s_not_Covered__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="DescriptionRich__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="DescriptionRich__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Client_Type__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Client_Type__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Claim_Type__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Claim_Type__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Claim_Area__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Claim_Area__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Specification__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Specification__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Volmacht_Receive_Claim_Status_Update__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Volmacht_Receive_Claim_Status_Update__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary_Damage_Number__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary_Damage_Number__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary_Authorized__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary_Authorized__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Intermediary__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Intermediary__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="ParentId">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="ParentId"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Origin">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Origin"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Location_Dossier__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Location_Dossier__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="SuppliedEmail">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="SuppliedEmail"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="EditSubject">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="EditSubject"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Status">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Status"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Description">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Description"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Beschrijving__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Beschrijving__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                        <argument id="Seen_by_SC__c">
+                                                                          <value class="variable">
+                                                                            <path element="juv"/>
+                                                                            <path element="Seen_by_SC__c"/>
+                                                                          </value>
+                                                                        </argument>
+                                                                      </arguments>
+                                                                      <outputArguments>
+                                                                        <outputArgument id="RecordId">
+                                                                          <name class="value" valueClass="string">RecordId</name>
+                                                                        </outputArgument>
+                                                                      </outputArguments>
+                                                                    </caseCall>
+                                                                  </steps>
+                                                                </clause>
+                                                              </clauses>
+                                                            </apiCall>
+                                                          </steps>
+                                                        </clause>
+                                                        <clause name="case" testItemId="1859">
+                                                          <steps>
+                                                            <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="3d6ed604-0d77-47fc-9a71-3b2580ed9997" name="SwitchCase" testItemId="1860" title="Case: Delete">
+                                                              <arguments>
+                                                                <argument id="value">
+                                                                  <value class="value" valueClass="string">Delete</value>
+                                                                </argument>
+                                                                <argument id="caseSensitive">
+                                                                  <value class="value" valueClass="string">No</value>
+                                                                </argument>
+                                                                <argument id="alreadyMatched"/>
+                                                                <argument id="switchValue"/>
+                                                              </arguments>
+                                                              <clauses>
+                                                                <clause name="steps" testItemId="1861"/>
+                                                              </clauses>
+                                                            </apiCall>
+                                                          </steps>
+                                                        </clause>
+                                                      </clauses>
+                                                    </apiCall>
+                                                  </steps>
+                                                </clause>
+                                              </clauses>
+                                            </apiCall>
+                                          </steps>
+                                        </clause>
+                                      </clauses>
+                                    </apiCall>
+                                  </steps>
+                                </clause>
+                                <clause name="case" testItemId="1729">
+                                  <steps/>
+                                </clause>
+                                <clause name="case" testItemId="1754">
+                                  <steps/>
+                                </clause>
+                                <clause name="case" testItemId="1837">
+                                  <steps>
+                                    <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="27992a14-cacb-456e-9f1a-41b776040557" name="SwitchCase" testItemId="1840" title="Case: Validate">
+                                      <tags>
+                                        <string>disabled</string>
+                                      </tags>
+                                      <arguments>
+                                        <argument id="value">
+                                          <value class="value" valueClass="string">Validate</value>
+                                        </argument>
+                                        <argument id="caseSensitive">
+                                          <value class="value" valueClass="string">No</value>
+                                        </argument>
+                                        <argument id="alreadyMatched"/>
+                                        <argument id="switchValue"/>
+                                      </arguments>
+                                      <clauses>
+                                        <clause name="steps" testItemId="1841">
+                                          <steps/>
+                                        </clause>
+                                      </clauses>
+                                    </apiCall>
+                                    <apiCall apiId="com.provar.plugins.bundled.apis.SwitchCase" guid="8853a2a6-98fc-479a-9a32-aac08b43267c" name="SwitchCase" testItemId="1838" title="Case: Mandatory">
+                                      <tags>
+                                        <string>disabled</string>
+                                      </tags>
+                                      <arguments>
+                                        <argument id="value">
+                                          <value class="value" valueClass="string">Mandatory</value>
+                                        </argument>
+                                        <argument id="caseSensitive">
+                                          <value class="value" valueClass="string">No</value>
+                                        </argument>
+                                        <argument id="alreadyMatched"/>
+                                        <argument id="switchValue"/>
+                                      </arguments>
+                                      <clauses>
+                                        <clause name="steps" testItemId="1839">
+                                          <steps>
+                                            <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="7877aed8-a80f-49fc-b038-2b520682cbcd" name="ForEach" testItemId="1843" title="For Each: {MandatoryData}=&gt;var">
+                                              <arguments>
+                                                <argument id="list">
+                                                  <value class="variable">
+                                                    <path element="MandatoryData"/>
+                                                  </value>
+                                                </argument>
+                                                <argument id="fromItem">
+                                                  <value class="value" valueClass="decimal">1</value>
+                                                </argument>
+                                                <argument id="valueName">
+                                                  <value class="value" valueClass="string">var</value>
+                                                </argument>
+                                                <argument id="continueOnFailure"/>
+                                              </arguments>
+                                              <clauses>
+                                                <clause name="substeps" testItemId="1763">
+                                                  <steps>
+                                                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="0defd050-05a1-411e-9556-4ba52eb01937" name="SetValues" testItemId="1765" title="Set Values: Scenario">
+                                                      <tags/>
+                                                      <arguments>
+                                                        <argument id="values">
+                                                          <value class="valueList" mutable="Mutable">
+                                                            <namedValues mutable="Mutable">
+                                                              <namedValue name="valuePath">
+                                                                <value class="value" valueClass="string">Scenario</value>
+                                                              </namedValue>
+                                                              <namedValue name="value">
+                                                                <value class="compound">
+                                                                  <parts>
+                                                                    <value valueClass="string">Callable Testcase : </value>
+                                                                    <variable>
+                                                                      <path element="var"/>
+                                                                      <path element="Scenario"/>
+                                                                    </variable>
+                                                                  </parts>
+                                                                </value>
+                                                              </namedValue>
+                                                              <namedValue name="valueScope">
+                                                                <value class="value" valueClass="string">Test</value>
+                                                              </namedValue>
+                                                            </namedValues>
+                                                          </value>
+                                                        </argument>
+                                                      </arguments>
+                                                    </apiCall>
+                                                    <caseCall guid="374c5529-2c14-4da5-84e8-1c10e7955744" testCaseId="1a9d92b2-36fe-4fa2-9f76-dc8446c07dff" testCasePath="tests/01-Pipeline Tests (API Level)/Claims/Case/Case_Mandatory_Fields.testcase" testItemId="1844">
+                                                      <arguments>
+                                                        <argument id="reuseConnectionName">
+                                                          <value class="variable">
+                                                            <path element="var"/>
+                                                            <path element="User"/>
+                                                          </value>
+                                                        </argument>
+                                                        <argument id="ExceptionError"/>
+                                                        <argument id="RecordTypeName">
+                                                          <value class="variable">
+                                                            <path element="var"/>
+                                                            <path element="RecordType"/>
+                                                          </value>
+                                                        </argument>
+                                                      </arguments>
+                                                    </caseCall>
+                                                  </steps>
+                                                </clause>
+                                              </clauses>
+                                            </apiCall>
+                                          </steps>
+                                        </clause>
+                                      </clauses>
+                                    </apiCall>
+                                  </steps>
+                                </clause>
+                              </clauses>
+                            </apiCall>
+                          </steps>
+                        </clause>
+                      </clauses>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+  <tags/>
+</testCase>

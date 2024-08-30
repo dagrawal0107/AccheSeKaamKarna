@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="b7986bd2-9350-4034-8c0d-95ce62c89547" id="26">
+  <summary/>
+  <steps>
+    <apiCall apiId="customapis.CLC" guid="5bf16a99-f2bf-4a1b-8631-326539d268e3" name="CLC" testItemId="2" title="CLC: ⇒ SUM">
+      <arguments>
+        <argument id="param1">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="param2">
+          <value class="value" valueClass="decimal">2</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SUM</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

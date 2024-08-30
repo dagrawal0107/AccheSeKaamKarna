@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="70307938-292c-495f-a0be-4260f99ce32d" id="9">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.io.Read" guid="310e021b-018c-406d-80fc-dd0e27b60839" name="Read" testItemId="1" title="Read: D:\\Deepak\\Download\\Chrome\\DummySalesforceConfiguration.json=&gt;Contents">
+      <tags/>
+      <arguments>
+        <argument id="urlString">
+          <value class="url">D:\\Deepak\\Download\\Chrome\\DummySalesforceConfiguration.json</value>
+        </argument>
+        <argument id="contentFormat">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+        <argument id="contentEncoding">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Contents</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="storeAs">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource url="json:fileScheme=json%3A&amp;debug=true&amp;filePath=D%3A%5CDeepak%5CDownload%5CChrome%5CDummySalesforceConfiguration.json&amp;displayValue=D%3A%5CDeepak%5CDownload%5CChrome%5CDummySalesforceConfiguration.json&amp;whereComparison=EqualTo&amp;filePathValue=PrimitiveValueImpl+%5B+value%3A+D%3A%5CDeepak%5CDownload%5CChrome%5CDummySalesforceConfiguration.json%2C+valueId%3Dnull%2C+createdUpdateSeq%3D-1%2C+updatedUpdateSeq%3D-1%5D&amp;expressionOffset=-1&amp;expressionLength=-1&amp;propertyChangeSupport=java.beans.PropertyChangeSupport%404fb1caf1" variableName="SourceData" variableScope="Test">
+          <sourceValue class="jsonTarget" debug="true" whereComparison="EqualTo">
+            <filePath class="value" valueClass="string">D:\\Deepak\\Download\\Chrome\\DummySalesforceConfiguration.json</filePath>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="366baf93-5db2-40c0-af6d-d2f2f21c263a" name="ForEach" testItemId="3" title="For Each: {SourceData.applicationSettings}=&gt;A">
+      <tags/>
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="SourceData"/>
+            <path element="applicationSettings"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">A</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="4">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="82d50839-fbba-4a57-9cb8-5140be57166c" name="SetValues" testItemId="5" title="Set Values: Environment">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">Environment</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="A"/>
+                          <path element="environmentName"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="07e9987c-3034-427f-b89b-57cbe1d8f6c2" name="If" testItemId="20" title="If: {Environment = &quot;ENV2&quot;}">
+              <arguments>
+                <argument id="condition">
+                  <value class="eq">
+                    <lhs class="variable">
+                      <path element="Environment"/>
+                    </lhs>
+                    <rhs class="value" valueClass="string">ENV2</rhs>
+                  </value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="then" testItemId="21">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="c61bb8c7-1bfd-4306-89bb-b2875a725c96" name="SetValues" testItemId="23" title="Set Values: New">
+                      <arguments>
+                        <argument id="values">
+                          <value class="valueList" mutable="Mutable">
+                            <namedValues mutable="Mutable">
+                              <namedValue name="valuePath">
+                                <value class="value" valueClass="string">New</value>
+                              </namedValue>
+                              <namedValue name="value">
+                                <value class="variable">
+                                  <path element="A"/>
+                                </value>
+                              </namedValue>
+                              <namedValue name="valueScope">
+                                <value class="value" valueClass="string">Test</value>
+                              </namedValue>
+                            </namedValues>
+                          </value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="efa6f1e2-0c96-486d-b4a6-c2245e34c032" name="StepGroup" testItemId="24" title="SETTING ENVIORNMENT VARIABLE">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">SETTING ENVIORNMENT VARIABLE</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="hidden" testItemId="25">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="6e488c49-4545-4c65-bc59-22a37314888e" name="SetValues" testItemId="26" title="Set Values: Credentials">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">SSOUrl</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="New"/>
+                          <path element="applicationSSOUrl"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">ApplicationUrl</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="New"/>
+                          <path element="applicationUrl"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath">
+                        <value class="value" valueClass="string">Credentials</value>
+                      </namedValue>
+                      <namedValue name="value">
+                        <value class="variable">
+                          <path element="New"/>
+                          <path element="credentials"/>
+                        </value>
+                      </namedValue>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

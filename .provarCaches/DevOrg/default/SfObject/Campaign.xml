@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="701" label="Campaign" labelPlural="Campaigns" layoutable="true" n="Campaign" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Campaign (701)" updatable="true" urlDetail="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}" urlEdit="https://provar-9a-dev-ed.develop.my.salesforce.com/{ID}/e" urlNew="https://provar-9a-dev-ed.develop.my.salesforce.com/701/e">
+  <fields>
+    <sfField createable="false" length="18" n="Id" t="Campaign ID" type="id" updateable="false"/>
+    <sfField createable="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true" required="true" t="Campaign Name"/>
+    <sfField length="18" n="ParentId" relationshipName="Parent" t="Parent Campaign" type="reference">
+      <referenceTos>
+        <string>Campaign</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="Type" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="1" n="Conference" s=""/>
+        <sfPLE id="2" n="Webinar" s=""/>
+        <sfPLE id="3" n="Trade Show" s=""/>
+        <sfPLE id="4" n="Public Relations" s=""/>
+        <sfPLE id="5" n="Partners" s=""/>
+        <sfPLE id="6" n="Referral Program" s=""/>
+        <sfPLE id="7" n="Advertisement" s=""/>
+        <sfPLE id="8" n="Banner Ads" s=""/>
+        <sfPLE id="9" n="Direct Mail" s=""/>
+        <sfPLE id="10" n="Email" s=""/>
+        <sfPLE id="11" n="Telemarketing" s=""/>
+        <sfPLE id="12" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Status" type="picklist">
+      <picklistEntryIds>13,14,15,16</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="13" n="Planned" s=""/>
+        <sfPLE id="14" n="In Progress" s=""/>
+        <sfPLE id="15" n="Completed" s=""/>
+        <sfPLE id="16" n="Aborted" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="StartDate" t="Start Date" type="date"/>
+    <sfField n="EndDate" t="End Date" type="date"/>
+    <sfField n="ExpectedRevenue" precision="18" t="Expected Revenue in Campaign" type="currency"/>
+    <sfField n="BudgetedCost" precision="18" t="Budgeted Cost in Campaign" type="currency"/>
+    <sfField n="ActualCost" precision="18" t="Actual Cost in Campaign" type="currency"/>
+    <sfField n="ExpectedResponse" precision="10" scale="2" t="Expected Response (%)" type="percent"/>
+    <sfField n="NumberSent" precision="18" t="Num Sent in Campaign" type="_double"/>
+    <sfField n="IsActive" t="Active" type="_boolean"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea"/>
+    <sfField length="18" n="CampaignImageId" t="Campaign Image" type="reference">
+      <referenceTos>
+        <string>ContentDocument</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" digits="9" n="NumberOfLeads" required="true" t="Leads in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" digits="9" n="NumberOfConvertedLeads" required="true" t="Converted Leads in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" digits="9" n="NumberOfContacts" required="true" t="Contacts in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" digits="9" n="NumberOfResponses" required="true" t="Responses in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" digits="9" n="NumberOfOpportunities" required="true" t="Opportunities in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" digits="9" n="NumberOfWonOpportunities" required="true" t="Won Opportunities in Campaign" type="_int" updateable="false"/>
+    <sfField createable="false" n="AmountAllOpportunities" precision="18" required="true" t="Value Opportunities in Campaign" type="currency" updateable="false"/>
+    <sfField createable="false" n="AmountWonOpportunities" precision="18" required="true" t="Value Won Opportunities in Campaign" type="currency" updateable="false"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Campaign Owner" type="reference">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
+    <sfField createable="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="18" n="CampaignMemberRecordTypeId" relationshipName="CampaignMemberRecordType" t="Campaign Member Type" type="reference">
+      <referenceTos>
+        <string>RecordType</string>
+      </referenceTos>
+    </sfField>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedCampaignHierarchyList" childName="Campaign" field="ParentId" n="ChildCampaigns" relationshipName="ChildCampaigns" s="2-" t="Campaign"/>
+    <sfObjectRelationship childName="CampaignFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="CampaignFeed"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="CampaignHistory" field="CampaignId" n="Histories" relationshipName="Histories" s="2-" t="CampaignHistory"/>
+    <sfObjectRelationship alias="RelatedCampaignMemberList" childName="CampaignMember" field="CampaignId" n="CampaignMembers" relationshipName="CampaignMembers" s="2-" t="CampaignMember"/>
+    <sfObjectRelationship childName="CampaignMemberStatus" field="CampaignId" n="CampaignMemberStatuses" relationshipName="CampaignMemberStatuses" s="2-" t="CampaignMemberStatus"/>
+    <sfObjectRelationship childName="CampaignShare" field="CampaignId" n="Shares" relationshipName="Shares" s="2-" t="CampaignShare"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedAttachmentList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="FlowOrchestrationWorkItem" field="RelatedRecordId" n="FlowOrchestrationWorkItems" relationshipName="FlowOrchestrationWorkItems" s="2-" t="FlowOrchestrationWorkItem"/>
+    <sfObjectRelationship childName="ListEmail" field="CampaignId" n="ListEmails" relationshipName="ListEmails" s="2-" t="ListEmail"/>
+    <sfObjectRelationship childName="ListEmailRecipientSource" field="SourceListId" n="ListEmailRecipientSources" relationshipName="ListEmailRecipientSources" s="2-" t="ListEmailRecipientSource"/>
+    <sfObjectRelationship childName="NetworkActivityAudit" field="ParentEntityId" n="ParentEntities" relationshipName="ParentEntities" s="2-" t="NetworkActivityAudit"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedOpportunityList" childName="Opportunity" field="CampaignId" n="Opportunities" relationshipName="Opportunities" s="2-" t="Opportunity"/>
+    <sfObjectRelationship childName="PartnerFundRequest" field="CampaignId" n="PartnerFundRequests" relationshipName="PartnerFundRequests" s="2-" t="PartnerFundRequest"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="Promotion" field="CampaignId" n="CampaignPromotions" relationshipName="CampaignPromotions" s="2-" t="Promotion"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship alias="RelatedContentDistributionList" childName="ContentDistribution" field="RelatedRecordId" n="RelatedContentDistributionList" relationshipName="RelatedContentDistributionList" s="2-" t="Content Deliveries"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="View Campaigns ChildCampaigns" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="View Campaigns ChildCampaigns" n="Delete" requiresRow="true" s="3" t="Del"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="Campaigns" n="addInfluence" newAction="true" t="Add to Campaign"/>
+    <sfActionLink modes="View" n="ViewCampaignHierarchy" t="View Campaign Hierarchy"/>
+    <sfActionLink modes="View" n="DeepClone" t="Clone with Related"/>
+    <sfActionLink modes="View" n="adv" t="Advanced Setup"/>
+    <sfActionLink modes="ObjectHome List ChildCampaigns" n="New"/>
+    <sfActionLink modes="View ChildCampaigns" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View ChildCampaigns" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

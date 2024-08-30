@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00G" label="Group" labelPlural="Group" n="Group" queryable="true" retrieveable="true" s="" t="Group (00G)" updatable="true">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Group ID" type="id" updateable="false"/>
+    <sfField length="40" n="Name" nameField="true" required="true"/>
+    <sfField length="80" n="DeveloperName" t="Developer Name"/>
+    <sfField createable="false" length="18" n="RelatedId" relationshipName="Related" t="Related" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+        <string>UserRole</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="Type" required="true" restrictedPicklist="true" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="AllCustomerPortal" s=""/>
+        <sfPLE id="2" n="ChannelProgramGroup" s=""/>
+        <sfPLE id="3" n="CollaborationGroup" s=""/>
+        <sfPLE id="4" n="Manager" s=""/>
+        <sfPLE id="5" n="ManagerAndSubordinatesInternal" s=""/>
+        <sfPLE id="6" n="Organization" s=""/>
+        <sfPLE id="7" n="Participant" s=""/>
+        <sfPLE id="8" n="PRMOrganization" s=""/>
+        <sfPLE id="9" n="Queue" s=""/>
+        <sfPLE id="10" n="Regular" s=""/>
+        <sfPLE id="11" n="Role" s=""/>
+        <sfPLE id="12" n="RoleAndSubordinates" s=""/>
+        <sfPLE id="13" n="RoleAndSubordinatesInternal" s=""/>
+        <sfPLE id="14" n="SharingRecordCollGroup" s=""/>
+        <sfPLE id="15" n="Territory" s=""/>
+        <sfPLE id="16" n="TerritoryAndSubordinates" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="Email" type="email"/>
+    <sfField createable="false" length="18" n="OwnerId" relationshipName="Owner" required="true" t="Owner" type="reference" updateable="false">
+      <referenceTos>
+        <string>Organization</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="DoesSendEmailToMembers" t="Send Email to Members" type="_boolean"/>
+    <sfField n="DoesIncludeBosses" t="Include Bosses" type="_boolean"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="GroupMember" field="GroupId" n="GroupMembers" relationshipName="GroupMembers" s="2-" t="GroupMember"/>
+    <sfObjectRelationship childName="QueueSobject" field="QueueId" n="QueueSobjects" relationshipName="QueueSobjects" s="2-" t="QueueSobject"/>
+    <sfObjectRelationship childName="User" field="DelegatedApproverId" n="DelegatedUsers" relationshipName="DelegatedUsers" s="2-" t="User"/>
+  </childRelationships>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

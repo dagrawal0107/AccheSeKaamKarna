@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="801" label="Order" labelPlural="Orders" layoutable="true" n="Order" queryable="true" readPermission="false" retrieveable="true" s="" t="Order (801)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome Orders" n="New"/>
+    <sfActionLink modes="View Orders" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Orders" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Orders" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Orders" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

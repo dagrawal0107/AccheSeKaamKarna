@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="PersonEmployment" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Person Employments" Name="standard-PersonEmployment" SobjectName="PersonEmployment" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0St/o"/>
+</toolingTabInfo>

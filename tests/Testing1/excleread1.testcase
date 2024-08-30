@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="2fd90714-67e8-4a30-97b5-4acb0f28c587" id="1">
+  <summary/>
+  <steps>
+    <apiCall apiId="customapis.ExcelRead" guid="e875e1db-b014-47ac-bb6d-b6fedaa56b6c" name="ExcelRead" testItemId="1" title="Excel Read: ⇒ Test">
+      <arguments>
+        <argument id="FilePath">
+          <value class="value" valueClass="string">D:\\Deepak\\Download\\Chrome\\Input.xlsx</value>
+        </argument>
+        <argument id="SheetName">
+          <value class="value" valueClass="string">Email1</value>
+        </argument>
+        <argument id="ColumnWise">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="ColumnName"/>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+  <parameterValueSources>
+    <parameterValueSource variableName="SourceData" variableScope="Test"/>
+  </parameterValueSources>
+</testCase>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="Forecasting3" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Forecasts" Name="standard-Forecasting3" SobjectName="Forecasting3" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/_ui/sales/forecasting/ui/ForecastingTabPage"/>
+</toolingTabInfo>

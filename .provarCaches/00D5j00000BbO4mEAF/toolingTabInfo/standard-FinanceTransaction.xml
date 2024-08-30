@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="FinanceTransaction" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Finance Transactions" Name="standard-FinanceTransaction" SobjectName="FinanceTransaction" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0n3/o"/>
+</toolingTabInfo>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WaveHome" IsAvailableInAloha="true" Label="Analytics" Name="standard-WaveHome" SobjectName="WaveHome" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/analytics/wave/waveHome.apexp"/>
+</toolingTabInfo>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="88e53080-ecbc-49e6-8135-f58c92f71d89" id="7">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="5ddf1ff4-7a53-4f60-bd16-f933a683e3b1" name="SetValues" testItemId="3" title="Set Values: A">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">A</value>
+              </namedValue>
+              <namedValue name="value"/>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="e068d641-6229-49ed-867a-9f71121dbb13" name="StepGroup" testItemId="1" title="Read excle">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Read excle</value>
+        </argument>
+      </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData" variableScope="Test">
+          <cacheToken>C:/Users/deepak.agrawal/Provar/Workspace1/Traning1/templates/Blank.xlsx;1710844627361</cacheToken>
+          <cachedParameters>
+            <apiParam name="Column1"/>
+            <apiParam name="Column2"/>
+            <apiParam name="Column3"/>
+            <apiParam name="Column4"/>
+            <apiParam name="Column5"/>
+            <apiParam name="Column6"/>
+            <apiParam name="Column7"/>
+            <apiParam name="Column8"/>
+            <apiParam name="Column9"/>
+            <apiParam name="Column10"/>
+            <apiParam name="Column11"/>
+            <apiParam name="Column12"/>
+          </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="None" whereNegative="true" whereValue="{A}">
+            <workbookPath class="value" valueClass="string">templates/Blank.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string"/>
+            <valuesRange class="value" valueClass="string"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
+      <clauses>
+        <clause name="hidden" testItemId="2"/>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="23f76d99-098c-45ca-abf2-aecc17102261" name="SetValues" testItemId="7" title="Set Values: B">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">B</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="variable">
+                  <path element="SourceData">
+                    <filter class="index">
+                      <index valueClass="decimal">0</index>
+                    </filter>
+                  </path>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" guid="8cf9c1fe-4d72-4498-9cab-3abc403b35ee" name="ForEach" testItemId="8" title="For Each: {SourceData}=&gt;AD">
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="SourceData"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">AD</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="9">
+          <steps>
+            <apiCall apiId="com.provar.plugins.bundled.apis.If" guid="821260f0-e809-47d5-a6eb-190fa5d25287" name="If" testItemId="10" title="If: {AD[1]}">
+              <arguments>
+                <argument id="condition">
+                  <value class="variable">
+                    <path element="AD">
+                      <filter class="index">
+                        <index valueClass="decimal">0</index>
+                      </filter>
+                    </path>
+                  </value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="then" testItemId="11">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="4cb9021d-942d-414d-81c8-4f0f0a7a74f0" name="SetValues" testItemId="12" title="Set Values: C">
+                      <arguments>
+                        <argument id="values">
+                          <value class="valueList" mutable="Mutable">
+                            <namedValues mutable="Mutable">
+                              <namedValue name="valuePath">
+                                <value class="value" valueClass="string">C</value>
+                              </namedValue>
+                              <namedValue name="value">
+                                <value class="value" valueClass="string">C</value>
+                              </namedValue>
+                              <namedValue name="valueScope">
+                                <value class="value" valueClass="string">Test</value>
+                              </namedValue>
+                            </namedValues>
+                          </value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

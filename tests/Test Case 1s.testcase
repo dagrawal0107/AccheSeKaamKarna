@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="6283beac-0778-403d-b781-dc7496e1655e" id="3">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.AssertValues" guid="42a8286c-8a5e-4933-b453-37f9753c9877" name="AssertValues" testItemId="1" title="Assert: 1 Matches 1 or 2">
+      <arguments>
+        <argument id="expectedValue">
+          <value class="value" valueClass="string">1</value>
+        </argument>
+        <argument id="comparisonType">
+          <value class="value" valueClass="string">Matches</value>
+        </argument>
+        <argument id="actualValue">
+          <value class="value" valueClass="string">1 or 2</value>
+        </argument>
+        <argument id="caseSensitive">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="numeric">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="retainDecimals">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="nullGreater">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="matchMultiLine">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="matchDotAll">
+          <value class="value" valueClass="boolean">false</value>
+        </argument>
+        <argument id="failureMessage"/>
+      </arguments>
+    </apiCall>
+    <caseCall guid="0bc53286-d45e-4ed6-8de8-7f78f30f98eb" testCaseId="ea1fb63d-cf64-46c4-8622-447c359da768" testCasePath="tests/Assignment/Account.testcase" testItemId="2"/>
+    <caseCall guid="caff5d04-e411-43b0-88c5-243da07d3eff" testCaseId="a126fbf4-80a2-4e5a-bfdb-5e785fbd681a" testCasePath="tests/DataDriven/Opportunity.testcase" testItemId="7"/>
+    <caseCall guid="663ab828-a9af-4711-8998-64309e1fb745" testCaseId="7fd6f051-9bd0-4fc1-b637-7c9229e0bf9f" testCasePath="tests/Assignment/SubmissionAssertions_TestCase.testcase" testItemId="27">
+      <arguments>
+        <argument id="SubName">
+          <value class="value" valueClass="string">RER Submission, Scotland</value>
+        </argument>
+        <argument id="SubRecordType">
+          <value class="value" valueClass="string">Asset</value>
+        </argument>
+        <argument id="Priority">
+          <value class="value" valueClass="string">Medium</value>
+        </argument>
+        <argument id="Stage">
+          <value class="value" valueClass="string">Underwriting Review</value>
+        </argument>
+        <argument id="DUALTeam">
+          <value class="value" valueClass="string">Asset</value>
+        </argument>
+        <argument id="InterLegalEntity">
+          <value class="value" valueClass="string">ALLINGTON HUGHES</value>
+        </argument>
+        <argument id="InterCon">
+          <value class="value" valueClass="string">Lois Griffiths</value>
+        </argument>
+        <argument id="InterConEmail">
+          <value class="value" valueClass="string">lois.griffiths@allingtonhughes.co.uk.invalid</value>
+        </argument>
+        <argument id="AccountName">
+          <value class="value" valueClass="string">Test Client Ltd 3</value>
+        </argument>
+        <argument id="ClientID">
+          <value class="value" valueClass="string">CL-0014886</value>
+        </argument>
+        <argument id="InsuredRegisteredAddressLine">
+          <value class="value" valueClass="string">1 Creechurch Place</value>
+        </argument>
+        <argument id="InsuredTradingAddressLine">
+          <value class="value" valueClass="string">1 Creechurch Lane</value>
+        </argument>
+        <argument id="InsuredRegisteredCity">
+          <value class="value" valueClass="string">London</value>
+        </argument>
+        <argument id="InsuredTradingCity">
+          <value class="value" valueClass="string">London</value>
+        </argument>
+        <argument id="InsuredRegisteredZipCode">
+          <value class="value" valueClass="string">EC3A</value>
+        </argument>
+        <argument id="InsuredTradingZipCode">
+          <value class="value" valueClass="string">EC3A 5AF</value>
+        </argument>
+        <argument id="InsuredCountry">
+          <value class="value" valueClass="string">United Kingdom</value>
+        </argument>
+        <argument id="InsuredTradingCountry">
+          <value class="value" valueClass="string">United Kingdom</value>
+        </argument>
+        <argument id="ClientClassification">
+          <value class="value" valueClass="string">Consumer</value>
+        </argument>
+        <argument id="AO">
+          <value class="value" valueClass="string">_AO_ALLINGTON HUGHES</value>
+        </argument>
+        <argument id="UnderwritingDivision">
+          <value class="value" valueClass="string">Title Business</value>
+        </argument>
+        <argument id="Product">
+          <value class="value" valueClass="string">Specific Risk</value>
+        </argument>
+        <argument id="HLCOB">
+          <value class="value" valueClass="string">Real Estate - Residential</value>
+        </argument>
+        <argument id="NatureOfOrganisation">
+          <value class="value" valueClass="string">L - Real Estate Activities</value>
+        </argument>
+        <argument id="RiskType">
+          <value class="value" valueClass="string">Insurance</value>
+        </argument>
+        <argument id="NewMTARenewal">
+          <value class="value" valueClass="string">New Business</value>
+        </argument>
+        <argument id="UnderwriterName">
+          <value class="value" valueClass="string">UW L4 Asset Infy Senior CIQA</value>
+        </argument>
+        <argument id="ProjectName">
+          <value class="value" valueClass="string">RER Submission</value>
+        </argument>
+        <argument id="TitleNumber">
+          <value class="value" valueClass="string">TN123</value>
+        </argument>
+        <argument id="SubCurrency">
+          <value class="value" valueClass="string">GBP - British Pound</value>
+        </argument>
+        <argument id="LimitOfIndemnity">
+          <value class="value" valueClass="string">GBP 750,000.00</value>
+        </argument>
+        <argument id="AddressLine1">
+          <value class="value" valueClass="string">Scotland</value>
+        </argument>
+        <argument id="WordingCountry">
+          <value class="value" valueClass="string">Scotland</value>
+        </argument>
+        <argument id="Country">
+          <value class="value" valueClass="string">United Kingdom</value>
+        </argument>
+        <argument id="CreatedBy">
+          <value class="value" valueClass="string">UW L4 Asset Infy Senior CIQA</value>
+        </argument>
+        <argument id="LastModifiedBy">
+          <value class="value" valueClass="string">UW L4 Asset Infy Senior CIQA</value>
+        </argument>
+        <argument id="SubOwner">
+          <value class="value" valueClass="string">UW L4 Asset Infy Senior CIQA</value>
+        </argument>
+        <argument id="Probability">
+          <value class="value" valueClass="string">10%</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+      </arguments>
+    </caseCall>
+    <caseCall guid="57343549-73e7-4c3c-918b-6151334554b2" testCaseId="58432464-081f-4a43-8b18-220d9b48a7da" testCasePath="tests/Assignment/ConsoleApp.testcase" testItemId="26"/>
+  </steps>
+</testCase>

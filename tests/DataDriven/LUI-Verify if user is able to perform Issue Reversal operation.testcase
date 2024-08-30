@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="19">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: SFConnection (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">QARSF_Admin</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SFConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Work_Orders</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Reuse</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" isTitleUpdated="true" name="ApexSoqlQuery" testItemId="3" title="Read WO ID which which has issue components &gt;0">
+      <arguments>
+        <argument id="soqlQuery">
+          <value class="value" valueClass="string">select rstk__woorddmd_ordno__c from rstk__woorddmd__c where rstk__woorddmd_qtyiss__c &gt;0 and rstk__woorddmd_dmdsts__c in ('2','4','5') and rstk__woorddmd_ordno__r.rstk__wocst_disassmind__c=false and  rstk__woorddmd_ordno__r.rstk__wocst_reworkind__c=false and  rstk__woorddmd_ordno__r.rstk__wocst_refurbind__c=false group by rstk__woorddmd_ordno__c limit 1</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">SFConnection</value>
+        </argument>
+        <argument id="resultListName">
+          <value class="value" valueClass="string">op_woID</value>
+        </argument>
+        <argument id="soqlColumnAliases">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.ForEach" isTitleUpdated="true" name="ForEach" testItemId="4" title="Process Record">
+      <tags/>
+      <arguments>
+        <argument id="list">
+          <value class="variable">
+            <path element="op_woID"/>
+          </value>
+        </argument>
+        <argument id="fromItem">
+          <value class="value" valueClass="decimal">1</value>
+        </argument>
+        <argument id="valueName">
+          <value class="value" valueClass="string">op_workOrderRecordID</value>
+        </argument>
+        <argument id="continueOnFailure"/>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="5">
+          <steps>
+            <caseCall testCaseId="fcad7e9d-ced4-43ac-8061-4a19d9d4f4cc" testCasePath="tests/Work Order -RSTKLUI/Callable/LUI-Issue Reversal.testcase" testItemId="6">
+              <arguments>
+                <argument id="reuseConnectionName">
+                  <value class="value" valueClass="string">SFConnection</value>
+                </argument>
+                <argument id="ip_RecordID">
+                  <value class="variable">
+                    <path element="op_workOrderRecordID"/>
+                    <path element="rstk__woorddmd_ordno__c"/>
+                  </value>
+                </argument>
+              </arguments>
+            </caseCall>
+              <arguments>
+                <argument id="reuseConnectionName">
+                  <value class="value" valueClass="string">SFConnection</value>
+                </argument>
+                <argument id="ip_RecordID">
+                  <value class="value" valueClass="string">a9iDm000000g2b9</value>
+                </argument>
+              </arguments>
+            </steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" isTitleUpdated="true" name="ApexSoqlQuery" testItemId="7" title="Read WO Components Issue Qty after performing Issue Reversal">
+              <arguments>
+                <argument id="soqlQuery">
+                  <value class="compound">
+                    <parts>
+                      <value valueClass="string">select id,name,rstk__woorddmd_qtyiss__c ,rstk__woorddmd_ordno__c,rstk__woorddmd_ordno__r.name,rstk__woorddmd_dmdsts_pl__c,rstk__woorddmd_dmdsts__c from rstk__woorddmd__c where rstk__woorddmd_ordno__c='</value>
+                      <variable>
+                        <path element="op_workOrderRecordID"/>
+                        <path element="rstk__woorddmd_ordno__c"/>
+                      </variable>
+                      <value valueClass="string">'</value>
+                    </parts>
+                  </value>
+                </argument>
+                <argument id="apexConnectionName">
+                  <value class="value" valueClass="string">SFConnection</value>
+                </argument>
+                <argument id="resultListName">
+                  <value class="value" valueClass="string">op_woorddmdAfter</value>
+                </argument>
+                <argument id="soqlColumnAliases">
+                  <value class="valueList" mutable="Mutable"/>
+                </argument>
+                <argument id="resultScope">
+                  <value class="value" valueClass="string">Test</value>
+                </argument>
+              </arguments>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.If" isTitleUpdated="true" name="If" testItemId="8" title="Verify Issue Qty after Performing Issue Reversal">
+              <arguments>
+                <argument id="condition">
+                  <value class="gt">
+                    <lhs class="variable">
+                      <path element="op_woorddmdAfter"/>
+                      <path element="rstk__woorddmd_qtyiss__c"/>
+                    </lhs>
+                    <rhs class="value" valueClass="decimal">0</rhs>
+                  </value>
+                </argument>
+              </arguments>
+              <clauses>
+                <clause name="then" testItemId="13">
+                  <steps>
+                    <apiCall apiId="com.provar.plugins.bundled.apis.control.Fail" name="Fail" testItemId="20" title="Fail Test: Issue with Issue Reversal">
+                      <arguments>
+                        <argument id="message">
+                          <value class="value" valueClass="string">Issue with Issue Reversal</value>
+                        </argument>
+                      </arguments>
+                    </apiCall>
+                  </steps>
+                </clause>
+              </clauses>
+            </apiCall>
+        </clause>
+      </clauses>
+    </apiCall>
+  </steps>
+</testCase>

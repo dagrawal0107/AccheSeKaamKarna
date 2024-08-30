@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="FulfillmentOrder" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Fulfillment Orders" Name="standard-FulfillmentOrder" SobjectName="FulfillmentOrder" Url="https://provar-9a-dev-ed.develop.my.salesforce.com/0a3/o"/>
+</toolingTabInfo>
